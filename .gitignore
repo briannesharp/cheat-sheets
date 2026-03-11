@@ -9,14 +9,13 @@ __pycache__/
 # Database credentials — never commit this
 config.py
 
-# Cached images (regenerated automatically)
+# Cached images and data (regenerated automatically)
 img_cache/
+cache.json
 
 # Old/scratch files
 *.pdf
 *.docx
 *.eps
-darley_cheatsheets.py
-darley_pdf.py
 generate_website-*.py
 stallion PPs/

@@ -21,6 +21,7 @@ BASE   = Path(r"C:\Users\bsharp\OneDrive - Godolphin\PythonScripts\ClaudeCodePro
 XL     = BASE / "stallion_data.xlsx"
 OUT    = BASE / "index.html"
 PP_DIR = BASE / "stallion PPs png files"
+CACHE  = BASE / "cache.json"
 
 # ── Full-size conformation photo URLs from darleyamerica.com ──────────────────
 CDN_BASE = "https://cdn.darleystallions.com/sites/default/files/drupal-media/stallion-images/"
@@ -254,11 +255,14 @@ def _parse_profile(name, html):
         'photo_file':     photo_f,
     }
 
-def scrape_all_stallions(names):
+def scrape_all_stallions(names, cache=None):
     """Scrape each stallion page once; return (profiles list, sp_map dict).
     profiles is a list of dicts in the same order as names.
     sp_map is name → [selling points].
+    Falls back to cache (last successful run) if a page cannot be fetched.
     """
+    cached_profiles = (cache or {}).get('profiles', {})
+    cached_sp       = (cache or {}).get('sp_map', {})
     print("Scraping stallion data from darleyamerica.com...")
     profiles = []
     sp_map   = {}
@@ -269,8 +273,10 @@ def scrape_all_stallions(names):
             profile = _parse_profile(name, html)
             points  = _parse_selling_points(name, html)
         else:
-            profile = _parse_profile(name, "")   # returns blanks + PEDIGREES data
-            points  = _SP_FALLBACK.get(name, [])
+            profile = cached_profiles.get(name) or _parse_profile(name, "")
+            points  = cached_sp.get(name, [])
+            if not points:
+                print("(no cache) ", end="", flush=True)
         profiles.append(profile)
         sp_map[name] = points
         print(f"{len(points)} selling points")
@@ -578,24 +584,44 @@ def scrape_tdn_auction_results(stallion_names):
     return sr_map
 
 
-def load_tables():
-    """Load fee history + highlights from DB/Excel; auction results scraped live from TDN."""
-    # Fee history + highlights: try DB, fall back to Excel
+def load_tables(cache=None):
+    """Load fee history + highlights from DB/Excel; auction results scraped live from TDN.
+    Falls back to cache (last successful run) if a source is unavailable.
+    """
+    cached_fh = defaultdict(list, (cache or {}).get('fh_map', {}))
+    cached_sr = defaultdict(list, (cache or {}).get('sr_map', {}))
+    cached_hl = defaultdict(list, (cache or {}).get('hl_map', {}))
+
+    # Fee history: try DB, fall back to cache
     try:
         import config
         print("Loading fee history from SQL database...")
         fh_map, _, hl_map = load_tables_from_db()
         print("  Done.")
     except Exception as e:
-        print(f"  DB load failed ({e}), loading from Excel.")
-        fh_map, _, hl_map = load_tables_from_xl()
+        if any(cached_fh.values()):
+            print(f"  DB load failed ({e}), using cached fee history.")
+            fh_map = cached_fh
+            hl_map = cached_hl
+        else:
+            print(f"  DB load failed ({e}), loading from Excel.")
+            fh_map, _, hl_map = load_tables_from_xl()
+
+    # Highlights: if empty (e.g. Excel missing), use cache
+    if not any(hl_map.values()) and any(cached_hl.values()):
+        print("  Highlights not loaded, using cached highlights.")
+        hl_map = cached_hl
 
     # Auction results: scrape live from TDN
     print("Scraping auction results from TDN insta-tistics...")
     sr_map = scrape_tdn_auction_results(list(PEDIGREES.keys()))
     if not any(sr_map.values()):
-        print("  TDN scrape returned no data, falling back to Excel sale results.")
-        _, sr_map, _ = load_tables_from_xl()
+        if any(cached_sr.values()):
+            print("  TDN scrape returned no data, using cached sale results.")
+            sr_map = cached_sr
+        else:
+            print("  TDN scrape returned no data, loading from Excel.")
+            _, sr_map, _ = load_tables_from_xl()
 
     return fh_map, sr_map, hl_map
 
@@ -668,7 +694,7 @@ def more_selling_points_html(highlights):
         return ''
     lis = ''.join(f'<li>{esc(str(h.get("text", "")))}</li>' for h in items)
     return f'''
-      <div class="content-block sp-block">
+      <div class="content-block sp-block msp-block">
         <h3 class="block-title"><span class="block-icon">🔍</span>More Selling Points<span class="chevron">▾</span></h3>
         <div class="block-body">
           <ul class="sp-list">{lis}</ul>
@@ -919,10 +945,10 @@ def stallion_section(s, fee_hist, sales, highlights, sp_points):
         {more_selling_points_html(highlights)}
         {fee_table_html(fee_hist)}
         {highlights_html(highlights)}
+        {pedigree_highlights_html(highlights)}
         {sales_table_html(sales)}
         {race_record_html(name)}
         {pedigree_html(name)}
-        {pedigree_highlights_html(highlights)}
         <div class="card-foot">
           <a href="#{slug}" class="back-to-card">↑ Back to top of card</a>
           <button class="print-btn" onclick="window.print()">⎙ Print</button>
@@ -1259,7 +1285,9 @@ th.center { text-align: center; }
 
 /* ── Selling points ── */
 .sp-block { background: linear-gradient(135deg, #f0f6ff 0%, #e8f4fd 100%); border-top: 3px solid #cc1012 !important; }
+.msp-block { background: #ffffff !important; }
 .sp-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.msp-block .sp-list { gap: 0; }
 .sp-list li {
   font-size: 13.5px;
   line-height: 1.5;
@@ -1878,14 +1906,41 @@ def write_manifest():
     (BASE / 'site.webmanifest').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
 
 
+def _load_cache():
+    """Load cache.json if it exists. Returns a dict (empty if missing or corrupt)."""
+    import json
+    if CACHE.exists():
+        try:
+            return json.loads(CACHE.read_text(encoding='utf-8'))
+        except Exception as e:
+            print(f"  WARNING: could not read cache ({e})")
+    return {}
+
+
+def _save_cache(profiles, sp_map, fh_map, sr_map, hl_map):
+    """Save all fetched data to cache.json for use as fallback on future runs."""
+    import json
+    data = {
+        'profiles': {s['name']: s for s in profiles},
+        'sp_map':   dict(sp_map),
+        'fh_map':   dict(fh_map),
+        'sr_map':   dict(sr_map),
+        'hl_map':   dict(hl_map),
+    }
+    CACHE.write_text(json.dumps(data, indent=2, default=str), encoding='utf-8')
+
+
 def generate():
     from datetime import date
 
     # Stallion list from PEDIGREES, sorted alphabetically
     stallion_names = sorted(PEDIGREES.keys())
 
+    # Load cache from last successful run (used as fallback if any source fails)
+    cache = _load_cache()
+
     # Scrape profiles + selling points from darleyamerica.com (one fetch per stallion)
-    stallions, sp_map = scrape_all_stallions(stallion_names)
+    stallions, sp_map = scrape_all_stallions(stallion_names, cache)
 
     # Merge Excel profile fields (height, YOB, earnings, etc.) into scraped profiles
     xl_stallions = load_stallions_from_xl()
@@ -1896,8 +1951,11 @@ def generate():
             if xl.get(f):   # Excel always takes precedence over scraped value
                 s[f] = xl[f]
 
-    # Fee history + sale results from DB; highlights from Excel (falls back gracefully)
-    fh_map, sr_map, hl_map = load_tables()
+    # Fee history + sale results from DB; highlights from Excel (falls back to cache)
+    fh_map, sr_map, hl_map = load_tables(cache)
+
+    # Save all data to cache for use as fallback on future runs
+    _save_cache(stallions, sp_map, fh_map, sr_map, hl_map)
 
     n           = len(stallions)
     logo_src    = embed_logo()
