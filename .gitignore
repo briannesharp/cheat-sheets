@@ -18,6 +18,5 @@ img_cache/
 *.eps
 darley_cheatsheets.py
 darley_pdf.py
-generate_cheatsheets.py
 generate_website-*.py
 stallion PPs/

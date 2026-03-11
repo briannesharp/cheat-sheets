@@ -14,8 +14,10 @@ import urllib.parse
 from html.parser import HTMLParser
 from pathlib import Path
 from collections import defaultdict
+from datetime import date 
+today = date.today()
 
-BASE   = Path(r"C:\Users\bsharp\OneDrive - Godolphin\PythonScripts\ClaudeCodeProjects\cheatsheets")
+BASE   = Path(r"C:\Users\bsharp\OneDrive - Godolphin\PythonScripts\ClaudeCodeProjects\cheat-sheets")
 XL     = BASE / "stallion_data.xlsx"
 OUT    = BASE / "index.html"
 PP_DIR = BASE / "stallion PPs png files"
