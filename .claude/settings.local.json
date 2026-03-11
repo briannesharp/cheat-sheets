@@ -49,7 +49,8 @@
       "Bash(cd \"C:\\\\Users\\\\bsharp\\\\OneDrive - Godolphin\\\\PythonScripts\\\\ClaudeCodeProjects\\\\cheatsheets\" && python -c \"\nimport openpyxl\nwb = openpyxl.load_workbook\\('stallion_data.xlsx', read_only=True\\)\nprint\\('Sheets:', wb.sheetnames\\)\nfor sh in wb.sheetnames:\n    ws = wb[sh]\n    rows = list\\(ws.iter_rows\\(values_only=True\\)\\)\n    if rows:\n        print\\(f'  {sh}: {rows[0]}'\\)\n\" 2>&1)",
       "Bash(python -c \"\nimport urllib.request, re\nurl = 'https://www.darleyamerica.com/stallions/our-stallions/nyquist'\nreq = urllib.request.Request\\(url, headers={'User-Agent': 'Mozilla/5.0'}\\)\nhtml = urllib.request.urlopen\\(req, timeout=15\\).read\\(\\).decode\\('utf-8', errors='ignore'\\)\nidx = html.find\\('Foaled'\\)\nif idx == -1: idx = html.find\\('foaled'\\)\nprint\\('Foaled context:', repr\\(html[max\\(0,idx-200\\):idx+400]\\) if idx > -1 else 'NOT FOUND'\\)\n\" 2>&1)",
       "WebFetch(domain:www.thoroughbreddailynews.com)",
-      "Bash(cd \"C:\\\\Users\\\\bsharp\\\\OneDrive - Godolphin\\\\PythonScripts\\\\ClaudeCodeProjects\\\\cheatsheets\" && python -c \"\nimport ast\nwith open\\('generate_website.py', encoding='utf-8'\\) as f: src = f.read\\(\\)\nast.parse\\(src\\)\nprint\\('Syntax OK'\\)\n\")"
+      "Bash(cd \"C:\\\\Users\\\\bsharp\\\\OneDrive - Godolphin\\\\PythonScripts\\\\ClaudeCodeProjects\\\\cheatsheets\" && python -c \"\nimport ast\nwith open\\('generate_website.py', encoding='utf-8'\\) as f: src = f.read\\(\\)\nast.parse\\(src\\)\nprint\\('Syntax OK'\\)\n\")",
+      "Bash(cd \"C:\\\\Users\\\\bsharp\\\\OneDrive - Godolphin\\\\PythonScripts\\\\ClaudeCodeProjects\\\\cheat-sheets\" && python generate_website.py)"
     ]
   }
 }

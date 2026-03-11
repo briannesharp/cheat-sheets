@@ -657,6 +657,16 @@ def pedigree_html(name):
               <div class="ped-cell">{pc("dam_sire")}</div>
               <div class="ped-cell ped-dam-side">{pc("dam_dam")}</div>
             </div>
+            <div class="ped-col ped-col-great">
+              <div class="ped-cell">{pc("sire_sire_sire")}</div>
+              <div class="ped-cell ped-dam-side">{pc("sire_sire_dam")}</div>
+              <div class="ped-cell">{pc("sire_dam_sire")}</div>
+              <div class="ped-cell ped-dam-side">{pc("sire_dam_dam")}</div>
+              <div class="ped-cell">{pc("dam_sire_sire")}</div>
+              <div class="ped-cell ped-dam-side">{pc("dam_sire_dam")}</div>
+              <div class="ped-cell">{pc("dam_dam_sire")}</div>
+              <div class="ped-cell ped-dam-side">{pc("dam_dam_dam")}</div>
+            </div>
           </div>
         </div>
       </div>'''
@@ -716,6 +726,32 @@ def _crop_age_label(season):
         return 'yearlings'
     return f'{age}yo'
 
+def fee_sparkline_svg(fee_hist):
+    """Return a small inline SVG sparkline of stud fee over time, or '' if < 2 data points."""
+    points = []
+    for fh in sorted(fee_hist, key=lambda r: r.get('season', 0)):
+        fee_raw = str(fh.get('stud_fee', '')).strip().lstrip('$').replace(',', '')
+        try:
+            points.append((int(fh.get('season', 0)), float(fee_raw)))
+        except (ValueError, TypeError):
+            continue
+    if len(points) < 2:
+        return ''
+    W, H, PAD = 100, 26, 3
+    fees = [f for _, f in points]
+    min_f, max_f = min(fees), max(fees)
+    n = len(points)
+    def xi(i): return PAD + i * (W - 2*PAD) / (n - 1)
+    def yi(f): return H/2 if max_f == min_f else PAD + (1-(f-min_f)/(max_f-min_f))*(H-2*PAD)
+    coords = ' '.join(f'{xi(i):.1f},{yi(f):.1f}' for i, (_, f) in enumerate(points))
+    lx, ly = xi(n-1), yi(fees[-1])
+    return (f'<svg class="fee-spark" viewBox="0 0 {W} {H}" width="{W}" height="{H}" aria-hidden="true">'
+            f'<polyline points="{coords}" fill="none" stroke="var(--cyan)" stroke-width="1.8"'
+            f' stroke-linejoin="round" stroke-linecap="round"/>'
+            f'<circle cx="{lx:.1f}" cy="{ly:.1f}" r="2.5" fill="var(--cyan)"/>'
+            f'</svg>')
+
+
 def fee_table_html(fee_hist):
     if not fee_hist:
         return ''
@@ -745,14 +781,15 @@ def fee_table_html(fee_hist):
           </tr>'''
     notes = '  ·  '.join(str(fh.get('notes','')) for fh in fee_hist if fh.get('notes'))
     notes_html = f'<p class="table-note">{esc(notes)}</p>' if notes else ''
+    spark = fee_sparkline_svg(fee_hist)
     return f'''
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History{spark}<span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
-            <table>
+            <table class="fee-table">
               <thead><tr>
-                <th>Season</th><th>Stud Fee</th><th class="center">Mares Bred</th>
+                <th>Season</th><th>Fee</th><th class="center">Mares</th>
                 <th class="center">CI</th><th class="center">CPI</th><th>Foals</th><th class="center">Runners</th><th class="center">Stakes Winners</th><th class="center">%SW</th>
               </tr></thead>
               <tbody>{rows}</tbody>
@@ -787,7 +824,7 @@ def sales_table_html(sales):
         <h3 class="block-title"><span class="block-icon">🔨</span>Auction Results<span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
-            <table>
+            <table class="sales-table">
               <thead><tr>
                 <th>Year</th><th>Sale Type</th><th class="center">Ring</th><th class="center">Sold</th>
                 <th class="center">Average</th><th class="center">Median</th><th class="center">Top Colt</th><th class="center">Top Filly / Mare</th>
@@ -951,7 +988,7 @@ def stallion_section(s, fee_hist, sales, highlights, sp_points):
         {pedigree_html(name)}
         <div class="card-foot">
           <a href="#{slug}" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -974,10 +1011,10 @@ body {
 /* ── Brand vars ── */
 :root {
   --blue:   #0037B2;
-  --blue2:  #002A85;
+  --blue2:  #0037B2;
   --cyan:   #00ABEE;
-  --cyan-lt:#E3F5FD;
-  --red:    #E3140D;
+  --cyan-lt:rgba(127, 213, 246, 0.25);
+  --red:    #CC1012;
   --grey:   #5a6a7a;
   --border: #c8d8ec;
   --light:  #f0f6fc;
@@ -995,7 +1032,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 0 16px;
+  padding: 0 max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left));
   height: 54px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.35);
 }
@@ -1429,12 +1466,14 @@ footer {
 .content-block.collapsed .block-body { opacity: 0; }
 
 /* ── Pedigree ── */
-.ped-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.ped-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
 .ped-col { display: flex; flex-direction: column; }
 .ped-col-parent .ped-cell { flex: 1; display: flex; align-items: center; padding: 10px 14px; font-weight: 700; font-size: 14px; color: var(--blue); border-bottom: 1px solid var(--border); }
 .ped-col-parent .ped-cell:last-child { border-bottom: none; }
 .ped-col-grand .ped-cell { flex: 1; padding: 7px 12px; font-size: 12.5px; color: #333; border-left: 1px solid var(--border); border-bottom: 1px solid var(--border); background: white; }
 .ped-col-grand .ped-cell:last-child { border-bottom: none; }
+.ped-col-great .ped-cell { flex: 1; padding: 1px 10px; font-size: 10.5px; color: #555; border-left: 1px solid var(--border); border-bottom: 1px solid var(--border); background: white; display: flex; align-items: center; }
+.ped-col-great .ped-cell:last-child { border-bottom: none; }
 .ped-sire-cell { background: var(--cyan-lt); }
 .ped-dam-cell  { background: #f5f0fc; }
 .ped-dam-side  { background: #faf8fe; }
@@ -1522,18 +1561,16 @@ footer {
     font-size: 18px;
     font-weight: 900;
     letter-spacing: 0.5px;
+    color: var(--blue2);
     flex: 1;
   }
   .accord-fee { font-size: 13px; font-weight: 700; color: #cc1012; white-space: nowrap; }
-  /* Alternating row colors */
-  .stallion:nth-child(odd)  .accord-header { background: var(--blue2); }
-  .stallion:nth-child(even) .accord-header { background: var(--cyan); color: var(--blue2); }
-  .stallion:nth-child(even) .accord-name   { color: var(--blue2); }
-  .stallion:nth-child(even) .accord-fee    { color: #cc1012; }
-  .stallion:nth-child(even) .accord-chev   { color: var(--blue2); opacity: 0.6; }
-  .stallion:nth-child(even).accord-open .accord-chev { opacity: 1; color: var(--blue2); }
-  .accord-chev { font-size: 16px; color: rgba(255,255,255,0.5); transition: transform 0.25s; flex-shrink: 0; }
-  .stallion.accord-open .accord-chev { transform: rotate(180deg); color: var(--cyan); }
+  /* All-white rows with cyan left accent */
+  .accord-header { background: #ffffff; border-left: 4px solid var(--cyan); }
+  .accord-header:hover { background: #E3F5FD; }
+  .stallion.accord-open .accord-header { background: #E3F5FD; border-left-color: var(--blue); }
+  .accord-chev { font-size: 16px; color: var(--grey); transition: transform 0.25s; flex-shrink: 0; }
+  .stallion.accord-open .accord-chev { transform: rotate(180deg); color: var(--blue); }
 
   /* Card hidden by default on mobile, revealed when open */
   .stallion-card { display: none; border-radius: 0; box-shadow: none; border: none; border-top: none; }
@@ -1563,17 +1600,30 @@ footer {
   /* Progeny */
   .progeny-list li { font-size: 12.5px; padding: 8px 10px 8px 12px; }
 
-  /* Tables */
+  /* Tables — fit to screen by hiding lower-priority columns */
   .table-scroll { border-radius: 4px; }
-  table { font-size: 11px; min-width: 500px; }
-  thead th { padding: 7px 8px; font-size: 10px; }
-  td { padding: 5px 8px; }
+  table { font-size: 10.5px; min-width: 0; width: 100%; }
+  thead th { padding: 6px 5px; font-size: 9.5px; }
+  td { padding: 4px 5px; }
+  /* Fee History: hide CI (col 4) and CPI (col 5) */
+  .fee-table th:nth-child(4), .fee-table td:nth-child(4),
+  .fee-table th:nth-child(5), .fee-table td:nth-child(5) { display: none; }
+  /* Auction Results: hide Ring (col 3) */
+  .sales-table th:nth-child(3), .sales-table td:nth-child(3) { display: none; }
+
+  /* Tap feedback on collapsible section titles */
+  .block-title { -webkit-tap-highlight-color: transparent; }
+  .block-title:active { background: rgba(0, 171, 238, 0.1); border-radius: 4px; }
+
+  /* Pedigree — 2 columns only on mobile */
+  .ped-grid { grid-template-columns: 1fr 1fr !important; }
+  .ped-col-great { display: none !important; }
 
   /* Back-to-top */
-  .back-to-top { bottom: 16px; right: 14px; width: 38px; height: 38px; font-size: 16px; }
+  .back-to-top { bottom: max(16px, env(safe-area-inset-bottom)); right: 14px; width: 38px; height: 38px; font-size: 16px; }
 
-  /* Footer */
-  footer { font-size: 10px; padding: 14px 16px; letter-spacing: 0.4px; }
+  /* Footer — respect home bar */
+  footer { font-size: 10px; padding: 14px 16px; padding-bottom: max(14px, env(safe-area-inset-bottom)); letter-spacing: 0.4px; }
 }
 
 /* ── Sticky name bar (desktop) ── */
@@ -1600,6 +1650,9 @@ footer {
   flex: 1;
 }
 .sticky-bar .sb-fee { font-size: 12px; font-weight: 700; color: #cc1012; }
+
+/* ── Fee sparkline ── */
+.fee-spark { flex-shrink: 0; opacity: 0.85; }
 
 /* ── Print button ── */
 .print-btn {
@@ -1665,9 +1718,14 @@ footer {
   thead th { padding: 4px 6px !important; font-size: 8.5px !important; }
   td { padding: 3px 6px !important; }
 
-  /* Pedigree */
-  .ped-grid { font-size: 10px !important; gap: 4px !important; }
+  /* Pedigree — 2 columns only on print */
+  .ped-grid { grid-template-columns: 1fr 1fr !important; font-size: 10px !important; gap: 4px !important; }
+  .ped-col-great { display: none !important; }
   .ped-cell { padding: 3px 6px !important; }
+
+  /* Sparkline */
+  .fee-spark polyline { stroke: #00ABEE !important; }
+  .fee-spark circle   { fill:   #00ABEE !important; }
 }
 """
 
@@ -1822,6 +1880,17 @@ JS = """
     setTimeout(() => all[nxt].scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
   }, { passive: true });
 
+  // ── Print single card ──
+  window.printCard = function(btn) {
+    const slug = btn.closest('.stallion').id;
+    const others = Array.from(document.querySelectorAll('.stallion:not(#' + slug + ')'));
+    others.forEach(s => s.style.setProperty('display', 'none', 'important'));
+    window.addEventListener('afterprint', () => {
+      others.forEach(s => s.style.removeProperty('display'));
+    }, { once: true });
+    window.print();
+  };
+
   // ── Service worker (offline support) ──
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});
@@ -1897,8 +1966,8 @@ def write_manifest():
         "short_name": "Darley Stallions",
         "start_url": "./index.html",
         "display": "standalone",
-        "background_color": "#002A85",
-        "theme_color": "#002A85",
+        "background_color": "#0037B2",
+        "theme_color": "#0037B2",
         "icons": [
             {"src": "D.jpg", "sizes": "any", "type": "image/jpeg", "purpose": "any maskable"}
         ]
@@ -1985,13 +2054,13 @@ def generate():
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Darley America — Stallion Cheat Sheets</title>
   <meta property="og:title" content="Darley America — Stallion Cheat Sheets">
   <meta property="og:description" content="{n} stallions · Updated {updated}">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
-  <meta name="theme-color" content="#002A85">
+  <meta name="theme-color" content="#0037B2">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Darley Stallions">
