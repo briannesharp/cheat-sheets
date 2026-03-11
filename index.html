@@ -579,18 +579,16 @@ footer {
     font-size: 18px;
     font-weight: 900;
     letter-spacing: 0.5px;
+    color: var(--blue2);
     flex: 1;
   }
   .accord-fee { font-size: 13px; font-weight: 700; color: #cc1012; white-space: nowrap; }
-  /* Alternating row colors */
-  .stallion:nth-child(odd)  .accord-header { background: var(--blue2); }
-  .stallion:nth-child(even) .accord-header { background: var(--cyan); color: var(--blue2); }
-  .stallion:nth-child(even) .accord-name   { color: var(--blue2); }
-  .stallion:nth-child(even) .accord-fee    { color: #cc1012; }
-  .stallion:nth-child(even) .accord-chev   { color: var(--blue2); opacity: 0.6; }
-  .stallion:nth-child(even).accord-open .accord-chev { opacity: 1; color: var(--blue2); }
-  .accord-chev { font-size: 16px; color: rgba(255,255,255,0.5); transition: transform 0.25s; flex-shrink: 0; }
-  .stallion.accord-open .accord-chev { transform: rotate(180deg); color: var(--cyan); }
+  /* All-white rows with cyan left accent */
+  .accord-header { background: #ffffff; border-left: 4px solid var(--cyan); }
+  .accord-header:hover { background: var(--cyan-lt); }
+  .stallion.accord-open .accord-header { background: var(--cyan-lt); border-left-color: var(--blue); }
+  .accord-chev { font-size: 16px; color: var(--grey); transition: transform 0.25s; flex-shrink: 0; }
+  .stallion.accord-open .accord-chev { transform: rotate(180deg); color: var(--blue); }
 
   /* Card hidden by default on mobile, revealed when open */
   .stallion-card { display: none; border-radius: 0; box-shadow: none; border: none; border-top: none; }
