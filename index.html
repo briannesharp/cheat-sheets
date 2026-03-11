@@ -658,6 +658,9 @@ footer {
 }
 .sticky-bar .sb-fee { font-size: 12px; font-weight: 700; color: #cc1012; }
 
+/* ── Fee sparkline ── */
+.fee-spark { flex-shrink: 0; opacity: 0.85; }
+
 /* ── Print button ── */
 .print-btn {
   font-family: inherit; font-size: 11.5px; color: var(--grey); padding: 5px 18px;
@@ -725,6 +728,10 @@ footer {
   /* Pedigree */
   .ped-grid { font-size: 10px !important; gap: 4px !important; }
   .ped-cell { padding: 3px 6px !important; }
+
+  /* Sparkline */
+  .fee-spark polyline { stroke: #00ABEE !important; }
+  .fee-spark circle   { fill:   #00ABEE !important; }
 }
 </style>
 </head>
@@ -811,7 +818,7 @@ footer {
       </div>
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,3.0 50.0,16.3 97.0,23.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="23.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -948,7 +955,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#cody-s-wish" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -1003,7 +1010,7 @@ footer {
       </div>
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,3.0 26.5,3.0 50.0,7.0 73.5,13.0 97.0,23.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="23.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -1150,6 +1157,16 @@ footer {
             <td class="center">$55,000</td>
             <td class="center">$135,000</td>
             <td class="center">$105,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">62</td>
+            <td class="center">54</td>
+            <td class="bold center">$88,564</td>
+            <td class="center">$50,000</td>
+            <td class="center">$450,000</td>
+            <td class="center">$375,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -1176,7 +1193,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#essential-quality" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -1306,7 +1323,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#first-mission" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -1355,7 +1372,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,3.0 13.4,3.0 23.9,3.0 34.3,8.0 44.8,15.5 55.2,18.0 65.7,23.0 76.1,23.0 86.6,20.5 97.0,21.8" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="21.8" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -1549,6 +1566,16 @@ footer {
             <td class="center">$22,500</td>
             <td class="center">$55,000</td>
             <td class="center">$55,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">50</td>
+            <td class="center">39</td>
+            <td class="bold center">$35,729</td>
+            <td class="center">$25,000</td>
+            <td class="center">$75,000</td>
+            <td class="center">$115,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -1575,7 +1602,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#frosted" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -1624,7 +1651,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,3.0 13.4,7.0 23.9,7.0 34.3,7.0 44.8,11.0 55.2,11.0 65.7,11.0 76.1,11.0 86.6,19.0 97.0,23.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="23.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -1812,6 +1839,16 @@ footer {
             <td class="center">$20,000</td>
             <td class="center"></td>
             <td class="center">$25,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">68</td>
+            <td class="center">54</td>
+            <td class="bold center">$49,203</td>
+            <td class="center">$40,500</td>
+            <td class="center">$260,000</td>
+            <td class="center">$125,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -1838,7 +1875,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#hard-spun" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -1968,7 +2005,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#highland-falls" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -2017,7 +2054,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,16.3 26.5,16.3 50.0,23.0 73.5,16.3 97.0,3.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="3.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -2158,6 +2195,16 @@ footer {
             <td class="center">$95,000</td>
             <td class="center">$350,000</td>
             <td class="center">$150,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">63</td>
+            <td class="center">52</td>
+            <td class="bold center">$150,401</td>
+            <td class="center">$100,000</td>
+            <td class="center">$550,000</td>
+            <td class="center">$375,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -2184,7 +2231,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#maxfield" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -2233,7 +2280,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,21.4 13.4,21.4 23.9,21.4 34.3,21.4 44.8,23.0 55.2,19.0 65.7,3.0 76.1,11.0 86.6,11.0 97.0,11.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="11.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -2421,6 +2468,16 @@ footer {
             <td class="center">$28,500</td>
             <td class="center">$45,000</td>
             <td class="center">$37,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">30</td>
+            <td class="center">29</td>
+            <td class="bold center">$61,573</td>
+            <td class="center">$45,000</td>
+            <td class="center">$270,000</td>
+            <td class="center">$160,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -2447,7 +2504,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#midshipman" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -2496,7 +2553,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,3.0 34.3,9.7 65.7,23.0 97.0,23.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="23.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -2616,6 +2673,16 @@ footer {
             <td class="center">$8,000</td>
             <td class="center">$65,000</td>
             <td class="center">$50,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">62</td>
+            <td class="center">55</td>
+            <td class="bold center">$62,737</td>
+            <td class="center">$37,000</td>
+            <td class="center">$425,000</td>
+            <td class="center">$245,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -2650,7 +2717,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#mystic-guide" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -2699,7 +2766,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,23.0 13.4,23.0 23.9,23.0 34.3,23.0 44.8,17.8 55.2,20.8 65.7,20.8 76.1,16.3 86.6,3.0 97.0,3.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="3.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -2887,6 +2954,16 @@ footer {
             <td class="center">$562,500</td>
             <td class="center">$600,000</td>
             <td class="center">$750,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">80</td>
+            <td class="center">62</td>
+            <td class="bold center">$346,209</td>
+            <td class="center">$300,000</td>
+            <td class="center">$1,050,000</td>
+            <td class="center">$735,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -2913,7 +2990,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#nyquist" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -2962,7 +3039,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,3.0 50.0,19.0 97.0,23.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="23.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -3103,7 +3180,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#proxy" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -3152,7 +3229,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,3.0 34.3,8.0 65.7,23.0 97.0,23.0" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="23.0" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -3266,6 +3343,16 @@ footer {
             <td class="center">$13,500</td>
             <td class="center">$110,000</td>
             <td class="center">$100,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">78</td>
+            <td class="center">63</td>
+            <td class="bold center">$66,410</td>
+            <td class="center">$50,000</td>
+            <td class="center">$250,000</td>
+            <td class="center">$210,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -3300,7 +3387,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#speaker-s-corner" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -3349,7 +3436,7 @@ footer {
         
         
       <div class="content-block" id="fees">
-        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">💰</span>Stud Fee History<svg class="fee-spark" viewBox="0 0 100 26" width="100" height="26" aria-hidden="true"><polyline points="3.0,18.0 13.4,23.0 23.9,15.5 34.3,3.0 44.8,10.5 55.2,3.0 65.7,3.0 76.1,10.5 86.6,15.5 97.0,20.5" fill="none" stroke="var(--cyan)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="97.0" cy="20.5" r="2.5" fill="var(--cyan)"/></svg><span class="chevron">▾</span></h3>
         <div class="block-body">
           <div class="table-scroll-wrap"><div class="table-scroll">
             <table>
@@ -3537,6 +3624,16 @@ footer {
             <td class="center">$217,500</td>
             <td class="center">$375,000</td>
             <td class="center">$300,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td>Yearlings</td>
+            <td class="center">44</td>
+            <td class="center">38</td>
+            <td class="bold center">$164,565</td>
+            <td class="center">$80,000</td>
+            <td class="center">$450,000</td>
+            <td class="center">$650,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -3563,7 +3660,7 @@ footer {
       </div>
         <div class="card-foot">
           <a href="#street-sense" class="back-to-card">↑ Back to top of card</a>
-          <button class="print-btn" onclick="window.print()">⎙ Print</button>
+          <button class="print-btn" onclick="printCard(this)">⎙ Print</button>
         </div>
       </div>
 
@@ -3731,6 +3828,17 @@ footer {
     initCollapsibles(all[nxt]);
     setTimeout(() => all[nxt].scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
   }, { passive: true });
+
+  // ── Print single card ──
+  window.printCard = function(btn) {
+    const slug = btn.closest('.stallion').id;
+    const others = Array.from(document.querySelectorAll('.stallion:not(#' + slug + ')'));
+    others.forEach(s => s.style.setProperty('display', 'none', 'important'));
+    window.addEventListener('afterprint', () => {
+      others.forEach(s => s.style.removeProperty('display'));
+    }, { once: true });
+    window.print();
+  };
 
   // ── Service worker (offline support) ──
   if ('serviceWorker' in navigator) {
