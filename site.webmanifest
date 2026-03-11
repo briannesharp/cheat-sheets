@@ -1,0 +1,16 @@
+{
+  "name": "Darley America Stallion Cheat Sheets",
+  "short_name": "Darley Stallions",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#002A85",
+  "theme_color": "#002A85",
+  "icons": [
+    {
+      "src": "D.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
