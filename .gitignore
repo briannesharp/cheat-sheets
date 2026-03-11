@@ -18,10 +18,13 @@ config.py
 img_cache/
 cache.json
 
-# Old/scratch files
+# scratch files
 *.pdf
 *.docx
 *.eps
-stallion PPs/
+*.xlsx
 
+stallion_data.xlsx
+
+stallion PPs/
 scripts/
