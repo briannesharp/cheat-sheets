@@ -5,6 +5,11 @@
 __pycache__/
 *.pyc
 *.pyo
+*.py
+generate_website.py
+scripts/
+
+*.md
 
 # Database credentials — never commit this
 config.py
@@ -17,5 +22,6 @@ cache.json
 *.pdf
 *.docx
 *.eps
-generate_website-*.py
 stallion PPs/
+
+scripts/
