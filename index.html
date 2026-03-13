@@ -4398,10 +4398,16 @@ footer {
   // ── Print single card ──
   window.printCard = function(btn) {
     const slug = btn.closest('.stallion').id;
+    const target = btn.closest('.stallion');
     const others = Array.from(document.querySelectorAll('.stallion:not(#' + slug + ')'));
     others.forEach(s => s.style.setProperty('display', 'none', 'important'));
+    // Suppress trailing blank page caused by break-after:page on a non-last-child
+    target.style.setProperty('break-after', 'avoid', 'important');
+    target.style.setProperty('page-break-after', 'avoid', 'important');
     window.addEventListener('afterprint', () => {
       others.forEach(s => s.style.removeProperty('display'));
+      target.style.removeProperty('break-after');
+      target.style.removeProperty('page-break-after');
     }, { once: true });
     window.print();
   };
