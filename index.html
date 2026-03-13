@@ -700,12 +700,12 @@ footer {
     border: 1px solid #ccc !important; border-radius: 0 !important; overflow: visible !important;
     opacity: 1 !important; transform: none !important; }
 
-  /* Compact header — photo narrower, info spread into 2 cols to reduce height */
-  .stallion-header { grid-template-columns: 110px 1fr !important; min-height: 0 !important; }
+  /* Compact header — info spread into equal halves to fill width */
+  .stallion-header { grid-template-columns: 150px 1fr !important; min-height: 0 !important; }
   .photo-col { aspect-ratio: 4/3 !important; }
   .info-col {
     display: grid !important;
-    grid-template-columns: auto 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
     align-content: center !important;
     gap: 3px 18px !important;
     padding: 8px 14px !important;
