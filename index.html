@@ -688,7 +688,7 @@ footer {
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
 
   #navbar, .hero, .accord-header, .share-btn, .back-to-top, .card-foot,
-  footer, .sticky-bar, .print-btn { display: none !important; }
+  footer, .sticky-bar, .print-btn, .hdr-print-btn { display: none !important; }
 
   body, main { background: white !important; padding: 0 !important; margin: 0 !important; }
   main { max-width: 100% !important; }
@@ -836,7 +836,7 @@ footer {
           <div class="info-title">
             <span class="info-name">CODY'S WISH</span>
             <button class="share-btn" data-slug="cody-s-wish" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$60,000</div>
           <div class="ped-line">Curlin <span class="ped-dash">—</span> Dance Card <span class="ped-paren">(Tapit)</span></div>
@@ -946,6 +946,42 @@ footer {
         </div>
       </div>
         
+      <div class="content-block">
+        <h3 class="block-title"><span class="block-icon">🔨</span>Sales Results<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="table-scroll-wrap"><div class="table-scroll">
+            <table class="sales-table">
+              <thead><tr>
+                <th>Year</th><th class="center">Crop</th><th>Sale Type</th><th class="center">Ring</th><th class="center">Sold</th>
+                <th class="center">Average</th><th class="center">Median</th><th class="center">Top Colt</th><th class="center">Top Filly / Mare</th>
+              </tr></thead>
+              <tbody>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">2</td>
+            <td>Covering</td>
+            <td class="center">14</td>
+            <td class="center">11</td>
+            <td class="bold center">$219,545</td>
+            <td class="center">$170,000</td>
+            <td class="center"></td>
+            <td class="center">$550,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">1</td>
+            <td>Weanlings</td>
+            <td class="center">19</td>
+            <td class="center">18</td>
+            <td class="bold center">$258,520</td>
+            <td class="center">$216,685</td>
+            <td class="center">$500,000</td>
+            <td class="center">$550,000</td>
+          </tr></tbody>
+            </table>
+          </div></div>
+        </div>
+      </div>
         
       <div class="content-block pp-block">
         <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
@@ -1014,7 +1050,7 @@ footer {
           <div class="info-title">
             <span class="info-name">ESSENTIAL QUALITY</span>
             <button class="share-btn" data-slug="essential-quality" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$25,000</div>
           <div class="ped-line">Tapit <span class="ped-dash">—</span> Delightful Quality <span class="ped-paren">(Elusive Quality)</span></div>
@@ -1174,6 +1210,50 @@ footer {
             <td class="center">$22,500</td>
             <td class="center">$30,000</td>
             <td class="center">$15,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">1</td>
+            <td>2YOs</td>
+            <td class="center">26</td>
+            <td class="center">23</td>
+            <td class="bold center">$130,304</td>
+            <td class="center">$120,000</td>
+            <td class="center">$600,000</td>
+            <td class="center">$200,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">4</td>
+            <td>Covering</td>
+            <td class="center">14</td>
+            <td class="center">13</td>
+            <td class="bold center">$81,538</td>
+            <td class="center">$50,000</td>
+            <td class="center"></td>
+            <td class="center">$250,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">3</td>
+            <td>Weanlings</td>
+            <td class="center">10</td>
+            <td class="center">8</td>
+            <td class="bold center">$60,937</td>
+            <td class="center">$55,000</td>
+            <td class="center">$135,000</td>
+            <td class="center">$105,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">2</td>
+            <td>Yearlings</td>
+            <td class="center">62</td>
+            <td class="center">54</td>
+            <td class="bold center">$88,564</td>
+            <td class="center">$50,000</td>
+            <td class="center">$450,000</td>
+            <td class="center">$375,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -1239,7 +1319,7 @@ footer {
           <div class="info-title">
             <span class="info-name">FIRST MISSION</span>
             <button class="share-btn" data-slug="first-mission" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$10,000</div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Elude <span class="ped-paren">(Medaglia d'Oro)</span></div>
@@ -1383,7 +1463,7 @@ footer {
           <div class="info-title">
             <span class="info-name">FROSTED</span>
             <button class="share-btn" data-slug="frosted" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$12,500</div>
           <div class="ped-line">Tapit <span class="ped-dash">—</span> Fast Cookie <span class="ped-paren">(Deputy Minister)</span></div>
@@ -1613,6 +1693,50 @@ footer {
             <td class="center">$26,000</td>
             <td class="center">$26,000</td>
             <td class="center">$95,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">6</td>
+            <td>2YOs</td>
+            <td class="center">20</td>
+            <td class="center">17</td>
+            <td class="bold center">$40,235</td>
+            <td class="center">$37,000</td>
+            <td class="center">$85,000</td>
+            <td class="center">$80,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">9</td>
+            <td>Covering</td>
+            <td class="center">11</td>
+            <td class="center">9</td>
+            <td class="bold center">$39,222</td>
+            <td class="center">$17,000</td>
+            <td class="center"></td>
+            <td class="center">$140,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">8</td>
+            <td>Weanlings</td>
+            <td class="center">13</td>
+            <td class="center">12</td>
+            <td class="bold center">$26,916</td>
+            <td class="center">$22,500</td>
+            <td class="center">$55,000</td>
+            <td class="center">$55,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">7</td>
+            <td>Yearlings</td>
+            <td class="center">50</td>
+            <td class="center">39</td>
+            <td class="bold center">$35,729</td>
+            <td class="center">$25,000</td>
+            <td class="center">$75,000</td>
+            <td class="center">$115,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -1678,7 +1802,7 @@ footer {
           <div class="info-title">
             <span class="info-name">HARD SPUN</span>
             <button class="share-btn" data-slug="hard-spun" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$20,000</div>
           <div class="ped-line">Danzig <span class="ped-dash">—</span> Turkish Tryst <span class="ped-paren">(Turkoman)</span></div>
@@ -1894,6 +2018,50 @@ footer {
             <td class="center">$20,500</td>
             <td class="center">$22,000</td>
             <td class="center">$30,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">15</td>
+            <td>2YOs</td>
+            <td class="center">17</td>
+            <td class="center">14</td>
+            <td class="bold center">$93,509</td>
+            <td class="center">$27,500</td>
+            <td class="center">$305,000</td>
+            <td class="center">$335,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">18</td>
+            <td>Covering</td>
+            <td class="center">14</td>
+            <td class="center">14</td>
+            <td class="bold center">$68,214</td>
+            <td class="center">$35,000</td>
+            <td class="center"></td>
+            <td class="center">$200,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">17</td>
+            <td>Weanlings</td>
+            <td class="center">7</td>
+            <td class="center">3</td>
+            <td class="bold center">$17,333</td>
+            <td class="center">$20,000</td>
+            <td class="center"></td>
+            <td class="center">$25,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">16</td>
+            <td>Yearlings</td>
+            <td class="center">68</td>
+            <td class="center">54</td>
+            <td class="bold center">$49,203</td>
+            <td class="center">$40,500</td>
+            <td class="center">$260,000</td>
+            <td class="center">$125,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -1959,7 +2127,7 @@ footer {
           <div class="info-title">
             <span class="info-name">HIGHLAND FALLS</span>
             <button class="share-btn" data-slug="highland-falls" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$10,000</div>
           <div class="ped-line">Curlin <span class="ped-dash">—</span> Round Pond <span class="ped-paren">(Awesome Again)</span></div>
@@ -2103,7 +2271,7 @@ footer {
           <div class="info-title">
             <span class="info-name">MAXFIELD</span>
             <button class="share-btn" data-slug="maxfield" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$50,000</div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Velvety <span class="ped-paren">(Bernardini)</span></div>
@@ -2267,6 +2435,50 @@ footer {
             <td class="center">$112,500</td>
             <td class="center"></td>
             <td class="center">$112,500</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">1</td>
+            <td>2YOs</td>
+            <td class="center">38</td>
+            <td class="center">27</td>
+            <td class="bold center">$231,982</td>
+            <td class="center">$90,000</td>
+            <td class="center">$1,124,886</td>
+            <td class="center">$1,250,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">4</td>
+            <td>Covering</td>
+            <td class="center">15</td>
+            <td class="center">14</td>
+            <td class="bold center">$76,928</td>
+            <td class="center">$60,000</td>
+            <td class="center"></td>
+            <td class="center">$210,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">3</td>
+            <td>Weanlings</td>
+            <td class="center">15</td>
+            <td class="center">14</td>
+            <td class="bold center">$103,571</td>
+            <td class="center">$95,000</td>
+            <td class="center">$350,000</td>
+            <td class="center">$150,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">2</td>
+            <td>Yearlings</td>
+            <td class="center">63</td>
+            <td class="center">52</td>
+            <td class="bold center">$150,401</td>
+            <td class="center">$100,000</td>
+            <td class="center">$550,000</td>
+            <td class="center">$375,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -2332,7 +2544,7 @@ footer {
           <div class="info-title">
             <span class="info-name">MIDSHIPMAN</span>
             <button class="share-btn" data-slug="midshipman" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$15,000</div>
           <div class="ped-line">Unbridled's Song <span class="ped-dash">—</span> Fleet Lady <span class="ped-paren">(Avenue of Flags)</span></div>
@@ -2552,6 +2764,50 @@ footer {
             <td class="center">$27,500</td>
             <td class="center"></td>
             <td class="center">$50,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">12</td>
+            <td>2YOs</td>
+            <td class="center">19</td>
+            <td class="center">15</td>
+            <td class="bold center">$157,066</td>
+            <td class="center">$48,000</td>
+            <td class="center">$650,000</td>
+            <td class="center">$775,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">15</td>
+            <td>Covering</td>
+            <td class="center">7</td>
+            <td class="center">6</td>
+            <td class="bold center">$14,083</td>
+            <td class="center">$13,000</td>
+            <td class="center"></td>
+            <td class="center">$23,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">14</td>
+            <td>Weanlings</td>
+            <td class="center">8</td>
+            <td class="center">8</td>
+            <td class="bold center">$26,187</td>
+            <td class="center">$28,500</td>
+            <td class="center">$45,000</td>
+            <td class="center">$37,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">13</td>
+            <td>Yearlings</td>
+            <td class="center">30</td>
+            <td class="center">29</td>
+            <td class="bold center">$61,573</td>
+            <td class="center">$45,000</td>
+            <td class="center">$270,000</td>
+            <td class="center">$160,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -2617,7 +2873,7 @@ footer {
           <div class="info-title">
             <span class="info-name">MYSTIC GUIDE</span>
             <button class="share-btn" data-slug="mystic-guide" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$7,500</div>
           <div class="ped-line">Ghostzapper <span class="ped-dash">—</span> Music Note <span class="ped-paren">(A.P. Indy)</span></div>
@@ -2757,6 +3013,39 @@ footer {
             <td class="center">$30,000</td>
             <td class="center">$70,000</td>
             <td class="center">$70,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">3</td>
+            <td>Covering</td>
+            <td class="center">16</td>
+            <td class="center">12</td>
+            <td class="bold center">$19,916</td>
+            <td class="center">$4,750</td>
+            <td class="center"></td>
+            <td class="center">$100,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">2</td>
+            <td>Weanlings</td>
+            <td class="center">23</td>
+            <td class="center">19</td>
+            <td class="bold center">$17,184</td>
+            <td class="center">$8,000</td>
+            <td class="center">$65,000</td>
+            <td class="center">$50,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">1</td>
+            <td>Yearlings</td>
+            <td class="center">62</td>
+            <td class="center">55</td>
+            <td class="bold center">$62,737</td>
+            <td class="center">$37,000</td>
+            <td class="center">$425,000</td>
+            <td class="center">$245,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -2830,7 +3119,7 @@ footer {
           <div class="info-title">
             <span class="info-name">NYQUIST</span>
             <button class="share-btn" data-slug="nyquist" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$175,000</div>
           <div class="ped-line">Uncle Mo <span class="ped-dash">—</span> Seeking Gabrielle <span class="ped-paren">(Forestry)</span></div>
@@ -3054,6 +3343,50 @@ footer {
             <td class="center">$1,200,000</td>
             <td class="center">$1,200,000</td>
             <td class="center">$2,000,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">6</td>
+            <td>2YOs</td>
+            <td class="center">36</td>
+            <td class="center">26</td>
+            <td class="bold center">$268,932</td>
+            <td class="center">$172,500</td>
+            <td class="center">$1,050,000</td>
+            <td class="center">$370,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">9</td>
+            <td>Covering</td>
+            <td class="center">11</td>
+            <td class="center">7</td>
+            <td class="bold center">$607,857</td>
+            <td class="center">$525,000</td>
+            <td class="center"></td>
+            <td class="center">$1,200,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">8</td>
+            <td>Weanlings</td>
+            <td class="center">4</td>
+            <td class="center">4</td>
+            <td class="bold center">$550,000</td>
+            <td class="center">$562,500</td>
+            <td class="center">$600,000</td>
+            <td class="center">$750,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">7</td>
+            <td>Yearlings</td>
+            <td class="center">80</td>
+            <td class="center">62</td>
+            <td class="bold center">$346,209</td>
+            <td class="center">$300,000</td>
+            <td class="center">$1,050,000</td>
+            <td class="center">$735,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -3119,7 +3452,7 @@ footer {
           <div class="info-title">
             <span class="info-name">PROXY</span>
             <button class="share-btn" data-slug="proxy" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$12,500</div>
           <div class="ped-line">Tapit <span class="ped-dash">—</span> Panty Raid <span class="ped-paren">(Include)</span></div>
@@ -3227,6 +3560,42 @@ footer {
         </div>
       </div>
         
+      <div class="content-block">
+        <h3 class="block-title"><span class="block-icon">🔨</span>Sales Results<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="table-scroll-wrap"><div class="table-scroll">
+            <table class="sales-table">
+              <thead><tr>
+                <th>Year</th><th class="center">Crop</th><th>Sale Type</th><th class="center">Ring</th><th class="center">Sold</th>
+                <th class="center">Average</th><th class="center">Median</th><th class="center">Top Colt</th><th class="center">Top Filly / Mare</th>
+              </tr></thead>
+              <tbody>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">2</td>
+            <td>Covering</td>
+            <td class="center">18</td>
+            <td class="center">18</td>
+            <td class="bold center">$16,722</td>
+            <td class="center">$16,000</td>
+            <td class="center"></td>
+            <td class="center">$45,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">1</td>
+            <td>Weanlings</td>
+            <td class="center">12</td>
+            <td class="center">8</td>
+            <td class="bold center">$32,375</td>
+            <td class="center">$14,000</td>
+            <td class="center">$30,000</td>
+            <td class="center">$135,000</td>
+          </tr></tbody>
+            </table>
+          </div></div>
+        </div>
+      </div>
         
       <div class="content-block pp-block">
         <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
@@ -3295,7 +3664,7 @@ footer {
           <div class="info-title">
             <span class="info-name">SPEAKER'S CORNER</span>
             <button class="share-btn" data-slug="speaker-s-corner" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$10,000</div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Tyburn Brook <span class="ped-paren">(Bernardini)</span></div>
@@ -3439,6 +3808,39 @@ footer {
             <td class="center">$155,000</td>
             <td class="center">$210,000</td>
             <td class="center"></td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">3</td>
+            <td>Covering</td>
+            <td class="center">17</td>
+            <td class="center">15</td>
+            <td class="bold center">$26,050</td>
+            <td class="center">$8,500</td>
+            <td class="center"></td>
+            <td class="center">$110,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">2</td>
+            <td>Weanlings</td>
+            <td class="center">32</td>
+            <td class="center">26</td>
+            <td class="bold center">$23,211</td>
+            <td class="center">$13,500</td>
+            <td class="center">$110,000</td>
+            <td class="center">$100,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">1</td>
+            <td>Yearlings</td>
+            <td class="center">78</td>
+            <td class="center">63</td>
+            <td class="bold center">$66,410</td>
+            <td class="center">$50,000</td>
+            <td class="center">$250,000</td>
+            <td class="center">$210,000</td>
           </tr></tbody>
             </table>
           </div></div>
@@ -3512,7 +3914,7 @@ footer {
           <div class="info-title">
             <span class="info-name">STREET SENSE</span>
             <button class="share-btn" data-slug="street-sense" title="Copy link">🔗</button>
-            <button class="share-btn print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
           </div>
           <div class="info-fee">$40,000</div>
           <div class="ped-line">Street Cry <span class="ped-dash">—</span> Bedazzle <span class="ped-paren">(Dixieland Band)</span></div>
@@ -3728,6 +4130,50 @@ footer {
             <td class="center">$200,000</td>
             <td class="center"></td>
             <td class="center">$200,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">15</td>
+            <td>2YOs</td>
+            <td class="center">24</td>
+            <td class="center">20</td>
+            <td class="bold center">$107,726</td>
+            <td class="center">$70,000</td>
+            <td class="center">$400,000</td>
+            <td class="center">$383,542</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">18</td>
+            <td>Covering</td>
+            <td class="center">5</td>
+            <td class="center">3</td>
+            <td class="bold center">$288,333</td>
+            <td class="center">$275,000</td>
+            <td class="center"></td>
+            <td class="center">$500,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">17</td>
+            <td>Weanlings</td>
+            <td class="center">11</td>
+            <td class="center">10</td>
+            <td class="bold center">$207,350</td>
+            <td class="center">$217,500</td>
+            <td class="center">$375,000</td>
+            <td class="center">$300,000</td>
+          </tr>
+          <tr>
+            <td class="bold">2025</td>
+            <td class="center">16</td>
+            <td>Yearlings</td>
+            <td class="center">44</td>
+            <td class="center">38</td>
+            <td class="bold center">$164,565</td>
+            <td class="center">$80,000</td>
+            <td class="center">$450,000</td>
+            <td class="center">$650,000</td>
           </tr></tbody>
             </table>
           </div></div>
