@@ -693,68 +693,100 @@ footer {
   body, main { background: white !important; padding: 0 !important; margin: 0 !important; }
   main { max-width: 100% !important; }
 
-  /* One stallion per page */
+  /* ── One stallion per page ── */
   .stallion { page-break-after: always; break-after: page; margin: 0 !important; }
   .stallion:last-child { page-break-after: avoid; break-after: avoid; }
   .stallion-card { display: block !important; box-shadow: none !important;
     border: 1px solid #ccc !important; border-radius: 0 !important; overflow: visible !important;
     opacity: 1 !important; transform: none !important; }
 
-  /* Compact header — info spread into equal halves to fill width */
-  .stallion-header { grid-template-columns: 150px 1fr !important; min-height: 0 !important; }
-  .photo-col { aspect-ratio: 4/3 !important; }
+  /* ── HEADER: compact single strip ── */
+  .stallion-header {
+    display: grid !important;
+    grid-template-columns: 110px 1fr !important;
+    min-height: 0 !important;
+    border-bottom: 2px solid #0037B2 !important;
+  }
+  .photo-col {
+    overflow: hidden !important;
+    aspect-ratio: unset !important;
+    max-height: 90px !important;
+    border-right: 1px solid #ddd !important;
+  }
+  .photo-col img { width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center top !important; }
+
+  /* Info area: name + fee on row 1, ped on row 2, pills on row 3 */
   .info-col {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr auto !important;
+    grid-template-rows: auto auto auto !important;
     align-content: center !important;
-    gap: 3px 18px !important;
-    padding: 8px 14px !important;
+    gap: 1px 12px !important;
+    padding: 6px 12px !important;
   }
-  .info-title { grid-column: 1 !important; grid-row: 1 !important; }
-  .info-fee   { grid-column: 1 !important; grid-row: 2 !important; }
-  .ped-line   { grid-column: 1 !important; grid-row: 3 !important; }
-  .info-pills { grid-column: 2 !important; grid-row: 1 / span 3 !important; align-self: center !important; }
-  .first-crop { grid-column: 1 / span 2 !important; grid-row: 4 !important; }
-  .info-name { font-size: 18px !important; }
-  .info-fee  { font-size: 12px !important; }
-  .ped-line  { font-size: 11px !important; }
-  .info-pill { font-size: 10px !important; padding: 2px 6px !important; }
-  .first-crop { font-size: 10px !important; }
+  .info-title { grid-column: 1 !important; grid-row: 1 !important; align-self: end !important; }
+  .info-fee   { grid-column: 2 !important; grid-row: 1 !important; align-self: end !important;
+    font-size: 12px !important; font-weight: 700 !important; white-space: nowrap !important; }
+  .ped-line   { grid-column: 1 / span 2 !important; grid-row: 2 !important; font-size: 10px !important; }
+  .info-pills { grid-column: 1 / span 2 !important; grid-row: 3 !important; }
+  .first-crop { grid-column: 1 / span 2 !important; grid-row: 4 !important; font-size: 9px !important; }
+  .info-name  { font-size: 20px !important; line-height: 1 !important; }
+  .info-pill  { font-size: 9px !important; padding: 1px 5px !important; }
+  .info-pills { gap: 3px !important; margin-top: 2px !important; }
 
-  /* Two-column body sections */
-  .stallion-body { display: grid !important; grid-template-columns: 1fr 1fr !important;
-    gap: 0 !important; align-items: start !important; }
+  /* ── BODY: 3-column grid ── */
+  .stallion-body {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 0 !important;
+    align-items: start !important;
+  }
 
-  /* Expand all collapsed sections */
+  /* Wide sections (tables) span all 3 columns */
+  #fees,
+  .content-block:has(.fee-table),
+  .content-block:has(.sales-table) {
+    grid-column: 1 / -1 !important;
+  }
+
+  /* Pedigree block spans 2 columns */
+  .ped-block { grid-column: span 2 !important; }
+
+  /* ── Expand all collapsed sections ── */
   .block-body { max-height: none !important; overflow: visible !important;
-    display: block !important; padding-bottom: 4px !important; }
+    display: block !important; padding-bottom: 2px !important; }
   .chevron { display: none !important; }
 
-  /* Compact section blocks */
-  .content-block { break-inside: avoid; page-break-inside: avoid;
-    padding: 7px 10px !important; border-top: 1px solid #ddd !important; }
-  .block-title { font-size: 7.5px !important; letter-spacing: 1px !important;
-    margin-bottom: 5px !important; padding-bottom: 4px !important; }
+  /* ── Section blocks ── */
+  .content-block { padding: 5px 8px !important; border-top: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important; }
+  .block-title { font-size: 7px !important; letter-spacing: 0.8px !important;
+    margin-bottom: 3px !important; padding-bottom: 3px !important; }
+  .block-icon { display: none !important; }
 
-  /* Selling points */
-  .sp-list li { font-size: 10px !important; padding: 2px 8px 2px 20px !important; line-height: 1.4 !important; }
+  /* ── Selling points & bullet lists ── */
+  .sp-list li { font-size: 9px !important; padding: 1px 6px 1px 16px !important; line-height: 1.35 !important; }
+  .bullet-list li, .age-label { font-size: 9px !important; padding: 1px 0 !important; line-height: 1.35 !important; }
+  .progeny-list li { font-size: 9px !important; padding: 2px 6px 2px 8px !important; }
+  .age-label { margin-top: 2px !important; }
 
-  /* Highlights / progeny */
-  .bullet-list li, .age-label { font-size: 10px !important; padding: 1px 0 !important; }
-  .progeny-list li { font-size: 10px !important; padding: 4px 8px 4px 10px !important; }
+  /* ── Tables ── */
+  .table-scroll-wrap, .table-scroll { overflow: visible !important; }
+  table { font-size: 8.5px !important; min-width: 0 !important; width: 100% !important; }
+  thead th { padding: 3px 4px !important; font-size: 7.5px !important; }
+  td { padding: 2px 4px !important; }
+  .table-note { font-size: 8px !important; margin-top: 2px !important; }
 
-  /* Tables */
-  .table-scroll { overflow: visible !important; }
-  table { font-size: 9.5px !important; min-width: 0 !important; width: 100% !important; }
-  thead th { padding: 4px 6px !important; font-size: 8.5px !important; }
-  td { padding: 3px 6px !important; }
-
-  /* Pedigree — 2 columns only on print */
-  .ped-grid { grid-template-columns: 1fr 1fr !important; font-size: 10px !important; gap: 4px !important; }
+  /* ── Pedigree grid ── */
+  .ped-grid { grid-template-columns: 1fr 1fr !important; font-size: 9px !important; gap: 3px !important; }
   .ped-col-great { display: none !important; }
-  .ped-cell { padding: 3px 6px !important; }
+  .ped-cell { padding: 2px 5px !important; }
 
-  /* Sparkline */
+  /* ── Race record image ── */
+  .pp-block { grid-column: span 2 !important; }
+  .pp-img { max-width: 100% !important; height: auto !important; }
+
+  /* ── Sparkline ── */
   .fee-spark polyline { stroke: #00ABEE !important; }
   .fee-spark circle   { fill:   #00ABEE !important; }
 }
