@@ -738,23 +738,8 @@ footer {
   .info-name  { font-size: 20px !important; line-height: 1 !important; }
   .info-pill  { font-size: 9px !important; padding: 1px 5px !important; }
 
-  /* ── BODY: 3-column grid ── */
-  .stallion-body {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
-    gap: 0 !important;
-    align-items: start !important;
-  }
-
-  /* Wide sections (tables) span all 3 columns */
-  #fees,
-  .content-block:has(.fee-table),
-  .content-block:has(.sales-table) {
-    grid-column: 1 / -1 !important;
-  }
-
-  /* Pedigree block spans 2 columns */
-  .ped-block { grid-column: span 2 !important; }
+  /* ── BODY: single column, each section full width ── */
+  .stallion-body { display: block !important; }
 
   /* ── Expand all collapsed sections ── */
   .block-body { max-height: none !important; overflow: visible !important;
@@ -787,7 +772,6 @@ footer {
   .ped-cell { padding: 2px 4px !important; }
 
   /* ── Race record image ── */
-  .pp-block { grid-column: span 2 !important; }
   .pp-img { max-width: 100% !important; height: auto !important; }
 
   /* ── Sparkline ── */
