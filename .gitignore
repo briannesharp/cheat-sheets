@@ -28,3 +28,6 @@ stallion_data.xlsx
 
 stallion PPs/
 stuff/
+
+# Logo files — embedded as base64 at build time, not needed in repo
+logos/
