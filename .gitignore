@@ -1,3 +1,6 @@
+# macOS metadata
+.DS_Store
+
 # Claude Code local context
 .claude/
 
@@ -28,6 +31,9 @@ stallion_data.xlsx
 
 stallion PPs/
 stuff/
+
+# Fonts — not used by the generator
+fonts/
 
 # Logo files — embedded as base64 at build time, not needed in repo
 logos/
