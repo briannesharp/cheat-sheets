@@ -777,6 +777,89 @@ footer {
   .fee-spark polyline { stroke: #00ABEE !important; }
   .fee-spark circle   { fill:   #00ABEE !important; }
 }
+
+/* ── Foal gallery ── */
+.foal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.foal-item {
+  cursor: pointer;
+}
+.foal-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  transition: opacity 0.15s;
+}
+.foal-item:hover img { opacity: 0.85; }
+.foal-caption {
+  font-size: 11px;
+  color: var(--grey);
+  margin-top: 5px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* ── Foal lightbox ── */
+.foal-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.foal-lightbox.lb-open { display: flex; }
+.foal-lightbox img {
+  max-width: 90vw;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.lb-caption {
+  color: #fff;
+  margin-top: 14px;
+  font-size: 14px;
+  text-align: center;
+  max-width: 80vw;
+}
+.lb-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px 8px;
+}
+.lb-prev, .lb-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px 16px;
+  user-select: none;
+}
+.lb-prev { left: 0; }
+.lb-next { right: 0; }
+@media (max-width: 600px) {
+  .foal-grid { grid-template-columns: repeat(2, 1fr); }
+}
 </style>
 </head>
 <body id="top">
@@ -847,6 +930,26 @@ footer {
 
       <!-- ── BODY ── -->
       <div class="stallion-body">
+        
+      <div class="content-block foal-block">
+        <h3 class="block-title"><span class="block-icon">🐴</span>First Crop Foals<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="foal-grid">
+            <div class="foal-item" data-src="foal_photos/CodysWish/$425k%20out%20of%20Big%20Awakening%20Kee%20Nov.jpg" data-caption="$425k out of Big Awakening Kee Nov">
+              <img src="foal_photos/CodysWish/$425k%20out%20of%20Big%20Awakening%20Kee%20Nov.jpg" alt="$425k out of Big Awakening Kee Nov" loading="lazy">
+              <div class="foal-caption">$425k out of Big Awakening Kee Nov</div>
+            </div>
+            <div class="foal-item" data-src="foal_photos/CodysWish/$500k%20out%20of%20Catching%20the%20WInd%20FTKNov.jpg" data-caption="$500k out of Catching the WInd FTKNov">
+              <img src="foal_photos/CodysWish/$500k%20out%20of%20Catching%20the%20WInd%20FTKNov.jpg" alt="$500k out of Catching the WInd FTKNov" loading="lazy">
+              <div class="foal-caption">$500k out of Catching the WInd FTKNov</div>
+            </div>
+            <div class="foal-item" data-src="foal_photos/CodysWish/$550k%20out%20of%20Union%20Maiden%20Kee%20Nov.jpg" data-caption="$550k out of Union Maiden Kee Nov">
+              <img src="foal_photos/CodysWish/$550k%20out%20of%20Union%20Maiden%20Kee%20Nov.jpg" alt="$550k out of Union Maiden Kee Nov" loading="lazy">
+              <div class="foal-caption">$550k out of Union Maiden Kee Nov</div>
+            </div>
+          </div>
+        </div>
+      </div>
         
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
@@ -1061,6 +1164,7 @@ footer {
 
       <!-- ── BODY ── -->
       <div class="stallion-body">
+        
         
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
@@ -1331,6 +1435,7 @@ footer {
       <!-- ── BODY ── -->
       <div class="stallion-body">
         
+        
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
@@ -1474,6 +1579,7 @@ footer {
 
       <!-- ── BODY ── -->
       <div class="stallion-body">
+        
         
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
@@ -1814,6 +1920,7 @@ footer {
       <!-- ── BODY ── -->
       <div class="stallion-body">
         
+        
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
@@ -2139,6 +2246,7 @@ footer {
       <!-- ── BODY ── -->
       <div class="stallion-body">
         
+        
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
@@ -2282,6 +2390,7 @@ footer {
 
       <!-- ── BODY ── -->
       <div class="stallion-body">
+        
         
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
@@ -2555,6 +2664,7 @@ footer {
 
       <!-- ── BODY ── -->
       <div class="stallion-body">
+        
         
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
@@ -2885,6 +2995,7 @@ footer {
       <!-- ── BODY ── -->
       <div class="stallion-body">
         
+        
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
@@ -2955,7 +3066,7 @@ footer {
             <td class="bold">2026</td>
             <td class="center">4</td>
             <td class="fee-cell">$7,500</td>
-            <td class="center">84</td>
+            <td class="center">85</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -3130,6 +3241,7 @@ footer {
 
       <!-- ── BODY ── -->
       <div class="stallion-body">
+        
         
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
@@ -3464,6 +3576,7 @@ footer {
       <!-- ── BODY ── -->
       <div class="stallion-body">
         
+        
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
@@ -3675,6 +3788,7 @@ footer {
 
       <!-- ── BODY ── -->
       <div class="stallion-body">
+        
         
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
@@ -3925,6 +4039,7 @@ footer {
 
       <!-- ── BODY ── -->
       <div class="stallion-body">
+        
         
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
@@ -4230,6 +4345,15 @@ footer {
   <!-- ══ TOAST ══ -->
   <div class="toast" id="toast"></div>
 
+  <!-- ══ FOAL LIGHTBOX ══ -->
+  <div class="foal-lightbox" id="foalLightbox" role="dialog" aria-modal="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb-prev"  id="lbPrev"  aria-label="Previous">&#8249;</button>
+    <img id="lbImg" src="" alt="">
+    <div class="lb-caption" id="lbCaption"></div>
+    <button class="lb-next"  id="lbNext"  aria-label="Next">&#8250;</button>
+  </div>
+
   <script>
 (function() {
 
@@ -4429,6 +4553,54 @@ footer {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   }
+
+  // ── Foal photo lightbox ──
+  (function() {
+    const lb      = document.getElementById('foalLightbox');
+    const lbImg   = document.getElementById('lbImg');
+    const lbCap   = document.getElementById('lbCaption');
+    const lbClose = document.getElementById('lbClose');
+    const lbPrev  = document.getElementById('lbPrev');
+    const lbNext  = document.getElementById('lbNext');
+    let items = [], idx = 0;
+
+    function open(foalItems, startIdx) {
+      items = foalItems;
+      show(startIdx);
+      lb.classList.add('lb-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lb.classList.remove('lb-open');
+      document.body.style.overflow = '';
+    }
+    function show(i) {
+      idx = (i + items.length) % items.length;
+      lbImg.src = items[idx].dataset.src;
+      lbImg.alt = items[idx].dataset.caption;
+      lbCap.textContent = items[idx].dataset.caption;
+      lbPrev.style.display = items.length > 1 ? '' : 'none';
+      lbNext.style.display = items.length > 1 ? '' : 'none';
+    }
+
+    document.addEventListener('click', e => {
+      const item = e.target.closest('.foal-item');
+      if (!item) return;
+      const grid = item.closest('.foal-grid');
+      const allItems = Array.from(grid.querySelectorAll('.foal-item'));
+      open(allItems, allItems.indexOf(item));
+    });
+    lbClose.addEventListener('click', close);
+    lbPrev.addEventListener('click',  () => show(idx - 1));
+    lbNext.addEventListener('click',  () => show(idx + 1));
+    lb.addEventListener('click', e => { if (e.target === lb) close(); });
+    document.addEventListener('keydown', e => {
+      if (!lb.classList.contains('lb-open')) return;
+      if (e.key === 'Escape')     close();
+      if (e.key === 'ArrowLeft')  show(idx - 1);
+      if (e.key === 'ArrowRight') show(idx + 1);
+    });
+  })();
 
 })();
 </script>
