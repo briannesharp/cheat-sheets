@@ -13,6 +13,7 @@ generate_website.py
 scripts/
 
 *.md
+!CLAUDE.md
 
 # Database credentials — never commit this
 config.py
