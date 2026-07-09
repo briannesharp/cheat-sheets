@@ -20,6 +20,9 @@ config.py
 img_cache/
 cache.json
 
+# update_progeny.py state — races already drafted (local only)
+progeny_seen.json
+
 # scratch files
 *.pdf
 *.docx
