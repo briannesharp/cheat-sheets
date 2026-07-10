@@ -27,6 +27,7 @@ After generating, the script automatically stages `index.html`, `site.webmanifes
 > skill** (`Projects/.claude/skills/godolphin-db/SKILL.md`) — exact table/column
 > names, which database each table lives in, encodings, and a read-only connection recipe.
 
+0. **Stallion list (which stallions the site shows)** — the current-season Darley Kentucky roster from `Research.dbo.Stallions` (`Farm='Darley' AND State='KY' AND Hemisphere='N' AND Season=current`); falls back to the cached roster, then to `PEDIGREES` keys. A stallion dropped from the season table drops off the site.
 1. **Stallion profiles & selling points** — scraped live from `darleyamerica.com` per stallion; falls back to hardcoded `_SP_FALLBACK` dict in the script if scraping fails
 2. **Fee history** — loaded from SQL Server (`config.py`), falling back to `cache.json`; **highlights & profile overrides** — loaded from `data/stallions/*.yaml`
 3. **Auction/sale results** — scraped live from TDN insta-tistics; falls back to `stallion_data.xlsx` `SaleResults` sheet
@@ -39,11 +40,14 @@ After generating, the script automatically stages `index.html`, `site.webmanifes
 
 ## Adding a new stallion
 
+A stallion appears on the site automatically once he's in the current season
+of `Research.dbo.Stallions` as Darley/KY — but his page will be missing
+pieces (the generator prints warnings) until you also:
+
 1. Add an entry to `PEDIGREES` in `generate_website.py`
 2. Add a photo URL to `PHOTO_URLS`
 3. Add fallback selling points to `_SP_FALLBACK`
 4. Create `data/stallions/<name>.yaml` (copy an existing file — schema in `data/README.md`)
-5. Add the stallion to the current season in the SQL DB (for DB-sourced fee history)
 
 ## YAML data schema
 
