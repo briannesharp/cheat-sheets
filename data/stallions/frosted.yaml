@@ -1,5 +1,14 @@
 name: Frosted
-profile: {}
+profile:
+  fee_current: $12,500
+  sire: Tapit
+  dam: Fast Cookie
+  damsire: Deputy Minister
+  year_foaled: 2012 (14yo)
+  height: 16.1½ hh
+  earnings: $3.9M
+  entered_stud: '2017'
+  first_crop_note: First crop are 8-year-olds
 general:
 - Fastest-ever G1 Met Mile winner (1:32.73), by the largest margin in the history of the race — 14¼ lengths.
 - His 123 Beyer in the Met Mile is the highest ever recorded at a mile.
