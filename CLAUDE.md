@@ -40,14 +40,18 @@ After generating, the script automatically stages `index.html`, `site.webmanifes
 
 ## Adding a new stallion
 
-A stallion appears on the site automatically once he's in the current season
-of `Research.dbo.Stallions` as Darley/KY — but his page will be missing
-pieces (the generator prints warnings) until you also:
+Fully automatic: once he's in the current season of `Research.dbo.Stallions`
+as Darley/KY, the next generate scrapes his darleyamerica.com page for the
+pedigree, conformation photo, profile, and selling points, and auto-creates a
+stub `data/stallions/<name>.yaml`. Manual work is only:
 
-1. Add an entry to `PEDIGREES` in `generate_website.py`
-2. Add a photo URL to `PHOTO_URLS`
-3. Add fallback selling points to `_SP_FALLBACK`
-4. Create `data/stallions/<name>.yaml` (copy an existing file — schema in `data/README.md`)
+1. Fill in the stub YAML (highlights, progeny) — until then those sections
+   are empty
+2. Optional overrides if the scrape is wrong or missing (the generator warns):
+   hardcoded `PEDIGREES` / `PHOTO_URLS` entries always beat scraped values
+
+Scraped pedigrees/photos are persisted in `cache.json`, so a stallion whose
+page later disappears (e.g. deceased) keeps rendering.
 
 ## YAML data schema
 
