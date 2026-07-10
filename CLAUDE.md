@@ -16,9 +16,10 @@ After generating, the script automatically stages `index.html`, `site.webmanifes
 ## Key files
 
 - `scripts/generate_website.py` — the entire pipeline in one file: data loading, HTML/CSS/JS generation, git push
-- `scripts/update_progeny.py` — drafts new progeny black-type results from SQL into the `ProgenyDrafts` sheet for human review (see below)
+- `scripts/update_progeny.py` — drafts new progeny black-type results from SQL into the YAML files as `DRAFT:` entries for human review (see below)
 - `scripts/config.py` — SQL Server connection settings and queries; **excluded from git** (contains internal server names)
-- `stallion_data.xlsx` — Excel workbook with sheets: `Stallions`, `Highlights`, `ProgenyDrafts`
+- `data/stallions/*.yaml` — one hand-edited file per stallion: profile overrides, highlight bullets, and the progeny list (see `data/README.md` for the schema and editing rules). Tracked in git — everything in it renders on the public site.
+- `stallion_data.xlsx` — **retired** (July 2026). Pre-migration backup only; nothing reads it. Python deps for the YAML pipeline: `pyyaml` (generator, read) and `ruamel.yaml` (update_progeny, comment-preserving writes).
 
 ## Data flow
 
@@ -27,7 +28,7 @@ After generating, the script automatically stages `index.html`, `site.webmanifes
 > names, which database each table lives in, encodings, and a read-only connection recipe.
 
 1. **Stallion profiles & selling points** — scraped live from `darleyamerica.com` per stallion; falls back to hardcoded `_SP_FALLBACK` dict in the script if scraping fails
-2. **Fee history & highlights** — loaded from SQL Server (`config.py`) if available, otherwise from `stallion_data.xlsx`
+2. **Fee history** — loaded from SQL Server (`config.py`), falling back to `cache.json`; **highlights & profile overrides** — loaded from `data/stallions/*.yaml`
 3. **Auction/sale results** — scraped live from TDN insta-tistics; falls back to `stallion_data.xlsx` `SaleResults` sheet
 4. **Pedigree data** — hardcoded `PEDIGREES` dict in the script (3 generations)
 5. **Conformation photos** — fetched from `cdn.darleystallions.com` URLs defined in `PHOTO_URLS`; cached locally in `img_cache/` (excluded from git)
@@ -41,41 +42,49 @@ After generating, the script automatically stages `index.html`, `site.webmanifes
 1. Add an entry to `PEDIGREES` in `generate_website.py`
 2. Add a photo URL to `PHOTO_URLS`
 3. Add fallback selling points to `_SP_FALLBACK`
-4. Add rows to the relevant sheets in `stallion_data.xlsx`
+4. Create `data/stallions/<name>.yaml` (copy an existing file — schema in `data/README.md`)
 5. Add the stallion to the current season in the SQL DB (for DB-sourced fee history)
 
-## Excel sheet schemas
+## YAML data schema
 
-- **FeeHistory**: `stallion_name`, `season`, `stud_fee`, `mares_bred`, `CI`, `CPI`, `Foals`, `runners`, `black_type_winners`, `SW_percent`, `notes`
-- **SaleResults**: `stallion_name`, `year`, `sale_type`, `ring`, `sold`, `average`, `median`, `top_colt`, `top_filly`
-- **Highlights**: `stallion_name`, `category`, `sort_order`, `subtitle`, `text`. Categories: `general`, `selling_point`, `more_selling_point`, `pedigree_highlight`, `progeny` (the "Current Top Runners" list), `at_two`/`at_three`/`at_four`/`at_five` (Career Highlights age groups)
-- **ProgenyDrafts**: machine-written staging rows from `update_progeny.py` — `stallion_name`, `horse_name`, `draft_text`, `trainer`, `race_dates`, `added_on`, `notes`. Never rendered on the site.
-- **Stallions**: `name` + profile fields (fee, foaled, earnings, etc.) — used as override/supplement to scraped data
+One file per stallion in `data/stallions/`. Keys (all optional except `name`):
+`profile` (field overrides: `year_foaled`, `height`, `earnings`,
+`entered_stud`, `first_crop_note`, plus reference-only fields), `general`,
+`selling_points`, `more_selling_points`, `pedigree_highlights`, `career`
+(`at_two`…`at_five`, each with optional `subtitle` + `items`), and `progeny`
+(the "Current Top Runners" list — one quoted string per horse, list order =
+display order). Progeny entries starting with `DRAFT:` are review-pending
+output from `update_progeny.py` and are never rendered. Full editing guide:
+`data/README.md`.
 
 ## Progeny update workflow (draft-then-review)
 
-The `progeny` rows in Highlights (hand-edited, one row per horse) drive the
-site's "Current Top Runners" lists. To draft new results automatically:
+The `progeny` entries in the YAML files (hand-edited, one line per horse)
+drive the site's "Current Top Runners" lists. To draft new results
+automatically:
 
-1. Close `stallion_data.xlsx` in Excel, then run `python scripts/update_progeny.py`
+1. Run `python scripts/update_progeny.py` (no need to close anything —
+   it's all text files)
 2. The script queries `GBSWebsite.dbo.RaceResults` for black-type top-3
    finishes by current Darley KY roster progeny since the last run, plus
    `Research.dbo.TDNRisingStars` for new TDN Rising Stars (180-day lookback —
    they're usually MSW/ALW winners and marketing-wise on par with graded
    stakes winners; their draft says "TDN Rising Star."), formats everything
    in house style ("won G3 Tampa Bay Derby at TAM 3/7 (94)"), and appends
-   rows to the `ProgenyDrafts` sheet
-3. Review in Excel: merge keepers into the `Highlights` sheet (category
-   `progeny`), add editorial notes (Derby points, sale prices, etc.), fix any
-   Beyers, delete the draft rows
+   `DRAFT:` entries to each stallion's `progeny:` list
+3. Review in the YAML: edit the text, add editorial notes (Derby points,
+   sale prices, etc.), fix any Beyers, then delete the `DRAFT: ` prefix to
+   publish the line (or delete the whole line to reject it)
 4. Run `generate_website.py` as usual
 
-**The script never touches the Highlights sheet and never runs git.** State
-lives in `progeny_seen.json` (gitignored): a watermark date plus a log of
-every race already drafted, so re-runs never duplicate. Each run re-queries a
-7-day overlap (Beyers post late), and skips results whose horse + m/d date
-already appear in a hand-written progeny row. `--dry-run` prints without
-writing; `--since YYYY-MM-DD` overrides the watermark.
+**The script only appends `DRAFT:` entries — it never edits hand-written
+lines — and never runs git.** It uses `ruamel.yaml` round-trip mode, so
+comments and formatting in the files survive. State lives in
+`progeny_seen.json` (gitignored): a watermark date plus a log of every race
+already drafted, so re-runs never duplicate. Each run re-queries a 7-day
+overlap (Beyers post late), and skips results whose horse + m/d date already
+appear in an existing progeny entry. `--dry-run` prints without writing;
+`--since YYYY-MM-DD` overrides the watermark.
 
 ## Brand colours (CSS variables)
 
