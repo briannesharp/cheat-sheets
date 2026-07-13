@@ -28,7 +28,7 @@ After generating, the script automatically stages `index.html`, `site.webmanifes
 > names, which database each table lives in, encodings, and a read-only connection recipe.
 
 0. **Stallion list (which stallions the site shows)** — the current-season Darley Kentucky roster from `Research.dbo.Stallions` (`Farm='Darley' AND State='KY' AND Hemisphere='N' AND Season=current`); falls back to the cached roster, then to `PEDIGREES` keys. A stallion dropped from the season table drops off the site.
-1. **Stallion profiles & selling points** — scraped live from `darleyamerica.com` per stallion; falls back to hardcoded `_SP_FALLBACK` dict in the script if scraping fails
+1. **Stallion profiles & selling points** — scraped live from `darleyamerica.com` per stallion; falls back to `cache.json` (last successful scrape) if the page can't be fetched or parsed
 2. **Fee history** — loaded from SQL Server (`config.py`), falling back to `cache.json`; **highlights & profile overrides** — loaded from `data/stallions/*.yaml`
 3. **Auction/sale results** — scraped live from TDN insta-tistics; falls back to `stallion_data.xlsx` `SaleResults` sheet
 4. **Pedigree data** — hardcoded `PEDIGREES` dict in the script (3 generations)
