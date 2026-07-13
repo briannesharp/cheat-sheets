@@ -19,11 +19,33 @@ career:
     - Won G1 Breeders' Cup Juvenile at Santa Anita in stakes record time — still the fastest ever BC Juvenile winner.
     - Won G1 Del Mar Futurity; 2nd in G1 Norfolk at Santa Anita. Broke maiden on debut at Del Mar with a 91 Beyer.
 progeny:
-- 'SYNTHETIC (4f): won a stake at Evangeline on Oaks day (91 Beyer). '
-- 'SURFACE TO AIR (6h): won G3 Iselin at Monmouth (96); won G3 Monmouth Cup S. (97).'
-- 'SNOW FACE PRINCESS (3f): 2nd $1m Untapable S. at KY Downs (71); won Bolton Landing S. at Saratoga (82). Todd Pletcher.'
-- 'KONTIKI (3f): two-time Stakes winner for Brad Cox/Stonestreet. Won Best of Ohio S. by 12 lengths; won Tah Dah S. by 8 lengths.'
-- "ROYAL TESTAMENT (3f): beat boys in Exacta Systems Rosie's S. at COL (80); 2nd G3 Matron (76)."
-- 'GERRARDS CROSS (3f): won Monmouth County stakes at Monmouth 7.5 (82).'
-- "DRAFT: GERRARDS CROSS (3f): won Monmouth County S. at MTH 7/5 (82); 2nd by a neck Stormy Blues S. at LRL 6/14 (74). Kathleen O'Connell."
-- 'DRAFT: SEA STRIKE (3c): TDN Rising Star. Won MSW on debut at AQU 4/25 (83). Chad C. Brown.'
+- horse: SYNTHETIC (4f)
+  auto: won ALW by 9 1/2 at FG 1/31 (98); won a stake at Evangeline on Oaks day (91 Beyer).
+  note: ''
+- horse: SURFACE TO AIR (6h)
+  auto: won G3 Iselin at Monmouth (96); won G3 Monmouth Cup S.
+  note: (97).
+- horse: SNOW FACE PRINCESS (3f)
+  auto: 2nd $1m Untapable S. at KY Downs (71); won Bolton Landing S. at Saratoga (82).
+  note: Todd Pletcher.
+- horse: KONTIKI (3f)
+  auto: two-time Stakes winner for Brad Cox/Stonestreet. Won Best of Ohio S. by 12 lengths; won Tah Dah S. by 8 lengths.
+  note: ''
+- horse: ROYAL TESTAMENT (3f)
+  auto: beat boys in Exacta Systems Rosie's S. at COL (80); 2nd G3 Matron (76).
+  note: ''
+- horse: GERRARDS CROSS (3f)
+  auto: won Monmouth County stakes at Monmouth 7.5 (82).
+  note: ''
+- horse: SEA STRIKE (3c)
+  auto: TDN Rising Star. Won MSW on debut at AQU 4/25 (83).
+  note: Chad C. Brown.
+- horse: ANEGADA (4g)
+  auto: won Listed John B. Connally Turf Cup S. at HOU 1/24 (93).
+  note: Michael J. Maker.
+- horse: PRIMER VALS (4c)
+  auto: won G3 Premio Fernando Moller Bordeu 4/25.
+  note: Julio Orellana R..
+- horse: SCAR SHIP (3c)
+  auto: won LA Bred Premier Night Prince S. at DED 2/7 (75).
+  note: Ricky Courville.

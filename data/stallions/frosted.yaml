@@ -25,8 +25,24 @@ career:
     items:
     - Won G1 Wood Memorial (103 Beyer), 4th G1 Kentucky Derby (100), 2nd G1 Belmont (98), 3rd G1 Travers (102), Won G2 Pennsylvania Derby (106).
 progeny:
-- 'FROST AT DAWN (5f): 3rd G1 Nunthorpe Stakes at York; 2nd G1 King Charles III Stakes at Royal Ascot; won Cecil Frail Listed Stakes at Haydock.'
-- 'POST TIME (6h): won Robert T. Manfuso S. at Laurel (110 Beyer); won G3 Blame S.; 2nd G1 BC Dirt Mile (102); 3rd G1 Whitney (105).'
-- 'FLOOD ZONE (4c): won G3 Gotham S. at Aqueduct (98 Beyer).'
-- 'MERINGUE (3f): won KY Downs Juvenile Fillies S. (68); 2nd G3 Adirondack at Saratoga (78).'
-- 'DRAFT: FROSTY VIEW (5g): won Brooks Fields Mile S. at CBY 6/27 (92). Joel Berndt.'
+- horse: FROST AT DAWN (5f)
+  auto: 3rd G1 Nunthorpe Stakes at York; 2nd G1 King Charles III Stakes at Royal Ascot; won Cecil Frail Listed Stakes at Haydock.
+  note: ''
+- horse: POST TIME (6h)
+  auto: won Robert T. Manfuso S. at Laurel (110 Beyer); won G3 Blame S.; 2nd G1 BC Dirt Mile (102); 3rd G1 Whitney (105).
+  note: ''
+- horse: FLOOD ZONE (4c)
+  auto: won G3 Gotham S. at Aqueduct (98 Beyer).
+  note: ''
+- horse: MERINGUE (3f)
+  auto: won KY Downs Juvenile Fillies S. (68); 2nd G3 Adirondack at Saratoga (78).
+  note: ''
+- horse: FROSTY VIEW (5g)
+  auto: won Brooks Fields Mile S. at CBY 6/27 (92).
+  note: Joel Berndt.
+- horse: ARCTIC GLAMOUR (5f)
+  auto: 2nd G1 Coolmore Classic 3/14.
+  note: G Ryan & S Alexiou.
+- horse: FROSTY INDULGENCE (5g)
+  auto: won ALW at KEE 4/19 (91).
+  note: Christopher Davis.

@@ -27,5 +27,6 @@ career:
     items:
     - Won a MSW at Belmont, beating 5 future Stakes winners including G2Ws Greatest Honour and Bourbonic, and Caddo River.
 progeny:
-- "HARPER'S CORNER (2f): 2 for 2. won MSW on debut at Laurel by 8 (56) then won Schuyerville at Saratoga by 5 (88)."
-- "DRAFT: HARPER'S CORNER (2f): won Listed Schuylerville S. by 5 1/4 at SAR 7/3 (88). Cathal A. Lynch."
+- horse: HARPER'S CORNER (2f)
+  auto: 2 for 2. won MSW on debut at Laurel by 8 (56) then won Schuyerville at Saratoga by 5 (88).
+  note: ''

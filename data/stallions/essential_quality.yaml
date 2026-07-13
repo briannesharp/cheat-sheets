@@ -27,11 +27,30 @@ career:
     items:
     - Undefeated, won G1 Breeders' Futurity and G1 Breeder's Cup Juvenile.
 progeny:
-- 'THE PUMA (3c): won G3 Tampa Bay Derby on 3/7 (94), 2nd by a nose G1 Florida Derby 3/28 (100). 106 Ky Derby points. Scratched from Ky Derby.'
-- 'BULL BY THE HORNS (3c): won Rushaway at TP 3/21 (70).'
-- 'MY WORLD (3c): won Jerome at Aqu 1/3 (84); won Nashua at Aqu 11/1 (79). Brad Cox. $350k KeeSep. TDN Derby Dozen.'
-- 'BLACK HORNET (3c): won Black Gold Stakes at FG 2/28 (85). Brendan Walsh/Calumet.'
-- 'CHOPSTICKS (3f): won Ellis Park Debutante 8/10 (68); won MSW on debut at CD 6/27 (68). Brad Cox. $300k KeeSep.'
-- 'ESSENTIAL TIME (3g): won Clever Trevor S. at Remington 9/28 (68).'
-- 'EZUM (3c): won MSW by 20 at Colonial 3/14 (87). Brad Cox/Shadwell.'
-- 'CONFESSIONAL (3c): 3rd in Virginia Derby 3/14 (82). Brad Cox.'
+- horse: THE PUMA (3c)
+  auto: won G3 Tampa Bay Derby on 3/7 (94), 2nd by a nose G1 Florida Derby 3/28 (100).
+  note: 106 Ky Derby points. Scratched from Ky Derby.
+- horse: BULL BY THE HORNS (3c)
+  auto: won Rushaway at TP 3/21 (70).
+  note: ''
+- horse: MY WORLD (3c)
+  auto: won Jerome at Aqu 1/3 (84); won Nashua at Aqu 11/1 (79).
+  note: Brad Cox. $350k KeeSep. TDN Derby Dozen.
+- horse: BLACK HORNET (3c)
+  auto: won Black Gold Stakes at FG 2/28 (85).
+  note: Brendan Walsh/Calumet.
+- horse: CHOPSTICKS (3f)
+  auto: won Ellis Park Debutante 8/10 (68); won MSW on debut at CD 6/27 (68).
+  note: Brad Cox. $300k KeeSep.
+- horse: ESSENTIAL TIME (3g)
+  auto: won Clever Trevor S. at Remington 9/28 (68).
+  note: ''
+- horse: EZUM (3c)
+  auto: won MSW by 20 at Colonial 3/14 (87).
+  note: Brad Cox/Shadwell.
+- horse: CONFESSIONAL (3c)
+  auto: 3rd in Virginia Derby 3/14 (82).
+  note: Brad Cox.
+- horse: TACTICALITY (3c)
+  auto: won AOC at MTH 5/24 (90).
+  note: Chad C. Brown.

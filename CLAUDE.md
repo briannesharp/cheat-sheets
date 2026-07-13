@@ -65,38 +65,43 @@ display order). Progeny entries starting with `DRAFT:` are review-pending
 output from `update_progeny.py` and are never rendered. Full editing guide:
 `data/README.md`.
 
-## Progeny update workflow (draft-then-review)
+## Progeny auto-update (no review needed)
 
-The `progeny` entries in the YAML files (hand-edited, one line per horse)
-drive the site's "Current Top Runners" lists. To draft new results
-automatically:
+The `progeny` entries in the YAML files drive the site's "Current Top
+Runners" lists and are **machine-maintained** — no drafts, no review.
+Each entry is a dict:
 
-1. Drafting runs automatically at the start of every `generate_website.py`
-   run (so the nightly auto-update drafts too; a DB outage skips drafting
-   without blocking the build). To draft on demand, run
-   `python scripts/update_progeny.py` (no need to close anything —
-   it's all text files)
-2. The script queries `GBSWebsite.dbo.RaceResults` for current Darley KY
-   roster progeny over a rolling 180-day window — **USA/CAN: G1 top-3,
-   G2/G3/Listed/black-type stakes wins, MSW/ALW/AOC wins with a Beyer of
-   90+; foreign: Graded/Group wins only** — plus `Research.dbo.TDNRisingStars`
-   for new TDN Rising Stars (same window; their draft says "TDN Rising
-   Star."), formats everything in house style ("won G3 Tampa Bay Derby at
-   TAM 3/7 (94)"), and appends `DRAFT:` entries to each stallion's
-   `progeny:` list
-3. Review in the YAML: edit the text, add editorial notes (Derby points,
-   sale prices, etc.), fix any Beyers, then delete the `DRAFT: ` prefix to
-   publish the line (or delete the whole line to reject it)
-4. Run `generate_website.py` as usual
+```yaml
+- horse: MOON SPUN (5f)          # machine-refreshed (incl. age each season)
+  auto: won Ladies' Turf Sprint S. at GP 2/7 (99); won 5.5f turf G2 Unbridled Sidney on Oaks Day (98).
+  note: Turf sprinter.           # HUMAN-ONLY — never touched by the machine
+```
 
-**The script only appends `DRAFT:` entries — it never edits hand-written
-lines — and never runs git.** It uses `ruamel.yaml` round-trip mode, so
-comments and formatting in the files survive. State lives in
-`progeny_seen.json` (gitignored): a watermark date plus a log of every race
-already drafted, so re-runs never duplicate. Each run re-queries a 7-day
-overlap (Beyers post late), and skips results whose horse + m/d date already
-appear in an existing progeny entry. `--dry-run` prints without writing;
-`--since YYYY-MM-DD` overrides the watermark.
+Renders as `horse: auto note` on one line. Rules:
+
+1. `update_progeny.run()` executes at the start of every
+   `generate_website.py` run (nightly included; a DB outage skips it without
+   blocking the build). On demand: `python scripts/update_progeny.py`
+   (`--dry-run` to preview).
+2. Qualifying results (rolling 180-day window): **USA/CAN — G1 top-3,
+   G2/G3/Listed/black-type stakes wins, MSW/ALW/AOC wins with a 90+ Beyer;
+   foreign — G1 top-3 and G2/G3 wins.** Plus new TDN Rising Stars
+   (`Research.dbo.TDNRisingStars`, same window) — "TDN Rising Star." is
+   prefixed to the horse's `auto` text.
+3. New results **prepend** to the horse's `auto` text (new horses get a new
+   entry, trainer seeded into `note`); the machine NEVER writes into `note`
+   after creation — that's where Derby points, sale prices, etc. live.
+4. **Expiry:** an entry with an *empty* note whose newest result is older
+   than 180 days is removed automatically. Entries with a note never
+   auto-expire — delete them by hand when done with them.
+5. A plain-string progeny entry (legacy hand-written form) is still
+   rendered but the machine leaves it entirely alone — including never
+   adding that horse's new results.
+
+State: `progeny_seen.json` (gitignored) — every race already applied plus
+each horse's newest-result date. Rejecting a result permanently = removing
+its clause from `auto` (the seen-log stops it returning). The script never
+runs git; the nightly generate commit picks up the YAML changes.
 
 ## Brand colours (CSS variables)
 

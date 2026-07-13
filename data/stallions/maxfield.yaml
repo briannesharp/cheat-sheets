@@ -26,14 +26,33 @@ career:
     items:
     - Won on debut at Churchill, then won the G1 Breeders' Futurity at Keeneland by 5.5 lengths.
 progeny:
-- 'ENGLISHMAN (3c): Won G1 Woody Stephens - 115 Beyer is the highest of the year! TDN Rising Star. Won MSW by 7 on debut at CD 9/19 (97 Beyer); won ALW by 7 at FG 3/19 (95 Beyer); 2nd G2 Pat Day Mile on Derby Day (94). Cherie DaVaux. $400k KeeSep.'
-- 'MASHALLAH (3f): TDN Rising Star won by 4 on debut at Kee 4/23. Her 106 Beyer is the best debut Beyer for a filly in 25 years! Won AOC at Sar 7/4 by 7 (96). Brendan Walsh. $1.25m OBS 2yo.'
-- 'LIBERTY NATIONAL (3c): TDN Rising Star. 2nd Gun Runner at FG; won MSW by 4 at CD. TDN Derby Dozen.'
-- 'MAGNA VICTOR (3c): TDN Rising Star. Won WFA Newcomer Race in Japan by 10 lengths.'
-- 'FIVE BARS (3f): TDN Rising Star. 3rd G1 Frizette (72). Won MSW on debut at Saratoga.'
-- 'IVY GIRL (3f): won Weber City Miss at Laurel 4/18 (70); won Main Line S. at Parx 3/3 (62).'
-- 'DANON BOURBON (3c): won Fukuryu Stakes. 5th in Ky Derby.'
-- "HOLLY'S HOLIDAY (3f): won Valley of the Vapors at Oaklawn 4/18 (76). "
-- 'SABINO CANYON (3c): won Los Al Derby 6/27 (85). Baffert/ Three Amigos.'
-- 'DRAFT: ENGLISHMAN (3c): won G1 Woody Stephens S. by 5 3/4 at SAR 6/6 (115). Cherie DeVaux.'
-- 'DRAFT: MAXIMUM OFFER (3f): won G3 Indiana Oaks at IND 7/11 (84). Kenneth G. McPeek.'
+- horse: ENGLISHMAN (3c)
+  auto: Won G1 Woody Stephens - 115 Beyer is the highest of the year! TDN Rising Star. Won MSW by 7 on debut at CD 9/19 (97 Beyer); won ALW by 7 at FG 3/19 (95 Beyer); 2nd G2 Pat Day Mile on Derby Day (94).
+  note: Cherie DaVaux. $400k KeeSep.
+- horse: MASHALLAH (3f)
+  auto: TDN Rising Star won by 4 on debut at Kee 4/23. Her 106 Beyer is the best debut Beyer for a filly in 25 years! Won AOC at Sar 7/4 by 7 (96).
+  note: Brendan Walsh. $1.25m OBS 2yo.
+- horse: LIBERTY NATIONAL (3c)
+  auto: TDN Rising Star. 2nd Gun Runner at FG; won MSW by 4 at CD.
+  note: TDN Derby Dozen.
+- horse: MAGNA VICTOR (3c)
+  auto: TDN Rising Star. Won WFA Newcomer Race in Japan by 10 lengths.
+  note: ''
+- horse: FIVE BARS (3f)
+  auto: TDN Rising Star. 3rd G1 Frizette (72). Won MSW on debut at Saratoga.
+  note: ''
+- horse: IVY GIRL (3f)
+  auto: won Weber City Miss at Laurel 4/18 (70); won Main Line S. at Parx 3/3 (62).
+  note: ''
+- horse: DANON BOURBON (3c)
+  auto: won Fukuryu Stakes.
+  note: 5th in Ky Derby.
+- horse: HOLLY'S HOLIDAY (3f)
+  auto: won Valley of the Vapors at Oaklawn 4/18 (76).
+  note: ''
+- horse: SABINO CANYON (3c)
+  auto: won Los Al Derby 6/27 (85).
+  note: Baffert/ Three Amigos.
+- horse: MAXIMUM OFFER (3f)
+  auto: won G3 Indiana Oaks at IND 7/11 (84).
+  note: Kenneth G. McPeek.

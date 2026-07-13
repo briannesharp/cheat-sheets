@@ -15,10 +15,30 @@ general:
 more_selling_points:
 - "13 G1 winners: SWEET REASON, AUBBY K, CALLBACK, WEDDING TOAST, MCKINZIE, MAXFIELD, SPEAKER'S CORNER, LA CARA, HALLOWED CROWN, etc."
 progeny:
-- 'BELLA BALLERINA (3f): KY Oaks next. Won G2 Golden Rod at Churchill on 11/29 (80); won G2 Rachel Alexandra at FG 2/14 (84), 2nd G2 Fair Grounds Oaks 3/21 (80). Godolphin/Brendan Walsh.'
-- 'LA CARA (4f): won G1 Acorn S. at Saratoga (93); won G1 Ashland at Keeneland (88).'
-- 'FIRST MISSION (6c): won $1m G2 Oaklawn H (109 Beyer); won G2 Alysheba (106); won G3 Essex (100). '
-- 'STREET BEAST (3c): won KY Downs Juvenile Mile S. 9/7 (81); 4th G1 BC Juv Turf (79); won Leonatus S at TP 1/17 (80).'
-- 'SERENDIPITY (4f): won G3 Selene S. (Woodbine-6/28) (81)'
-- 'NOT TO WORRY (3c): TDN RISING STAR. Won on debut at FG 3/21 (75). Cherie deVaux/Lael Stables.'
-- 'QUEENSTOWN (3f): won ALW by 9 at Kee 4/9 (92).'
+- horse: BELLA BALLERINA (3f)
+  auto: KY Oaks next. Won G2 Golden Rod at Churchill on 11/29 (80); won G2 Rachel Alexandra at FG 2/14 (84), 2nd G2 Fair Grounds Oaks 3/21 (80).
+  note: Godolphin/Brendan Walsh.
+- horse: LA CARA (4f)
+  auto: won G1 Acorn S. at Saratoga (93); won G1 Ashland at Keeneland (88).
+  note: ''
+- horse: FIRST MISSION (6c)
+  auto: won $1m G2 Oaklawn H (109 Beyer); won G2 Alysheba (106); won G3 Essex (100).
+  note: ''
+- horse: STREET BEAST (3c)
+  auto: won KY Downs Juvenile Mile S. 9/7 (81); 4th G1 BC Juv Turf (79); won Leonatus S at TP 1/17 (80).
+  note: ''
+- horse: SERENDIPITY (4f)
+  auto: won G3 Selene S.
+  note: (Woodbine-6/28) (81)
+- horse: NOT TO WORRY (3c)
+  auto: TDN RISING STAR. Won on debut at FG 3/21 (75).
+  note: Cherie deVaux/Lael Stables.
+- horse: QUEENSTOWN (3f)
+  auto: won ALW by 9 at Kee 4/9 (92).
+  note: ''
+- horse: MAKES SENSE (4c)
+  auto: won AOC by 5 at AQU 2/6 (94).
+  note: Chad Summers.
+- horse: VICTORY ACHIEVED (5g)
+  auto: won AOC at GP 5/30 (92).
+  note: Mark E. Casse.
