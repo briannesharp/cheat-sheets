@@ -77,12 +77,13 @@ automatically:
    `python scripts/update_progeny.py` (no need to close anything —
    it's all text files)
 2. The script queries `GBSWebsite.dbo.RaceResults` for current Darley KY
-   roster progeny since the last run — **G1 races: top-3 finishes;
-   G2/G3/Listed/black-type stakes: wins only; MSW/ALW/AOC: wins with a
-   Beyer of 90+** — plus `Research.dbo.TDNRisingStars` for new TDN Rising
-   Stars (180-day lookback; their draft says "TDN Rising Star."), formats
-   everything in house style ("won G3 Tampa Bay Derby at TAM 3/7 (94)"),
-   and appends `DRAFT:` entries to each stallion's `progeny:` list
+   roster progeny over a rolling 180-day window — **USA/CAN: G1 top-3,
+   G2/G3/Listed/black-type stakes wins, MSW/ALW/AOC wins with a Beyer of
+   90+; foreign: Graded/Group wins only** — plus `Research.dbo.TDNRisingStars`
+   for new TDN Rising Stars (same window; their draft says "TDN Rising
+   Star."), formats everything in house style ("won G3 Tampa Bay Derby at
+   TAM 3/7 (94)"), and appends `DRAFT:` entries to each stallion's
+   `progeny:` list
 3. Review in the YAML: edit the text, add editorial notes (Derby points,
    sale prices, etc.), fix any Beyers, then delete the `DRAFT: ` prefix to
    publish the line (or delete the whole line to reject it)
