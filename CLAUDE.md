@@ -71,7 +71,10 @@ The `progeny` entries in the YAML files (hand-edited, one line per horse)
 drive the site's "Current Top Runners" lists. To draft new results
 automatically:
 
-1. Run `python scripts/update_progeny.py` (no need to close anything —
+1. Drafting runs automatically at the start of every `generate_website.py`
+   run (so the nightly auto-update drafts too; a DB outage skips drafting
+   without blocking the build). To draft on demand, run
+   `python scripts/update_progeny.py` (no need to close anything —
    it's all text files)
 2. The script queries `GBSWebsite.dbo.RaceResults` for black-type top-3
    finishes by current Darley KY roster progeny since the last run, plus
