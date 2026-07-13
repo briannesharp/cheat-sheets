@@ -94,6 +94,11 @@ Renders as `horse: auto note` on one line. Rules:
 4. **Expiry:** an entry with an *empty* note whose newest result is older
    than 180 days is removed automatically. Entries with a note never
    auto-expire — delete them by hand when done with them.
+4a. **Beyer backfill:** a clause published before its figure reached the DB
+   (Beyers post a day or two after the race) gets the "(NN)" inserted
+   automatically once it lands (checked for 21 days). Also: the "(Nyo)" age
+   in `profile.year_foaled` is recomputed at render time, so it rolls over
+   every Jan 1 by itself.
 5. A plain-string progeny entry (legacy hand-written form) is still
    rendered but the machine leaves it entirely alone — including never
    adding that horse's new results.
