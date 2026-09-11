@@ -31,6 +31,8 @@ progeny:                       # "Current Top Runners" — machine-maintained
   - horse: THE PUMA (3c)       #   auto-refreshed (results, age)
     auto: won G3 Tampa Bay Derby on 3/7 (94), 2nd by a nose G1 Florida Derby 3/28 (100).
     note: 106 Ky Derby points. # yours — the machine never touches note
+    bms: Tapit                 # broodmare sire — filled in once by the machine
+                               #   from the database; edit it if it's wrong
 ```
 
 ## Rules of thumb
@@ -39,6 +41,9 @@ progeny:                       # "Current Top Runners" — machine-maintained
   start of every site generation and prepends new qualifying results to
   `auto`. Don't edit `auto` unless you must (the machine rewrites it);
   put your editorial (Derby points, sale prices, trainer color) in `note`.
+- **Broodmare sire (`bms`)** shows after the horse's name as "out of a Tapit
+  mare". The machine fills it in only when it's blank, so if the database
+  has the wrong dam you can correct it here and it stays corrected.
 - An entry with an **empty note** disappears automatically once its newest
   result is older than 180 days. An entry **with a note** stays until you
   delete it.
