@@ -41,8 +41,8 @@ progeny:                       # "Current Top Runners" — machine-maintained
   start of every site generation and prepends new qualifying results to
   `auto`. Don't edit `auto` unless you must (the machine rewrites it);
   put your editorial (Derby points, sale prices, trainer color) in `note`.
-- **Broodmare sire (`bms`)** shows after the horse's name as "out of a Tapit
-  mare". The machine fills it in only when it's blank, so if the database
+- **Broodmare sire (`bms`)** shows in parentheses after the horse's name and
+  age/sex, e.g. `THE PUMA (3c) (Tapit)`. The machine fills it in only when it's blank, so if the database
   has the wrong dam you can correct it here and it stays corrected.
 - An entry with an **empty note** disappears automatically once its newest
   result is older than 180 days. An entry **with a note** stays until you
