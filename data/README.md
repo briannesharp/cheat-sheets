@@ -8,6 +8,8 @@ edit in any editor (VS Code, Notepad), save, then run
 
 ```yaml
 name: Essential Quality        # must match the name in the site's PEDIGREES
+status: deceased               # optional: deceased | retired — hides him from
+                               #   the site and freezes his progeny list
 profile:                       # overrides for scraped profile fields
   year_foaled: 2018 (8yo)
   height: 16.2½ hh
@@ -47,6 +49,13 @@ progeny:                       # "Current Top Runners" — machine-maintained
 - Comments start with `#` and are preserved — leave yourself notes freely.
 - Adding a stallion: happens automatically when he joins the SQL roster;
   a stub file is created for you to fill in highlights.
+- **Removing a stallion who is still in this season's roster** (died or
+  retired mid-season): add `status: deceased` (or `retired`) at the top of
+  his file. He disappears from the site on the next generate and
+  `update_progeny.py` stops touching his file. Don't delete his row from
+  `Research.dbo.Stallions` — it is the fee history and he did stand this
+  season. Once he is absent from the next season's roster the flag is
+  redundant but harmless.
 
 The old `stallion_data.xlsx` is retired and kept only as a pre-migration
 backup (July 2026). Nothing reads it anymore.
