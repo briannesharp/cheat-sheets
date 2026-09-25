@@ -24,8 +24,8 @@ career:
     - Won G1 BC Juvenile at Keeneland, G1 FrontRunner at SA, G1 Del Mar Futurity, G2 Best Pal S.
 progeny:
 - horse: KNIGHTSBRIDGE (5c)
-  auto: won G1 Pacific Classic S. by 6 1/4 at DMR 8/22 (104); won G3 Monmouth Cup S. by 10 1/4 at MTH 7/18 (122); 2nd in G1 Met Mile; won G3 Gulfstream Park Mile by 11 lengths 2/28 (112); G3 Fred Hooper by 5 at GP 1/24 (105); won G3 Mr.
-  note: Prospector by 5 at GP 12/27 (104). Godolphin/Mott.
+  auto: won G1 Pacific Classic S. by 6 1/4 at DMR 8/22 (104); won G3 Monmouth Cup S. by 10 1/4 at MTH 7/18 (122); 2nd in G1 Met Mile; won G3 Gulfstream Park Mile by 11 lengths 2/28 (112); won G3 Fred Hooper by 5 at GP 1/24 (105); won G3 Mr. Prospector by 5 at GP 12/27/25 (104).
+  note: Godolphin/Mott.
   bms: Bernardini
 - horse: NYSOS (5c)
   auto: won G1 Met Mile (109); 2nd G1 Saudi Cup 2/14; won G1 BC Dirt Mile (102); won G2 Laffit Pincay (101); won G2 San Diego H. (102); won G3 Triple Bend (108).
@@ -36,11 +36,11 @@ progeny:
   note: Klaravich/Chad Brown.
   bms: Wildcat Heir
 - horse: IRON HONOR (3c)
-  auto: 3rd G1 NYRA Bets Haskell S. at MTH 7/18 (94); 2nd G1 Preakness S. at LRL 5/16 (94); Won G3 Gotham (50 Ky Derby points) at Aqu 2/28 (90); won MSW on debut at Aqu 12/13 (95).
+  auto: 3rd G1 NYRA Bets Haskell S. at MTH 7/18 (94); 2nd G1 Preakness S. at LRL 5/16 (94); Won G3 Gotham at Aqu 2/28 (90); won MSW on debut at Aqu 12/13/25 (95).
   note: Chad Brown/ St Elias. $475k KeeSep.
   bms: Blame
 - horse: LITMUS TEST (3c)
-  auto: Won G2 Los Al Futurity 12/13 (96); won MSW at DM on debut 8/16 (78); 4th G1 Del Mar Futurity; 4th G1 BC Juv (95).
+  auto: Won G2 Los Al Futurity 12/13/25 (96); won MSW at DM on debut 8/16/25 (78); 4th G1 Del Mar Futurity; 4th G1 BC Juv (95).
   note: Baffert, SF/Starlight/Madaket. $875k FT Sar yrlg.
   bms: Malibu Moon
 - horse: CAVALIERI (5f)
@@ -107,6 +107,9 @@ progeny:
   auto: won Sorority S. by 5 1/4 at MTH 8/29 (83).
   note: Brendan P. Walsh.
   bms: Tiznow
+- horse: GAUDREAU (2c)
+  auto: won MSW on debut at SAR 8/8 (89).
+  note: Chad C. Brown.
 auto_bullets:
 - '12 G1 winners (NH): ARGOS, CAVALIERI, GRETZKY THE GREAT, IMMERSIVE, JOHANNES, KNIGHTSBRIDGE, NYSOS, RANDOMIZED, SLOW DOWN ANDY, TENMA, VELOCITY, VEQUIST.'
 - '6 Graded Stakes winners in 2026: DAVID OF ATHENS, GROWTH EQUITY, IMMERSIVE, IRON HONOR, KNIGHTSBRIDGE, NYSOS.'
