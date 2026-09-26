@@ -43,18 +43,6 @@ progeny:
   auto: Won G2 Los Al Futurity 12/13/25 (96); won MSW at DM on debut 8/16/25 (78); 4th G1 Del Mar Futurity; 4th G1 BC Juv (95).
   note: Baffert, SF/Starlight/Madaket. $875k FT Sar yrlg.
   bms: Malibu Moon
-- horse: CAVALIERI (5f)
-  auto: unbeaten in 5 starts. Won G1 Beholder Mile (101), G2 Zenyatta (100), G3 La Canada (95).
-  note: ''
-  bms: Stephen Got Even
-- horse: VELOCITY (4f)
-  auto: won G1 Del Mar Oaks (87).
-  note: ''
-  bms: Harlan's Holiday
-- horse: ARGOS (3c)
-  auto: won G1 Summer Stakes at Woodbine (81).
-  note: ''
-  bms: Acclamation
 - horse: IMMERSIVE (4f)
   auto: won G2 Fleur de Lis at CD 6/27 (91).
   note: ''
@@ -110,6 +98,7 @@ progeny:
 - horse: GAUDREAU (2c)
   auto: won MSW on debut at SAR 8/8 (89).
   note: Chad C. Brown.
+  bms: Congrats
 auto_bullets:
 - '12 G1 winners (NH): ARGOS, CAVALIERI, GRETZKY THE GREAT, IMMERSIVE, JOHANNES, KNIGHTSBRIDGE, NYSOS, RANDOMIZED, SLOW DOWN ANDY, TENMA, VELOCITY, VEQUIST.'
 - '6 Graded Stakes winners in 2026: DAVID OF ATHENS, GROWTH EQUITY, IMMERSIVE, IRON HONOR, KNIGHTSBRIDGE, NYSOS.'
