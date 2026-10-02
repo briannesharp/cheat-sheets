@@ -16,6 +16,9 @@ profile:                       # overrides for scraped profile fields
   earnings: $4.9M
   entered_stud: 2022
   first_crop_note: First crop are 3-year-olds
+facts_and_stats:               # "Facts & Stats" bullets — used ONLY while his
+  - ...                        #   darleyamerica.com page is not live; the
+                               #   page's selling points replace them after
 general:                       # Career Highlights bullets
   - ...
 more_selling_points:           # "More selling points" bullets
