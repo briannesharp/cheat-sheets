@@ -40,3 +40,6 @@ fonts/
 
 # Logo files — embedded as base64 at build time, not needed in repo
 logos/
+
+# Original phone photos (HEIC, carry EXIF/GPS) - publish the converted JPG only
+*.heic
