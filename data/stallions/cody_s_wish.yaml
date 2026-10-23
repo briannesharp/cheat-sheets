@@ -34,3 +34,11 @@ career:
 auto_bullets:
 - 2026 yearlings bring $950k, $925k, $850k, $675k, $600k, $600k, $575k, $550k, $500k, $450k.
 - 2025 weanlings bring $550k, $500k, $440k, $425k, $425k, $320k, $300k, $235k, $210k, $210k.
+auto_stats:
+  starters: 0
+  winners: 0
+  stakes_horses: 0
+  stakes_winners: 0
+  graded_sw: 0
+  g1_winners: 0
+  freshman: false

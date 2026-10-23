@@ -27,3 +27,11 @@ career:
   at_three:
     items:
     - Won on debut at Ellis Park and a Churchill allowance (98 Beyer).
+auto_stats:
+  starters: 0
+  winners: 0
+  stakes_horses: 0
+  stakes_winners: 0
+  graded_sw: 0
+  g1_winners: 0
+  freshman: false

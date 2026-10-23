@@ -36,9 +36,34 @@ progeny:
   auto: won G2 Oak Leaf S. by 7 at SA 10/3 (88).
   note: Leonard Powell.
   bms: Medaglia d'Oro
+- horse: SPEAKER'S SPEECH (2c)
+  auto: 3rd G3 Algonquin S. at WO 10/3 (66); 2nd by a head Listed Soaring Free S. at WO 8/15 (59).
+  note: Mark E. Casse.
+  rule: freshman
+  bms: Summer Bird
+- horse: CHIQUEADA (2f)
+  auto: won MCL by 5 1/4 at IND 8/13 (60).
+  note: John Ennis.
+  rule: freshman
+  bms: Elusive Quality
+- horse: IMMIGRANT SON (2c)
+  auto: won MSW on debut at BTP 7/10 (30).
+  note: Rey Hernandez.
+  rule: freshman
+  bms: Discreetly Mine
 auto_bullets:
 - '1 Graded Stakes winner (NH): DOMAIN EXPANSION.'
 - '1 Graded Stakes winner in 2026: DOMAIN EXPANSION.'
 - 2026 2yos in training bring $875k, $650k, $500k, $425k, $270k, $250k, $210k, $170k, $165k, $160k.
 - 2026 yearlings bring $115k.
 - 2025 weanlings bring $110k, $100k.
+auto_stats:
+  starters: 36
+  winners: 4
+  stakes_horses: 3
+  stakes_winners: 2
+  graded_sw: 1
+  g1_winners: 0
+  freshman: true
+  tdn_rank: 16
+  tdn_rank_date: '2026-10-23'

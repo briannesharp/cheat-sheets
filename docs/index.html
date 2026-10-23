@@ -862,6 +862,53 @@ footer {
 @media (max-width: 600px) {
   .foal-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+.hero { padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; text-align: left; }
+.hero h1 { font-size: 20px; letter-spacing: 2.5px; margin: 0; }
+.hero p { margin-left: auto; letter-spacing: 1px; font-size: 11px; }
+.hero .stallion-count { display: none; }
+.stallion-card { border-radius: 8px; box-shadow: 0 1px 4px rgba(0,55,178,0.10); border: 1px solid var(--border); }
+.info-name { text-decoration: none; font-weight: 700; letter-spacing: 0.3px; }
+.info-fee { margin-left: auto; font-family: 'Egizio', 'Playfair Display', Georgia, serif; font-size: clamp(20px, 2.2vw, 26px); font-weight: 800; color: #cc1012; line-height: 1.1; white-space: nowrap; }
+.info-pills { gap: 0; }
+.info-pill { background: none; border: none; padding: 0; font-size: 12.5px; color: var(--grey); border-radius: 0; }
+.info-pill + .info-pill::before { content: '·'; margin: 0 7px; color: var(--cyan); font-weight: 700; }
+.block-title { font-size: 11px; letter-spacing: 1.5px; }
+.block-title::before { display: none; }
+.block-title::after { content: ''; flex: 1; height: 1px; background: var(--border); margin-left: 6px; }
+.block-title .chevron { order: 5; }
+.sp-block { background: #fff; border-top: 1px solid var(--border) !important; }
+.sp-list li { padding: 7px 0 7px 18px; border-bottom: 1px solid #eef2f7; border-radius: 0; }
+.sp-list li:last-child { border-bottom: none; }
+.sp-list li::before { content: ''; width: 6px; height: 6px; background: var(--cyan); border-radius: 50%; left: 2px; top: 14px; }
+.table-scroll { border: none; border-radius: 0; }
+thead th { background: #fff; color: var(--blue); border-bottom: 2px solid var(--blue); text-transform: uppercase; letter-spacing: 0.5px; font-size: 10.5px; }
+thead th:first-child, thead th:last-child { border-radius: 0; }
+tbody tr:nth-child(even) { background: #fff; }
+td { border-bottom: 1px solid #eef2f7; }
+
+/* ── Progeny counts under the profile (Kate, 23 Oct 2026) ── */
+.stat-strip { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.stat { background: var(--light); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px 3px; min-width: 64px; }
+.stat b { display: block; font-family: 'Egizio', 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 800; color: var(--blue); line-height: 1.1; }
+.stat span { font-size: 9.5px; color: var(--grey); text-transform: uppercase; letter-spacing: 0.6px; white-space: nowrap; }
+.stat.rank { border-color: #cc1012; }
+.stat.rank b { color: #cc1012; }
+@media (max-width: 600px) {
+  .hero { padding: 12px 16px; }
+  .info-fee { font-size: 20px; }
+  .stat { padding: 3px 8px 2px; min-width: 56px; }
+  .stat b { font-size: 16px; }
+  .stat span { font-size: 9px; }
+}
+@media print {
+  .stat-strip { gap: 3px !important; margin-top: 3px !important; }
+  .stat { padding: 1px 5px !important; min-width: 0 !important; border-radius: 3px !important; }
+  .stat b { font-size: 11px !important; }
+  .stat span { font-size: 7px !important; letter-spacing: 0.3px !important; }
+  .info-fee { font-size: 14px !important; }
+  thead th { background: #fff !important; color: #0037B2 !important; }
+}
 </style>
 </head>
 <body id="top">
@@ -923,10 +970,11 @@ footer {
             <span class="info-name">CODY'S WISH</span>
             <button class="share-btn" data-slug="cody-s-wish" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$55,000</div>
           </div>
-          <div class="info-fee">$55,000</div>
           <div class="ped-line">Curlin <span class="ped-dash">—</span> Dance Card <span class="ped-paren">(Tapit)</span></div>
           <div class="info-pills"><span class="info-pill">2018 (8yo)</span><span class="info-pill">16.3¾ hh</span><span class="info-pill">Earnings: $3.1M</span><span class="info-pill">Entered stud: 2024</span><span class="info-pill">First crop are yearlings</span></div>
+          
           
         </div>
       </div>
@@ -1028,7 +1076,7 @@ footer {
             <td class="bold">2027</td>
             <td class="center">4</td>
             <td class="fee-cell">$55,000</td>
-            <td class="center">34</td>
+            <td class="center">35</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -1186,10 +1234,11 @@ footer {
             <span class="info-name">ESSENTIAL QUALITY</span>
             <button class="share-btn" data-slug="essential-quality" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$25,000</div>
           </div>
-          <div class="info-fee">$25,000</div>
           <div class="ped-line">Tapit <span class="ped-dash">—</span> Delightful Quality <span class="ped-paren">(Elusive Quality)</span></div>
           <div class="info-pills"><span class="info-pill">2018 (8yo)</span><span class="info-pill">16.2½ hh</span><span class="info-pill">Earnings: $4.9M</span><span class="info-pill">Entered stud: 2022</span><span class="info-pill">First crop are 3-year-olds</span></div>
+          <div class="stat-strip"><div class="stat"><b>127</b><span>Starters</span></div><div class="stat"><b>66</b><span>Winners</span></div><div class="stat"><b>12</b><span>Stakes horses</span></div><div class="stat"><b>8</b><span>Stakes winners</span></div><div class="stat"><b>1</b><span>Graded SW</span></div><div class="stat"><b>1</b><span>G1 winners</span></div></div>
           
         </div>
       </div>
@@ -1296,7 +1345,7 @@ footer {
             <td class="bold">2027</td>
             <td class="center">6</td>
             <td class="fee-cell">$25,000</td>
-            <td class="center">19</td>
+            <td class="center">21</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -1492,10 +1541,11 @@ footer {
             <span class="info-name">FIRST MISSION</span>
             <button class="share-btn" data-slug="first-mission" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$7,500</div>
           </div>
-          <div class="info-fee">$7,500</div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Elude <span class="ped-paren">(Medaglia d'Oro)</span></div>
           <div class="info-pills"><span class="info-pill">2020 (6yo)</span><span class="info-pill">16.1½ hh</span><span class="info-pill">Earnings: $2.2M</span><span class="info-pill">Entered stud: 2026</span><span class="info-pill">Enters stud 2026 — NEW</span></div>
+          
           
         </div>
       </div>
@@ -1676,10 +1726,11 @@ footer {
             <span class="info-name">HARD SPUN</span>
             <button class="share-btn" data-slug="hard-spun" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$15,000</div>
           </div>
-          <div class="info-fee">$15,000</div>
           <div class="ped-line">Danzig <span class="ped-dash">—</span> Turkish Tryst <span class="ped-paren">(Turkoman)</span></div>
           <div class="info-pills"><span class="info-pill">2004 (22yo)</span><span class="info-pill">16.3 hh</span><span class="info-pill">Earnings: $2.7M</span><span class="info-pill">Entered stud: 2008</span><span class="info-pill">First crop are 17-year-olds</span></div>
+          <div class="stat-strip"><div class="stat"><b>1,807</b><span>Starters</span></div><div class="stat"><b>1,264</b><span>Winners</span></div><div class="stat"><b>229</b><span>Stakes horses</span></div><div class="stat"><b>116</b><span>Stakes winners</span></div><div class="stat"><b>58</b><span>Graded SW</span></div><div class="stat"><b>15</b><span>G1 winners</span></div></div>
           
         </div>
       </div>
@@ -2038,10 +2089,11 @@ footer {
             <span class="info-name">HIGHLAND FALLS</span>
             <button class="share-btn" data-slug="highland-falls" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$7,500</div>
           </div>
-          <div class="info-fee">$7,500</div>
           <div class="ped-line">Curlin <span class="ped-dash">—</span> Round Pond <span class="ped-paren">(Awesome Again)</span></div>
           <div class="info-pills"><span class="info-pill">2020 (6yo)</span><span class="info-pill">16.2 hh</span><span class="info-pill">Earnings: $1.6M</span><span class="info-pill">Entered stud: 2026</span><span class="info-pill">Enters stud 2026 — NEW</span></div>
+          
           
         </div>
       </div>
@@ -2222,10 +2274,11 @@ footer {
             <span class="info-name">KNIGHTSBRIDGE</span>
             <button class="share-btn" data-slug="knightsbridge" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">TBD</div>
           </div>
-          <div class="info-fee">TBD</div>
           <div class="ped-line">Nyquist <span class="ped-dash">—</span> Tyburn Brook <span class="ped-paren">(Bernardini)</span></div>
-          <div class="info-pills"><span class="info-pill">2021 (5yo)</span><span class="info-pill">Earnings: $1.5M</span><span class="info-pill">Entered stud: 2027</span><span class="info-pill">Enters stud 2027 — NEW</span></div>
+          <div class="info-pills"><span class="info-pill">2021 (5yo)</span><span class="info-pill">16.1 hh</span><span class="info-pill">Earnings: $1.5M</span><span class="info-pill">Entered stud: 2027</span><span class="info-pill">Enters stud 2027 — NEW</span></div>
+          
           
         </div>
       </div>
@@ -2256,7 +2309,7 @@ footer {
             <td class="bold">2027</td>
             <td class="center">1</td>
             <td class="fee-cell"></td>
-            <td class="center">79</td>
+            <td class="center">82</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -2371,10 +2424,11 @@ footer {
             <span class="info-name">MAXFIELD</span>
             <button class="share-btn" data-slug="maxfield" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$75,000</div>
           </div>
-          <div class="info-fee">$75,000</div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Velvety <span class="ped-paren">(Bernardini)</span></div>
           <div class="info-pills"><span class="info-pill">2017 (9yo)</span><span class="info-pill">16.3½ hh</span><span class="info-pill">Earnings: $2M</span><span class="info-pill">Entered stud: 2022</span><span class="info-pill">First crop are 3-year-olds</span></div>
+          <div class="stat-strip"><div class="stat"><b>117</b><span>Starters</span></div><div class="stat"><b>57</b><span>Winners</span></div><div class="stat"><b>20</b><span>Stakes horses</span></div><div class="stat"><b>8</b><span>Stakes winners</span></div><div class="stat"><b>3</b><span>Graded SW</span></div><div class="stat"><b>1</b><span>G1 winners</span></div></div>
           
         </div>
       </div>
@@ -2386,7 +2440,7 @@ footer {
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <ul class="sp-list"><li><strong>First three-year-olds in 2026</strong></li><li><strong>18 first-crop Stakes horses</strong> including G1 Woody Stephens and G1 Allen Jerkens winner <strong>Englishman</strong>, whose <strong>117 Beyer</strong> is the best for a three-year-old colt since Flightline, G3 Prioress winner <strong>Mashallah</strong>, whose <strong>106 Beyer</strong> on debut at Keeneland is the best for a three-year-old filly this year and is the highest debut Beyer for a filly in the past 25 years, plus G3 Indiana Oaks winner <strong>Maximum Offer</strong> and Stakes winners <strong>Sabino Canyon</strong>, <strong>Holly's Holiday</strong>, <strong>Ivy Girl</strong>, and <strong>Max Ciao</strong>.</li><li><strong>20% Stakes horses from his first-crop starters</strong> - best among all stallions under $250k for the current three-year-old crop.</li><li>2026 yearlings bring $900k, $850k, $600k, $550k, $475k.</li></ul>
+          <ul class="sp-list"><li><strong>First three-year-olds in 2026</strong></li><li><strong>The fastest three-year-old colt and filly of 2026!</strong> G1 Woody Stephens and G1 Allen Jerkens winner <strong>Englishman's 117 Beyer</strong> is the best for a three-year-old colt since Flightline, and G3 Prioress winner <strong>Mashallah's 106 Beyer</strong> on debut at Keeneland is the highest debut Beyer for a filly in the past 25 years.</li><li><strong>20% Stakes horses from his first-crop starters</strong> - best among all stallions under $250k for the current three-year-old crop.</li><li>2026 yearlings bring $900k, $850k, $600k, $550k, $475k.</li></ul>
         </div>
       </div>
         
@@ -2692,10 +2746,11 @@ footer {
             <span class="info-name">MIDSHIPMAN</span>
             <button class="share-btn" data-slug="midshipman" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$15,000</div>
           </div>
-          <div class="info-fee">$15,000</div>
           <div class="ped-line">Unbridled's Song <span class="ped-dash">—</span> Fleet Lady <span class="ped-paren">(Avenue of Flags)</span></div>
           <div class="info-pills"><span class="info-pill">2006 (20yo)</span><span class="info-pill">16.0½ hh</span><span class="info-pill">Earnings: $1.6M</span><span class="info-pill">Entered stud: 2011</span><span class="info-pill">First crop are 14-year-olds</span></div>
+          <div class="stat-strip"><div class="stat"><b>1,066</b><span>Starters</span></div><div class="stat"><b>838</b><span>Winners</span></div><div class="stat"><b>184</b><span>Stakes horses</span></div><div class="stat"><b>91</b><span>Stakes winners</span></div><div class="stat"><b>33</b><span>Graded SW</span></div><div class="stat"><b>9</b><span>G1 winners</span></div></div>
           
         </div>
       </div>
@@ -2872,7 +2927,7 @@ footer {
             <td class="bold">2027</td>
             <td class="center">17</td>
             <td class="fee-cell">$15,000</td>
-            <td class="center">7</td>
+            <td class="center">8</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -3047,10 +3102,11 @@ footer {
             <span class="info-name">MYSTIC GUIDE</span>
             <button class="share-btn" data-slug="mystic-guide" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$7,500</div>
           </div>
-          <div class="info-fee">$7,500</div>
           <div class="ped-line">Ghostzapper <span class="ped-dash">—</span> Music Note <span class="ped-paren">(A.P. Indy)</span></div>
           <div class="info-pills"><span class="info-pill">2017 (9yo)</span><span class="info-pill">16.2½ hh</span><span class="info-pill">Earnings: $7.6M</span><span class="info-pill">Entered stud: 2023</span><span class="info-pill">First crop are 2yos</span></div>
+          <div class="stat-strip"><div class="stat"><b>31</b><span>Starters</span></div><div class="stat"><b>8</b><span>Winners</span></div></div><div class="stat-strip"><div class="stat rank"><b>22nd</b><span>TDN first-crop sire list by earnings · 23 Oct 2026</span></div></div>
           
         </div>
       </div>
@@ -3062,7 +3118,7 @@ footer {
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <ul class="sp-list"><li><strong>First two-year-olds in 2026</strong></li><li>First juveniles include four-length debut winner <strong>Mystic Ride</strong> for Bob Baffert, a $425k Keeneland September yearling purchase.</li><li><strong>Rated the best in the world</strong> after winning the G1 Dubai World Cup in a faster time than Arrogate and California Chrome. Also won the G2 Jim Dandy at three and took the G3 Razorback by six lengths earning a 108 Beyer.</li><li>Dam is A.P. Indy’s five-time G1-winning daughter Music Note, a half-sister to multiple G1 and Classic winner Musical Chimes from the family of Champion two-year-old filly It’s In The Air and 2,000 Guineas winner Coroebus.</li><li>2026 first-crop juveniles brought $480k, $290k, $210k.</li></ul>
+          <ul class="sp-list"><li><strong>First two-year-olds in 2026</strong></li><li>First juveniles include four-length debut winner <strong>Mystic Ride</strong> for Bob Baffert, a $425k Keeneland September yearling purchase, and 13-length Woodbine MSW winner <strong>Sunday Finery</strong>.</li><li><strong>Rated the best in the world</strong> after winning the G1 Dubai World Cup in a faster time than Arrogate and California Chrome. Also won the G2 Jim Dandy at three and took the G3 Razorback by six lengths earning a 108 Beyer.</li><li>Dam is A.P. Indy’s five-time G1-winning daughter Music Note, a half-sister to multiple G1 and Classic winner Musical Chimes from the family of Champion two-year-old filly It’s In The Air and 2,000 Guineas winner Coroebus.</li><li>2026 first-crop juveniles brought $480k, $290k, $210k.</li></ul>
         </div>
       </div>
         
@@ -3171,6 +3227,12 @@ footer {
                 <div class="age-label">At four</div>
                 <ul class="bullet-list"><li>Won G3 Razorback at Oaklawn by 6 (108 Beyer). Won G1 Dubai World Cup by almost 4 lengths. 2nd G2 Suburban.</li></ul>
               </div></div>
+        </div>
+      </div>
+      <div class="content-block">
+        <h3 class="block-title"><span class="block-icon">🐎</span>Winners &amp; Stakes Horses<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <ul class="progeny-list"><li><strong class="prog-name">SUNDAY FINERY (2f)</strong> <span class="prog-bms">(Uncle Mo)</span>: won MSW by 13 1/2 at WO 9/26 (76). James Bentley Begg.</li><li><strong class="prog-name">SERAPH (2f)</strong> <span class="prog-bms">(Central Banker)</span>: won MSW 10/18; won MSW on debut 6/26. Lim Sung Sil.</li><li><strong class="prog-name">STARFINDER (2f)</strong> <span class="prog-bms">(Pleasantly Perfect)</span>: won MSW at SA 10/2 (69). Peter Miller.</li><li><strong class="prog-name">MYSTIC RIDE (2c)</strong> <span class="prog-bms">(Honor Glide)</span>: won MSW by 4 1/4 on debut at LRC 9/18 (67). Bob Baffert.</li><li><strong class="prog-name">DIVINER (2c)</strong> <span class="prog-bms">(Street Cry)</span>: won MSW at DEL 10/7 (58). Lindsay Schultz.</li><li><strong class="prog-name">C V ATHENA (2f)</strong> <span class="prog-bms">(Maclean's Music)</span>: won MCL at IND 8/22 (28). Kenia Hernandez.</li><li><strong class="prog-name">MYSTIC MISCHIEF (2f)</strong> <span class="prog-bms">(Into Mischief)</span>: won Maiden 9/12. Alejandro Moreno Aparicio.</li><li><strong class="prog-name">VANGUARDIAN (2c)</strong> <span class="prog-bms">(Dominus)</span>: won MSW on debut at BTP 10/8 (40). Michael J. Maker.</li></ul>
         </div>
       </div>
         
@@ -3330,10 +3392,11 @@ footer {
             <span class="info-name">NYQUIST</span>
             <button class="share-btn" data-slug="nyquist" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$225,000</div>
           </div>
-          <div class="info-fee">$225,000</div>
           <div class="ped-line">Uncle Mo <span class="ped-dash">—</span> Seeking Gabrielle <span class="ped-paren">(Forestry)</span></div>
           <div class="info-pills"><span class="info-pill">2013 (13yo)</span><span class="info-pill">16.1½ hh</span><span class="info-pill">Earnings: $5.2M</span><span class="info-pill">Entered stud: 2017</span><span class="info-pill">First crop are 8-year-olds</span></div>
+          <div class="stat-strip"><div class="stat"><b>578</b><span>Starters</span></div><div class="stat"><b>379</b><span>Winners</span></div><div class="stat"><b>98</b><span>Stakes horses</span></div><div class="stat"><b>45</b><span>Stakes winners</span></div><div class="stat"><b>26</b><span>Graded SW</span></div><div class="stat"><b>13</b><span>G1 winners</span></div></div>
           
         </div>
       </div>
@@ -3345,7 +3408,7 @@ footer {
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <ul class="sp-list"><li>13 career G1 winners and 16 career million-dollar yearlings.</li><li>13 G1 juveniles from 7 crops – only Danzig has ever had more.</li><li>Three G1 winners and six G1 horses in 2026 - best among all stallions under $250k. His seven Graded Stakes winners this year include G1 Darley Alcibiades winner <strong>Emphatic</strong>, G1 Met Mile winner <strong>Nysos</strong>, and G1 Pacific Classic winner <strong>Knightsbridge</strong> - whose <strong>122 Beyer</strong> is the highest since Flightline! - plus G2 Fleur de Lis winner <strong>Immersive</strong>, G3 Peter Pan winner <strong>Growth Equity</strong> and G3 Gotham winner <strong>Iron Honor</strong>.</li><li>Eleven $1m+ yearlings in 2026, including a $3.2m session-topper at Saratoga and a $2.25m session-topper at Keeneland!</li></ul>
+          <ul class="sp-list"><li><strong>13 career G1 winners and 16 career million-dollar yearlings.</strong></li><li>13 G1 juveniles from 7 crops – only Danzig has ever had more!</li><li>Three G1 winners and six G1 horses in 2026 - <strong>best among all stallions under $250k</strong>. His seven Graded Stakes winners this year include G1 Darley Alcibiades winner <strong>Emphatic</strong>, G1 Met Mile winner <strong>Nysos</strong>, and G1 Pacific Classic winner <strong>Knightsbridge</strong> - whose <strong>122 Beyer</strong> is the highest since Flightline! - plus G2 Fleur de Lis winner <strong>Immersive</strong>, G3 Peter Pan winner <strong>Growth Equity</strong> and G3 Gotham winner <strong>Iron Honor</strong>.</li><li><strong>Eleven $1m+ yearlings in 2026</strong>, including a $3.2m session-topper at Saratoga and a $2.25m session-topper at Keeneland!</li></ul>
         </div>
       </div>
         
@@ -3510,7 +3573,7 @@ footer {
             <td class="bold">2027</td>
             <td class="center">11</td>
             <td class="fee-cell">$225,000</td>
-            <td class="center">133</td>
+            <td class="center">135</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -3689,10 +3752,11 @@ footer {
             <span class="info-name">PROXY</span>
             <button class="share-btn" data-slug="proxy" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$7,500</div>
           </div>
-          <div class="info-fee">$7,500</div>
           <div class="ped-line">Tapit <span class="ped-dash">—</span> Panty Raid <span class="ped-paren">(Include)</span></div>
           <div class="info-pills"><span class="info-pill">2018 (8yo)</span><span class="info-pill">16.3 hh</span><span class="info-pill">Earnings: $2.8M</span><span class="info-pill">Entered stud: 2024</span><span class="info-pill">First crop are yearlings</span></div>
+          
           
         </div>
       </div>
@@ -3715,7 +3779,7 @@ footer {
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <ul class="sp-list"><li><strong>First juveniles in 2027</strong></li><li>Outstanding good looks and Tapit’s only G1-winning son out of a multiple G1-winning mare.</li><li>Winner of the G1 Clark at Churchill Downs and the $1 million G2 Oaklawn Handicap, plus a fast-closing third in the G1 Breeders’ Cup Classic.</li><li>Won or placed in 11 Graded Stakes, including the G1 Breeders’ Cup Classic, G1 Jockey Club Gold Cup and G1 Santa Anita Handicap,  and <strong>defeated 22 G1 winners</strong> and an additional 23 Graded Stakes winners.</li><li>First yearlings in 2026 bring $160k, $150k, $140k, $140k, $130k, $110k, $100k.</li></ul>
+          <ul class="sp-list"><li><strong>First juveniles in 2027</strong></li><li>Outstanding good looks and <strong>Tapit’s only G1-winning son out of a multiple G1-winning mare.</strong></li><li>Winner of the G1 Clark at Churchill Downs and the $1 million G2 Oaklawn Handicap, plus a fast-closing third in the G1 Breeders’ Cup Classic.</li><li>Won or placed in 11 Graded Stakes, including the G1 Breeders’ Cup Classic, G1 Jockey Club Gold Cup and G1 Santa Anita Handicap,  and <strong>defeated 22 G1 winners</strong> and an additional 23 Graded Stakes winners.</li><li>First yearlings in 2026 bring $160k, $150k, $140k, $140k, $130k, $110k, $100k.</li></ul>
         </div>
       </div>
         
@@ -3966,10 +4030,11 @@ footer {
             <span class="info-name">SOVEREIGNTY</span>
             <button class="share-btn" data-slug="sovereignty" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">TBD</div>
           </div>
-          <div class="info-fee">TBD</div>
           <div class="ped-line">Into Mischief <span class="ped-dash">—</span> Crowned <span class="ped-paren">(Bernardini)</span></div>
-          <div class="info-pills"><span class="info-pill">2022 (4yo)</span><span class="info-pill">Earnings: $6.9M</span><span class="info-pill">Entered stud: 2027</span><span class="info-pill">Enters stud 2027 — NEW</span></div>
+          <div class="info-pills"><span class="info-pill">2022 (4yo)</span><span class="info-pill">16.3 hh</span><span class="info-pill">Earnings: $6.9M</span><span class="info-pill">Entered stud: 2027</span><span class="info-pill">Enters stud 2027 — NEW</span></div>
+          
           
         </div>
       </div>
@@ -4006,7 +4071,7 @@ footer {
             <td class="bold">2027</td>
             <td class="center">1</td>
             <td class="fee-cell"></td>
-            <td class="center">84</td>
+            <td class="center">89</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -4117,10 +4182,11 @@ footer {
             <span class="info-name">SPEAKER'S CORNER</span>
             <button class="share-btn" data-slug="speaker-s-corner" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">TBD</div>
           </div>
-          <div class="info-fee">TBD</div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Tyburn Brook <span class="ped-paren">(Bernardini)</span></div>
           <div class="info-pills"><span class="info-pill">2018 (8yo)</span><span class="info-pill">16.1½ hh</span><span class="info-pill">Earnings: $740k</span><span class="info-pill">Entered stud: 2023</span><span class="info-pill">First crop are 2yos</span></div>
+          <div class="stat-strip"><div class="stat"><b>36</b><span>Starters</span></div><div class="stat"><b>4</b><span>Winners</span></div><div class="stat"><b>3</b><span>Stakes horses</span></div><div class="stat"><b>2</b><span>Stakes winners</span></div><div class="stat"><b>1</b><span>Graded SW</span></div></div><div class="stat-strip"><div class="stat rank"><b>16th</b><span>TDN first-crop sire list by earnings · 23 Oct 2026</span></div></div>
           
         </div>
       </div>
@@ -4132,7 +4198,7 @@ footer {
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <ul class="sp-list"><li><strong>First two-year-olds in 2026</strong></li><li>First-crop two-year-olds include seven-length G2 Oak Leaf winner <strong>Domain Expansion</strong>, five-length Schuylerville winner and G1 Spinaway runner-up <strong>Harper's Corner</strong>, and G3-placed <strong>Speaker's Speech</strong>.</li><li><strong>His 10% Graded horses from runners is the best among all Kentucky stallions!</strong></li><li>Only Life Is Good can top his <strong>three Graded Stakes juveniles</strong> this year.</li><li>The fastest ever by sire of sires Street Sense. Earned a <strong>114 Beyer</strong> in the G1 Carter – in the past six years only his G1-winning half-brother <strong>Knightsbridge</strong>, along with Sovereignty, Flightline, and Englishman have run faster.</li><li>His seven career triple-digit Beyers include a <strong>109</strong> at three. Broke his maiden in an especially hot Belmont MSW at two, beating five future Stakes winners.</li><li><strong>First juveniles in 2026 bring $875k, $650k, $500k, $425k!</strong></li></ul>
+          <ul class="sp-list"><li><strong>First two-year-olds in 2026</strong></li><li>First-crop two-year-olds include seven-length G2 Oak Leaf winner <strong>Domain Expansion</strong>, five-length Schuylerville winner and G1 Spinaway runner-up <strong>Harper's Corner</strong>, and G3-placed <strong>Speaker's Speech</strong>.</li><li>His <strong>9% Graded Stakes juveniles from runners</strong> is the best among all Kentucky stallions! Only Life Is Good can top his <strong>three Graded Stakes juveniles</strong> this year.</li><li>The fastest ever by sire of sires Street Sense. Earned a <strong>114 Beyer</strong> in the G1 Carter – in the past six years only his G1-winning half-brother <strong>Knightsbridge</strong>, along with Sovereignty, Flightline, and Englishman have run faster. His seven career triple-digit Beyers include a <strong>109</strong> at three.</li><li><strong>First juveniles in 2026 bring $875k, $650k, $500k, $425k!</strong></li></ul>
         </div>
       </div>
         
@@ -4213,7 +4279,7 @@ footer {
             <td class="bold">2027</td>
             <td class="center">5</td>
             <td class="fee-cell"></td>
-            <td class="center">7</td>
+            <td class="center">9</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -4248,9 +4314,9 @@ footer {
         </div>
       </div>
       <div class="content-block">
-        <h3 class="block-title"><span class="block-icon">🐎</span>Current Top Runners<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">🐎</span>Winners &amp; Stakes Horses<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <ul class="progeny-list"><li><strong class="prog-name">HARPER'S CORNER (2f)</strong> <span class="prog-bms">(Speightstown)</span>: 2nd G1 Spinaway S. at SAR 9/5 (87); won Schuylerville S. by 5 1/4 at SAR 7/3 (88); won MSW by 7 3/4 on debut at LRL 6/12 (56).</li><li><strong class="prog-name">DOMAIN EXPANSION (2f)</strong> <span class="prog-bms">(Medaglia d'Oro)</span>: won G2 Oak Leaf S. by 7 at SA 10/3 (88). Leonard Powell.</li></ul>
+          <ul class="progeny-list"><li><strong class="prog-name">HARPER'S CORNER (2f)</strong> <span class="prog-bms">(Speightstown)</span>: 2nd G1 Spinaway S. at SAR 9/5 (87); won Schuylerville S. by 5 1/4 at SAR 7/3 (88); won MSW by 7 3/4 on debut at LRL 6/12 (56).</li><li><strong class="prog-name">DOMAIN EXPANSION (2f)</strong> <span class="prog-bms">(Medaglia d'Oro)</span>: won G2 Oak Leaf S. by 7 at SA 10/3 (88). Leonard Powell.</li><li><strong class="prog-name">SPEAKER'S SPEECH (2c)</strong> <span class="prog-bms">(Summer Bird)</span>: 3rd G3 Algonquin S. at WO 10/3 (66); 2nd by a head Listed Soaring Free S. at WO 8/15 (59). Mark E. Casse.</li><li><strong class="prog-name">CHIQUEADA (2f)</strong> <span class="prog-bms">(Elusive Quality)</span>: won MCL by 5 1/4 at IND 8/13 (60). John Ennis.</li><li><strong class="prog-name">IMMIGRANT SON (2c)</strong> <span class="prog-bms">(Discreetly Mine)</span>: won MSW on debut at BTP 7/10 (30). Rey Hernandez.</li></ul>
         </div>
       </div>
         
@@ -4410,10 +4476,11 @@ footer {
             <span class="info-name">STREET SENSE</span>
             <button class="share-btn" data-slug="street-sense" title="Copy link">🔗</button>
             <button class="share-btn hdr-print-btn" onclick="printCard(this)" title="Print">🖨️</button>
+            <div class="info-fee">$35,000</div>
           </div>
-          <div class="info-fee">$35,000</div>
           <div class="ped-line">Street Cry <span class="ped-dash">—</span> Bedazzle <span class="ped-paren">(Dixieland Band)</span></div>
           <div class="info-pills"><span class="info-pill">2004 (22yo)</span><span class="info-pill">16.3 hh</span><span class="info-pill">Earnings: $4.4M</span><span class="info-pill">Entered stud: 2008</span><span class="info-pill">First crop are 17-year-olds</span></div>
+          <div class="stat-strip"><div class="stat"><b>1,473</b><span>Starters</span></div><div class="stat"><b>1,036</b><span>Winners</span></div><div class="stat"><b>189</b><span>Stakes horses</span></div><div class="stat"><b>109</b><span>Stakes winners</span></div><div class="stat"><b>47</b><span>Graded SW</span></div><div class="stat"><b>13</b><span>G1 winners</span></div></div>
           
         </div>
       </div>
@@ -4425,7 +4492,7 @@ footer {
       <div class="content-block sp-block">
         <h3 class="block-title"><span class="block-icon">⭐</span>Facts & Stats<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <ul class="sp-list"><li>Thirteen career G1 winners including four stallion sons in Kentucky: sophomore sensation <strong>Maxfield</strong>, exciting young sires <strong>McKinzie</strong> and <strong>Speaker’s Corner</strong>, and multiple Graded Stakes winner <strong>First Mission</strong>.</li><li>Recent top performers include G2 Rachel Alexandra winner <strong>Bella Ballerina</strong>, G2 Canadian Stakes winner <strong>Proctor Street</strong>, Fair Grounds <strong>TDN Rising Star Not to Worry</strong>, G1 Ashland and G1 Acorn winner <strong>La Cara</strong>, $1.25m G2 Oaklawn Handicap winner <strong>First Mission</strong> (109 Beyer!), G3 Selene Stakes winner <strong>Serendipity</strong>, $1m Kentucky Downs Juvenile Mile winner <strong>Street Beast</strong>.</li><li>2026 yearlings bring $625k, $500k, $400k.</li></ul>
+          <ul class="sp-list"><li><strong>Thirteen career G1 winners</strong> including four stallion sons in Kentucky: sophomore sensation <strong>Maxfield</strong>, exciting young sires <strong>McKinzie</strong> and <strong>Speaker’s Corner</strong>, and multiple Graded Stakes winner <strong>First Mission</strong>.</li><li>Recent top performers include G2 Rachel Alexandra winner <strong>Bella Ballerina</strong>, G2 Canadian Stakes winner <strong>Proctor Street</strong>, Fair Grounds <strong>TDN Rising Star Not to Worry</strong>, G1 Ashland and G1 Acorn winner <strong>La Cara</strong>, $1.25m G2 Oaklawn Handicap winner <strong>First Mission</strong> (109 Beyer!), G3 Selene Stakes winner <strong>Serendipity</strong>, $1m Kentucky Downs Juvenile Mile winner <strong>Street Beast</strong>.</li><li>2026 yearlings bring $625k, $500k, $400k.</li></ul>
         </div>
       </div>
         

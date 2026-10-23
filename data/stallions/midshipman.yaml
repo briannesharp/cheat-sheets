@@ -51,3 +51,11 @@ auto_bullets:
 - '1 Graded Stakes winner in 2026: PRIMER VALS.'
 - 2026 2yos in training bring $270k.
 - 2026 yearlings bring $200k, $200k, $170k, $140k.
+auto_stats:
+  starters: 1066
+  winners: 838
+  stakes_horses: 184
+  stakes_winners: 91
+  graded_sw: 33
+  g1_winners: 9
+  freshman: false

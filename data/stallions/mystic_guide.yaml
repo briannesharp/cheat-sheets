@@ -28,3 +28,54 @@ career:
 auto_bullets:
 - 2026 2yos in training bring $480k, $290k, $210k, $150k, $100k.
 - 2025 yearlings bring $425k, $300k, $245k, $210k, $180k, $150k, $150k, $150k, $140k, $140k.
+auto_stats:
+  starters: 31
+  winners: 8
+  stakes_horses: 0
+  stakes_winners: 0
+  graded_sw: 0
+  g1_winners: 0
+  freshman: true
+  tdn_rank: 22
+  tdn_rank_date: '2026-10-23'
+progeny:
+- horse: SUNDAY FINERY (2f)
+  auto: won MSW by 13 1/2 at WO 9/26 (76).
+  note: James Bentley Begg.
+  rule: freshman
+  bms: Uncle Mo
+- horse: SERAPH (2f)
+  auto: won MSW 10/18; won MSW on debut 6/26.
+  note: Lim Sung Sil.
+  rule: freshman
+  bms: Central Banker
+- horse: STARFINDER (2f)
+  auto: won MSW at SA 10/2 (69).
+  note: Peter Miller.
+  rule: freshman
+  bms: Pleasantly Perfect
+- horse: MYSTIC RIDE (2c)
+  auto: won MSW by 4 1/4 on debut at LRC 9/18 (67).
+  note: Bob Baffert.
+  rule: freshman
+  bms: Honor Glide
+- horse: DIVINER (2c)
+  auto: won MSW at DEL 10/7 (58).
+  note: Lindsay Schultz.
+  rule: freshman
+  bms: Street Cry
+- horse: C V ATHENA (2f)
+  auto: won MCL at IND 8/22 (28).
+  note: Kenia Hernandez.
+  rule: freshman
+  bms: Maclean's Music
+- horse: MYSTIC MISCHIEF (2f)
+  auto: won Maiden 9/12.
+  note: Alejandro Moreno Aparicio.
+  rule: freshman
+  bms: Into Mischief
+- horse: VANGUARDIAN (2c)
+  auto: won MSW on debut at BTP 10/8 (40).
+  note: Michael J. Maker.
+  rule: freshman
+  bms: Dominus

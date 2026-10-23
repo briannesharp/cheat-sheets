@@ -36,6 +36,18 @@ progeny:                       # "Current Top Runners" — machine-maintained
     note: 106 Ky Derby points. # yours — the machine never touches note
     bms: Tapit                 # broodmare sire — filled in once by the machine
                                #   from the database; edit it if it's wrong
+    rule: freshman             # machine-set on entries added under the
+                               #   freshman rule (see below); leave it alone
+auto_stats:                    # machine-maintained, rewritten every run:
+  starters: 36                 #   lifetime progeny counts, all countries,
+  winners: 4                   #   shown as the row of figures under the
+  stakes_horses: 3             #   profile (a zero is not shown)
+  stakes_winners: 2
+  graded_sw: 1
+  g1_winners: 0
+  freshman: true               #   oldest crop are 2yos this year
+  tdn_rank: 16                 #   freshmen only: rank on TDN's first-crop
+  tdn_rank_date: '2026-10-23'  #   sire list by earnings, and when it was read
 ```
 
 ## Rules of thumb
@@ -50,6 +62,15 @@ progeny:                       # "Current Top Runners" — machine-maintained
 - An entry with an **empty note** disappears automatically once its newest
   result is older than 180 days. An entry **with a note** stays until you
   delete it.
+- **Freshman sires** (oldest crop are two-year-olds): the list holds *every*
+  winner and every stakes-placed horse, titled "Winners & Stakes Horses",
+  in the order stakes winners, stakes-placed, winners by earnings. The
+  machine keeps that order, so moving a freshman's entry by hand does not
+  stick. Those entries carry `rule: freshman`; from the year the crop turns
+  three they drop off 180 days after their last result even with the
+  trainer note the machine wrote, unless you changed the note.
+- `auto_stats` is rewritten every run from the database and TDN; do not
+  edit it. A stallion with no runners shows no figures.
 - To reject a result the machine added, delete its clause from `auto` — the
   seen-log stops it coming back. To reject a horse's entry entirely, delete
   the whole entry (his *next* new result will recreate it, though).

@@ -64,3 +64,11 @@ auto_bullets:
 - 2026 2yos in training bring $575k, $250k, $240k, $170k, $117k.
 - 2026 yearlings bring $400k, $300k, $200k, $185k, $180k, $170k, $150k, $135k, $125k, $110k.
 - 2026 weanlings bring $130k.
+auto_stats:
+  starters: 1807
+  winners: 1264
+  stakes_horses: 229
+  stakes_winners: 116
+  graded_sw: 58
+  g1_winners: 15
+  freshman: false
