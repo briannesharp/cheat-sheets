@@ -59,16 +59,16 @@ auto_stats:                    # machine-maintained, rewritten every run:
 - **Broodmare sire (`bms`)** shows in parentheses after the horse's name and
   age/sex, e.g. `THE PUMA (3c) (Tapit)`. The machine fills it in only when it's blank, so if the database
   has the wrong dam you can correct it here and it stays corrected.
-- An entry with an **empty note** disappears automatically once its newest
-  result is older than 180 days. An entry **with a note** stays until you
-  delete it.
+- A machine entry disappears automatically once its newest result is older
+  than 180 days, and its note goes with it. To keep a horse longer, write
+  him as a plain one-line string (the old hand-written form): the machine
+  never touches those.
 - **Freshman sires** (oldest crop are two-year-olds): the list holds *every*
   winner and every stakes-placed horse, titled "Winners & Stakes Horses",
   in the order stakes winners, stakes-placed, winners by earnings. The
   machine keeps that order, so moving a freshman's entry by hand does not
   stick. Those entries carry `rule: freshman`; from the year the crop turns
-  three they drop off 180 days after their last result even with the
-  trainer note the machine wrote, unless you changed the note.
+  three they drop off 180 days after their last result like any other.
 - `auto_stats` is rewritten every run from the database and TDN; do not
   edit it. A stallion with no runners shows no figures.
 - To reject a result the machine added, delete its clause from `auto` — the
