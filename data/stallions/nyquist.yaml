@@ -75,6 +75,10 @@ progeny:
   auto: won Listed Display S. by 5 3/4 at WO 10/11 (80).
   note: Mark E. Casse.
   bms: Divine Park
+- horse: CASH BURN (2f)
+  auto: won Maid of the Mist S. at BEL 10/24 (72).
+  note: Chad C. Brown.
+  bms: Violence
 auto_bullets:
 - '13 G1 winners (NH): ARGOS, CAVALIERI, EMPHATIC, GRETZKY THE GREAT, IMMERSIVE, JOHANNES, KNIGHTSBRIDGE, NYSOS, RANDOMIZED, SLOW DOWN ANDY, TENMA, VELOCITY, VEQUIST.'
 - '7 Graded Stakes winners in 2026: DAVID OF ATHENS, EMPHATIC, GROWTH EQUITY, IMMERSIVE, IRON HONOR, KNIGHTSBRIDGE, NYSOS.'
@@ -84,8 +88,8 @@ auto_bullets:
 auto_stats:
   starters: 578
   winners: 379
-  stakes_horses: 98
-  stakes_winners: 45
+  stakes_horses: 100
+  stakes_winners: 46
   graded_sw: 26
   g1_winners: 13
   freshman: false
