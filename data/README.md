@@ -38,7 +38,7 @@ progeny:                       # "Current Top Runners" — machine-maintained
                                #   from the database; edit it if it's wrong
     rule: freshman             # machine-set on entries added under the
                                #   freshman rule (see below); leave it alone
-    breeder: Bishop Racing     # freshman sires only, machine-filled once;
+    breeder: Bishop Racing     # machine-filled once from the database;
     sale: $70k OBS Spring 2yo (Charles L. Biggs)   #   correct by hand if wrong
 auto_stats:                    # machine-maintained, rewritten every run:
   starters: 36                 #   lifetime progeny counts, all countries,

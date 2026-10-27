@@ -20,25 +20,33 @@ progeny:
   auto: won G2 Nearctic S. at WO 10/3 (100); won AOC at GP 5/30 (92).
   note: Mark E. Casse.
   bms: War Front
+  breeder: Live Oak Stud
+  sale: ''
 - horse: JUDO (6g)
   auto: won R. J. Speers S. by 5 1/4 at ASD 7/13 (90).
   note: Steve Keplin Jr.
   bms: Tapit
+  breeder: Gary & Mary West Stables Inc.
+  sale: ''
 - horse: PROCTOR STREET (5f)
   auto: won G2 Canadian S. at WO 8/15 (93).
   note: Brendan P. Walsh.
   bms: Ghostzapper
+  breeder: Patricia L. Moseley
+  sale: ''
 - horse: KINETIC (5g)
   auto: won AOC at BEL 9/24 (92).
   note: Ilkay Kantarmaci.
   bms: Bernardini
+  breeder: Godolphin
+  sale: ''
 auto_bullets:
 - "9 G1 winners (NH): AUBBY K, CALLBACK, LA CARA, MAXFIELD, MCKINZIE, SPEAKER'S CORNER, STREET FANCY, SWEET REASON, WEDDING TOAST."
 - 4 G1 winners and 7 GSWs (SH) including DIXIE BLOSSOMS, HALLOWED CROWN, POLITENESS, SENSE OF OCCASION.
 - '3 Graded Stakes winners in 2026: BELLA BALLERINA, PROCTOR STREET, VICTORY ACHIEVED.'
-- 2026 2yos in training bring $275k (Paradise Equine Farm), $200k (Bona Venture Stables), $190k (Crown's Way Racing), $170k.
-- 2026 yearlings bring $625k (Tracy Farmer), $500k (Pin Oak Stud), $400k (Live Oak Plantation), $325k, $275k, $250k, $225k, $190k, $190k, $185k.
-- 2025 weanlings bring $375k (Glen Hill Farm), $335k (Cherry Knoll Farm), $300k (Tracy Farmer), $300k, $260k, $175k, $140k, $125k.
+- 2026 2yos in training bring $275k (Paradise Equine Farm), $200k (Bona Venture Stables), $190k (Crown's Way Racing), $170k (Walsh Racing).
+- 2026 yearlings bring $625k (Tracy Farmer), $500k (Pin Oak Stud), $400k (Live Oak Plantation), $325k (RTM Racing), $275k (R.T. Racing Stable), $250k (Moody Bluegrass), $225k (Joel Politi), $190k (Ben Gowans), $190k (Donegal Racing II), $185k (John McCormack Bloodstock).
+- 2025 weanlings bring $375k (Glen Hill Farm), $335k (Cherry Knoll Farm), $300k (Tracy Farmer), $300k (Goodwill Bloodstock), $260k (KCS Bloodstock), $175k (Paca Paca Farm), $140k (Tropical Racing), $125k (Bourbon Meadows).
 auto_stats:
   starters: 1476
   winners: 1036
