@@ -36,6 +36,11 @@ progeny:
   auto: won G2 Oak Leaf S. by 7 at SA 10/3 (88).
   note: Leonard Powell.
   bms: Medaglia d'Oro
+- horse: KEAYPAMI (2f)
+  auto: won Listed Clasico Ricardo Lau Yunsan 10/24.
+  note: ''
+  rule: freshman
+  bms: Stroll
 - horse: SPEAKER'S SPEECH (2c)
   auto: 3rd G3 Algonquin S. at WO 10/3 (66); 2nd by a head Listed Soaring Free S. at WO 8/15 (59).
   note: Mark E. Casse.
@@ -63,12 +68,12 @@ auto_bullets:
 - 2026 yearlings bring $115k.
 - 2025 weanlings bring $110k, $100k.
 auto_stats:
-  starters: 40
-  winners: 5
-  stakes_horses: 3
-  stakes_winners: 2
+  starters: 41
+  winners: 6
+  stakes_horses: 4
+  stakes_winners: 3
   graded_sw: 1
   g1_winners: 0
   freshman: true
-  tdn_rank: 15
-  tdn_rank_date: '2026-10-26'
+  tdn_rank: 16
+  tdn_rank_date: '2026-10-27'
