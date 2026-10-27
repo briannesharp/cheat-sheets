@@ -16,6 +16,7 @@ general:
 more_selling_points:
 - Named TDN Gold Medal Value Sire for 2026.
 - 21 Black Type horses in 2025 - more than any other stallion under $45k - including Graded Stakes winners Pondering, Gas Me Up and Elysian Field.
+- '2026 yearlings sold for up to $400k: Johnny Johnny to Centennial Farms at Saratoga, Little Spunshine $300k to IJJ Racing, a $200k colt to MWG and a $180k colt to Gary Barber. His $575k OBS Spring 2yo went to Lael Stable.'
 progeny:
 - horse: MOON SPUN (5f)
   auto: won Ladies' Turf Sprint S. at GP 2/7 (99); won 5.5f turf G2 Unbridled Sidney at CD 5/1 (98).
@@ -57,9 +58,9 @@ auto_bullets:
 - '12 G1 winners (NH): ALOHA WEST, HARD ACES, HARD NOT TO LIKE, HARD NOT TO LOVE, HARDEST CORE, OUT FOR A SPIN, QUESTING, SILVER STATE, SMOOTH ROLLER, SPUN TO RUN, WICKED STRONG, ZO IMPRESSIVE.'
 - 3 G1 winners and 11 GSWs (SH) including ERTIJAAL, GATTING, LE ROMAIN.
 - '5 Graded Stakes winners in 2026: BOLD JOURNEY, BUILT, GAS ME UP, MOON SPUN, RUNAWAY AGAIN.'
-- 2026 2yos in training bring $575k, $250k, $240k, $170k, $117k.
-- 2026 yearlings bring $400k, $300k, $200k, $185k, $180k, $170k, $150k, $135k, $125k, $110k.
-- 2026 weanlings bring $130k.
+- 2026 2yos in training bring $575k (Lael Stable), $250k (Augustus McRae), $240k (Tim Hoese), $170k, $117k.
+- 2026 yearlings bring $400k (Centennial Farms), $300k (IJJ Racing), $200k (MWG), $185k, $180k, $170k, $150k, $135k, $125k, $110k.
+- 2026 weanlings bring $130k (Florida Pinhookers).
 auto_stats:
   starters: 1808
   winners: 1265
@@ -67,4 +68,5 @@ auto_stats:
   stakes_winners: 116
   graded_sw: 58
   g1_winners: 15
+  two_yo_winners: 11
   freshman: false

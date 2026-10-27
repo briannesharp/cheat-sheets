@@ -32,41 +32,55 @@ progeny:
   auto: 2nd G1 Spinaway S. at SAR 9/5 (87); won Schuylerville S. by 5 1/4 at SAR 7/3 (88); won MSW by 7 3/4 on debut at LRL 6/12 (56).
   note: ''
   bms: Speightstown
+  breeder: Bishop Racing, Inc.
+  sale: $70k OBS Spring 2yo (Charles L. Biggs)
 - horse: DOMAIN EXPANSION (2f)
   auto: won G2 Oak Leaf S. by 7 at SA 10/3 (88).
   note: Leonard Powell.
   bms: Medaglia d'Oro
+  breeder: Machmer Hall, Carrie Brogden & Craig Brogden
+  sale: $130k KeeSep (Sevenattributes.com)
 - horse: KEAYPAMI (2f)
   auto: won Listed Clasico Ricardo Lau Yunsan 10/24.
   note: ''
   rule: freshman
   bms: Stroll
+  breeder: Equine Futures LLC.
+  sale: $40k OBS Spring 2yo (Luis A. Shirley)
 - horse: SPEAKER'S SPEECH (2c)
   auto: 3rd G3 Algonquin S. at WO 10/3 (66); 2nd by a head Listed Soaring Free S. at WO 8/15 (59).
   note: Mark E. Casse.
   rule: freshman
   bms: Summer Bird
+  breeder: Tommy Wente Jr. & Scott Stephens
+  sale: $875k OBS Spring 2yo (Lauren Carlisle)
 - horse: CHIQUEADA (2f)
   auto: won MCL by 5 1/4 at IND 8/13 (60).
   note: John Ennis.
   rule: freshman
   bms: Elusive Quality
+  breeder: Rose Hill Farm
+  sale: ''
 - horse: SENTI LA VOCE (2c)
   auto: won MSW on debut at GP 10/23 (72).
   note: Saffie A. Joseph Jr.
   rule: freshman
   bms: Archarcharch
+  breeder: Machmer Hall
+  sale: $425k FT Gulfstream 2yo (Saffie Joseph Jr.)
 - horse: IMMIGRANT SON (2c)
   auto: won MSW on debut at BTP 7/10 (30).
   note: Rey Hernandez.
   rule: freshman
   bms: Discreetly Mine
+  breeder: Linda B Roach, Robert Fetkin & Small Batch Thoroughbreds
+  sale: ''
 auto_bullets:
 - '1 Graded Stakes winner (NH): DOMAIN EXPANSION.'
 - '1 Graded Stakes winner in 2026: DOMAIN EXPANSION.'
-- 2026 2yos in training bring $875k, $650k, $500k, $425k, $270k, $250k, $210k, $170k, $165k, $160k.
-- 2026 yearlings bring $115k.
-- 2025 weanlings bring $110k, $100k.
+- 2026 2yos in training bring $875k (Lauren Carlisle), $650k (Breeze Easy), $500k (Flanagan Racing), $425k, $270k, $250k, $210k, $170k, $165k, $160k.
+- 2026 yearlings bring $115k (Canuck Racing Club).
+- 2025 weanlings bring $110k (Sabby Racing), $100k (Faris Breeding).
 auto_stats:
   starters: 41
   winners: 6
@@ -74,6 +88,8 @@ auto_stats:
   stakes_winners: 3
   graded_sw: 1
   g1_winners: 0
+  two_yo_winners: 6
   freshman: true
+  tdn_list: first-crop
   tdn_rank: 16
   tdn_rank_date: '2026-10-27'

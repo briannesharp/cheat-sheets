@@ -26,8 +26,8 @@ career:
     items:
     - TDN Rising Star winning by 5 at Fair Grounds in March. Won G2 Jim Dandy. 2nd G1 Jockey Club Gold Cup.
 auto_bullets:
-- 2026 2yos in training bring $480k, $290k, $210k, $150k, $100k.
-- 2025 yearlings bring $425k, $300k, $245k, $210k, $180k, $150k, $150k, $150k, $140k, $140k.
+- 2026 2yos in training bring $480k (Novogratz Racing Stables), $290k (Marquee Bloodstock), $210k (Willis Horton Racing), $150k, $100k.
+- 2025 yearlings bring $425k (The Three Amigos), $300k (Champions Farm), $245k (Legion Bloodstock), $210k, $180k, $150k, $150k, $150k, $140k, $140k.
 auto_stats:
   starters: 33
   winners: 8
@@ -35,7 +35,9 @@ auto_stats:
   stakes_winners: 0
   graded_sw: 0
   g1_winners: 0
+  two_yo_winners: 8
   freshman: true
+  tdn_list: first-crop
   tdn_rank: 22
   tdn_rank_date: '2026-10-27'
 progeny:
@@ -44,38 +46,54 @@ progeny:
   note: James Bentley Begg.
   rule: freshman
   bms: Uncle Mo
+  breeder: Bernard & Karen McCormack
+  sale: $90k FT Gulfstream 2yo (Begg Racing)
 - horse: SERAPH (2f)
   auto: won MSW 10/18; won MSW on debut 6/26.
   note: Lim Sung Sil.
   rule: freshman
   bms: Central Banker
+  breeder: Lee Kwang Lim
+  sale: ''
 - horse: STARFINDER (2f)
   auto: won MSW at SA 10/2 (69).
   note: Peter Miller.
   rule: freshman
   bms: Pleasantly Perfect
+  breeder: Tabitha Lee
+  sale: $30k OBS March 2yo (Peter Miller)
 - horse: MYSTIC RIDE (2c)
   auto: won MSW by 4 1/4 on debut at LRC 9/18 (67).
   note: Bob Baffert.
   rule: freshman
   bms: Honor Glide
+  breeder: Bonnie Heath Farm
+  sale: $425k KeeSep (The Three Amigos)
 - horse: DIVINER (2c)
   auto: won MSW at DEL 10/7 (58).
   note: Lindsay Schultz.
   rule: freshman
   bms: Street Cry
+  breeder: Iconic Thoroughbreds, LLC
+  sale: ''
 - horse: C V ATHENA (2f)
   auto: won MCL at IND 8/22 (28).
   note: Kenia Hernandez.
   rule: freshman
   bms: Maclean's Music
+  breeder: Delia Nash & Jun Park
+  sale: ''
 - horse: MYSTIC MISCHIEF (2f)
   auto: won Maiden 9/12.
   note: Alejandro Moreno Aparicio.
   rule: freshman
   bms: Into Mischief
+  breeder: Porta Pia Stables LLC
+  sale: $9k KeeSep (Arcadio Escamilla)
 - horse: VANGUARDIAN (2c)
   auto: won MSW on debut at BTP 10/8 (40).
   note: Michael J. Maker.
   rule: freshman
   bms: Dominus
+  breeder: Clifton Farm, LLC
+  sale: $25k KeeNov (Peak Thoroughbreds)

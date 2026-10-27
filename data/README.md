@@ -38,6 +38,8 @@ progeny:                       # "Current Top Runners" — machine-maintained
                                #   from the database; edit it if it's wrong
     rule: freshman             # machine-set on entries added under the
                                #   freshman rule (see below); leave it alone
+    breeder: Bishop Racing     # freshman sires only, machine-filled once;
+    sale: $70k OBS Spring 2yo (Charles L. Biggs)   #   correct by hand if wrong
 auto_stats:                    # machine-maintained, rewritten every run:
   starters: 36                 #   lifetime progeny counts, all countries,
   winners: 4                   #   shown as the row of figures under the
@@ -45,9 +47,11 @@ auto_stats:                    # machine-maintained, rewritten every run:
   stakes_winners: 2
   graded_sw: 1
   g1_winners: 0
+  two_yo_winners: 4            #   this year's two-year-old winners
   freshman: true               #   oldest crop are 2yos this year
-  tdn_rank: 16                 #   freshmen only: rank on TDN's first-crop
-  tdn_rank_date: '2026-10-23'  #   sire list by earnings, and when it was read
+  tdn_list: first-crop         #   freshmen and second-crop sires only: which
+  tdn_rank: 16                 #   TDN list (by earnings), the rank, and
+  tdn_rank_date: '2026-10-23'  #   when it was read
 ```
 
 ## Rules of thumb

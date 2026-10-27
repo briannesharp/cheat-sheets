@@ -82,9 +82,9 @@ progeny:
 auto_bullets:
 - '13 G1 winners (NH): ARGOS, CAVALIERI, EMPHATIC, GRETZKY THE GREAT, IMMERSIVE, JOHANNES, KNIGHTSBRIDGE, NYSOS, RANDOMIZED, SLOW DOWN ANDY, TENMA, VELOCITY, VEQUIST.'
 - '7 Graded Stakes winners in 2026: DAVID OF ATHENS, EMPHATIC, GROWTH EQUITY, IMMERSIVE, IRON HONOR, KNIGHTSBRIDGE, NYSOS.'
-- 2026 2yos in training bring $2m, $1.2m, $700k, $425k, $400k, $400k, $385k, $220k, $170k, $100k.
-- 2026 yearlings bring $3.2m, $2.25m, $2m, $1.75m, $1.6m, $1.38m, $1.2m, $1.2m, $1.2m, $1m.
-- 2025 weanlings bring $750k, $600k, $525k, $325k.
+- 2026 2yos in training bring $2m (Boyd Racing), $1.2m (Morplay Racing/Marquee Bloodstock), $700k (Case Clay Thoroughbred Management), $425k, $400k, $400k, $385k, $220k, $170k, $100k.
+- 2026 yearlings bring $3.2m (Boyd Racing), $2.25m (Alex & JoAnn Lieblong), $2m (St. Elias Stable/West Point Thoroughbreds/Lane's End Racing/Belladonna Racing), $1.75m, $1.6m, $1.38m, $1.2m, $1.2m, $1.2m, $1m.
+- 2025 weanlings bring $750k (MWG), $600k (Clover Leaf Bloodstock), $525k (En Fuego), $325k.
 auto_stats:
   starters: 578
   winners: 379
@@ -92,4 +92,5 @@ auto_stats:
   stakes_winners: 46
   graded_sw: 26
   g1_winners: 13
+  two_yo_winners: 6
   freshman: false

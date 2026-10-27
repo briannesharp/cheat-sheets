@@ -13,6 +13,8 @@ general:
 - Won the G1 BC Juvenile, G1 Kentucky Derby, G1 Travers, G2 Jim Dandy, G3 Tampa Bay Derby. First ever to win both the BC Juvenile and the Derby.
 - Ran 8 triple-digit Beyers including 111, 110, 108 (×2). On the board in 12 of 13 starts.
 more_selling_points:
+- 'As a broodmare sire: 60 stakes winners, 29 graded winners and 5 G1 winners, including Cartier Horse of the Year Roaring Lion, Kentucky Oaks winner Good Cheer and Mindframe.'
+- "Sire of sires: McKinzie has four G1 winners from his first two crops (Hymn, Baeza, Scottish Lassie, Chancer McPatrick); roster-mates Maxfield (G1 winner Englishman), Speaker's Corner and First Mission are all his sons; Hallowed Crown has G1 winner Colette in Australia."
 progeny:
 - horse: VICTORY ACHIEVED (5g)
   auto: won G2 Nearctic S. at WO 10/3 (100); won AOC at GP 5/30 (92).
@@ -34,9 +36,9 @@ auto_bullets:
 - "9 G1 winners (NH): AUBBY K, CALLBACK, LA CARA, MAXFIELD, MCKINZIE, SPEAKER'S CORNER, STREET FANCY, SWEET REASON, WEDDING TOAST."
 - 4 G1 winners and 7 GSWs (SH) including DIXIE BLOSSOMS, HALLOWED CROWN, POLITENESS, SENSE OF OCCASION.
 - '3 Graded Stakes winners in 2026: BELLA BALLERINA, PROCTOR STREET, VICTORY ACHIEVED.'
-- 2026 2yos in training bring $275k, $200k, $190k, $170k.
-- 2026 yearlings bring $625k, $500k, $400k, $325k, $275k, $250k, $225k, $190k, $190k, $185k.
-- 2025 weanlings bring $375k, $335k, $300k, $300k, $260k, $175k, $140k, $125k.
+- 2026 2yos in training bring $275k (Paradise Equine Farm), $200k (Bona Venture Stables), $190k (Crown's Way Racing), $170k.
+- 2026 yearlings bring $625k (Tracy Farmer), $500k (Pin Oak Stud), $400k (Live Oak Plantation), $325k, $275k, $250k, $225k, $190k, $190k, $185k.
+- 2025 weanlings bring $375k (Glen Hill Farm), $335k (Cherry Knoll Farm), $300k (Tracy Farmer), $300k, $260k, $175k, $140k, $125k.
 auto_stats:
   starters: 1476
   winners: 1036
@@ -44,4 +46,5 @@ auto_stats:
   stakes_winners: 109
   graded_sw: 47
   g1_winners: 13
+  two_yo_winners: 2
   freshman: false
