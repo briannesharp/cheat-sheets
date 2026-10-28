@@ -20,6 +20,7 @@ config.py
 # Cached images and data (regenerated automatically)
 img_cache/
 cache.json
+bc_entries_last_good.json
 
 # update_progeny.py state — races already drafted (local only)
 progeny_seen.json
