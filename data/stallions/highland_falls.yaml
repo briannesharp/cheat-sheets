@@ -36,3 +36,10 @@ auto_stats:
   g1_winners: 0
   two_yo_winners: 0
   freshman: false
+  own:
+    starts: 13
+    wins: 6
+    g1_wins: 1
+    graded_wins: 2
+    best_beyer: 107
+    beyers_100: 4

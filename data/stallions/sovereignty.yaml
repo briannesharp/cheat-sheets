@@ -39,3 +39,12 @@ auto_stats:
   g1_winners: 0
   two_yo_winners: 0
   freshman: false
+  own:
+    starts: 12
+    wins: 7
+    g1_wins: 4
+    graded_wins: 7
+    best_beyer: 115
+    beyers_100: 7
+    champion_year: 2025
+    champion_title: Horse of the Year

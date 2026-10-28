@@ -43,3 +43,12 @@ auto_stats:
   g1_winners: 0
   two_yo_winners: 0
   freshman: false
+  own:
+    starts: 16
+    wins: 11
+    g1_wins: 5
+    graded_wins: 7
+    best_beyer: 112
+    beyers_100: 8
+    champion_year: 2023
+    champion_title: Horse of the Year

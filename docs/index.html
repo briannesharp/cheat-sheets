@@ -892,10 +892,12 @@ tbody tr:nth-child(even) { background: #fff; }
 td { border-bottom: 1px solid #eef2f7; }
 
 /* ── Progeny counts under the profile (Kate, 23 Oct 2026) ── */
-.stat-strip { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.stat { background: var(--light); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px 3px; min-width: 64px; }
-.stat b { display: block; font-family: 'Egizio', 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 800; color: var(--blue); line-height: 1.1; }
-.stat span { font-size: 9.5px; color: var(--grey); text-transform: uppercase; letter-spacing: 0.6px; white-space: nowrap; }
+.stat-strip { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.stat { background: var(--light); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px 3px; min-width: 0; }
+.stat b { display: block; font-family: 'Egizio', 'Playfair Display', Georgia, serif; font-size: 17px; font-weight: 800; color: var(--blue); line-height: 1.1; white-space: nowrap; }
+/* labels may break onto a second line inside the tile, so that ten tiles
+   still fit one row (28 Oct 2026) */
+.stat span { display: block; font-size: 9px; color: var(--grey); text-transform: uppercase; letter-spacing: 0.4px; line-height: 1.2; max-width: 9.5em; }
 .stat.rank { border-color: #cc1012; }
 .stat.rank b { color: #cc1012; }
 @media (max-width: 600px) {
@@ -973,7 +975,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Curlin <span class="ped-dash">—</span> Dance Card <span class="ped-paren">(Tapit)</span></div>
           <div class="info-pills"><span class="info-pill">2018 (8yo)</span><span class="info-pill">16.3¾ hh</span><span class="info-pill">Earnings: $3.1M</span><span class="info-pill">Entered stud: 2024</span><span class="info-pill">First crop are yearlings</span></div>
-          
+          <div class="stat-strip"><div class="stat rank"><b>2023</b><span>Horse of the Year</span></div><div class="stat"><b>11</b><span>wins from 16 starts</span></div><div class="stat"><b>5</b><span>G1 wins</span></div><div class="stat"><b>7</b><span>Graded wins</span></div><div class="stat"><b>112</b><span>Best Beyer</span></div><div class="stat"><b>8</b><span>100+ Beyers</span></div><div class="stat"><b>168</b><span>2026 mares</span></div><div class="stat" title="65 sold"><b>$268k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -1246,7 +1248,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Tapit <span class="ped-dash">—</span> Delightful Quality <span class="ped-paren">(Elusive Quality)</span></div>
           <div class="info-pills"><span class="info-pill">2018 (8yo)</span><span class="info-pill">16.2½ hh</span><span class="info-pill">Earnings: $4.9M</span><span class="info-pill">Entered stud: 2022</span><span class="info-pill">First crop are 3-year-olds</span></div>
-          <div class="stat-strip"><div class="stat rank"><b>2nd</b><span>TDN second-crop sires</span></div><div class="stat"><b>130</b><span>Starters</span></div><div class="stat"><b>67</b><span>Winners</span></div><div class="stat"><b>10</b><span>2026 2yo wnrs</span></div><div class="stat"><b>13</b><span>BTH</span></div><div class="stat"><b>9</b><span>BTW</span></div><div class="stat"><b>1</b><span>GSW</span></div><div class="stat"><b>1</b><span>G1W</span></div></div>
+          <div class="stat-strip"><div class="stat rank"><b>2nd</b><span>TDN second-crop sires</span></div><div class="stat"><b>130</b><span>Starters</span></div><div class="stat"><b>67</b><span>Winners</span></div><div class="stat"><b>10</b><span>2026 2yo wnrs</span></div><div class="stat"><b>13</b><span>BTH</span></div><div class="stat"><b>9</b><span>BTW</span></div><div class="stat"><b>1</b><span>GSW</span></div><div class="stat"><b>1</b><span>G1W</span></div><div class="stat"><b>162</b><span>2026 mares</span></div><div class="stat" title="43 sold"><b>$84k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -1560,7 +1562,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Elude <span class="ped-paren">(Medaglia d'Oro)</span></div>
           <div class="info-pills"><span class="info-pill">2020 (6yo)</span><span class="info-pill">16.1½ hh</span><span class="info-pill">Earnings: $2.2M</span><span class="info-pill">Entered stud: 2026</span><span class="info-pill">First foals due 2027</span></div>
-          
+          <div class="stat-strip"><div class="stat"><b>6</b><span>wins from 16 starts</span></div><div class="stat"><b>4</b><span>Graded wins</span></div><div class="stat"><b>109</b><span>Best Beyer</span></div><div class="stat"><b>6</b><span>100+ Beyers</span></div><div class="stat"><b>102</b><span>2026 mares</span></div></div>
           
         </div>
       </div>
@@ -1746,7 +1748,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Danzig <span class="ped-dash">—</span> Turkish Tryst <span class="ped-paren">(Turkoman)</span></div>
           <div class="info-pills"><span class="info-pill">2004 (22yo)</span><span class="info-pill">16.3 hh</span><span class="info-pill">Earnings: $2.7M</span><span class="info-pill">Entered stud: 2008</span><span class="info-pill">First crop are 17-year-olds</span></div>
-          <div class="stat-strip"><div class="stat"><b>1,808</b><span>Starters</span></div><div class="stat"><b>1,265</b><span>Winners</span></div><div class="stat"><b>11</b><span>2026 2yo wnrs</span></div><div class="stat"><b>230</b><span>BTH</span></div><div class="stat"><b>116</b><span>BTW</span></div><div class="stat"><b>58</b><span>GSW</span></div><div class="stat"><b>15</b><span>G1W</span></div></div>
+          <div class="stat-strip"><div class="stat"><b>1,808</b><span>Starters</span></div><div class="stat"><b>1,265</b><span>Winners</span></div><div class="stat"><b>11</b><span>2026 2yo wnrs</span></div><div class="stat"><b>230</b><span>BTH</span></div><div class="stat"><b>116</b><span>BTW</span></div><div class="stat"><b>58</b><span>GSW</span></div><div class="stat"><b>15</b><span>G1W</span></div><div class="stat"><b>76</b><span>2026 mares</span></div><div class="stat" title="43 sold"><b>$67k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -2116,7 +2118,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Curlin <span class="ped-dash">—</span> Round Pond <span class="ped-paren">(Awesome Again)</span></div>
           <div class="info-pills"><span class="info-pill">2020 (6yo)</span><span class="info-pill">16.2 hh</span><span class="info-pill">Earnings: $1.6M</span><span class="info-pill">Entered stud: 2026</span><span class="info-pill">First foals due 2027</span></div>
-          
+          <div class="stat-strip"><div class="stat"><b>6</b><span>wins from 13 starts</span></div><div class="stat"><b>1</b><span>G1 wins</span></div><div class="stat"><b>2</b><span>Graded wins</span></div><div class="stat"><b>107</b><span>Best Beyer</span></div><div class="stat"><b>4</b><span>100+ Beyers</span></div><div class="stat"><b>104</b><span>2026 mares</span></div></div>
           
         </div>
       </div>
@@ -2302,7 +2304,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Nyquist <span class="ped-dash">—</span> Tyburn Brook <span class="ped-paren">(Bernardini)</span></div>
           <div class="info-pills"><span class="info-pill">2021 (5yo)</span><span class="info-pill">16.1 hh</span><span class="info-pill">Earnings: $1.5M</span><span class="info-pill">New for 2027</span></div>
-          
+          <div class="stat-strip"><div class="stat"><b>8</b><span>wins from 12 starts</span></div><div class="stat"><b>1</b><span>G1 wins</span></div><div class="stat"><b>5</b><span>Graded wins</span></div><div class="stat"><b>122</b><span>Best Beyer</span></div><div class="stat"><b>6</b><span>100+ Beyers</span></div></div>
           
         </div>
       </div>
@@ -2333,7 +2335,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">1</td>
             <td class="fee-cell"></td>
-            <td class="center">90</td>
+            <td class="center">91</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -2453,7 +2455,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Velvety <span class="ped-paren">(Bernardini)</span></div>
           <div class="info-pills"><span class="info-pill">2017 (9yo)</span><span class="info-pill">16.3½ hh</span><span class="info-pill">Earnings: $2M</span><span class="info-pill">Entered stud: 2022</span><span class="info-pill">First crop are 3-year-olds</span></div>
-          <div class="stat-strip"><div class="stat rank"><b>4th</b><span>TDN second-crop sires</span></div><div class="stat"><b>118</b><span>Starters</span></div><div class="stat"><b>59</b><span>Winners</span></div><div class="stat"><b>6</b><span>2026 2yo wnrs</span></div><div class="stat"><b>20</b><span>BTH</span></div><div class="stat"><b>8</b><span>BTW</span></div><div class="stat"><b>3</b><span>GSW</span></div><div class="stat"><b>1</b><span>G1W</span></div></div>
+          <div class="stat-strip"><div class="stat rank"><b>4th</b><span>TDN second-crop sires</span></div><div class="stat"><b>118</b><span>Starters</span></div><div class="stat"><b>59</b><span>Winners</span></div><div class="stat"><b>6</b><span>2026 2yo wnrs</span></div><div class="stat"><b>20</b><span>BTH</span></div><div class="stat"><b>8</b><span>BTW</span></div><div class="stat"><b>3</b><span>GSW</span></div><div class="stat"><b>1</b><span>G1W</span></div><div class="stat"><b>149</b><span>2026 mares</span></div><div class="stat" title="48 sold"><b>$172k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -2782,7 +2784,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Unbridled's Song <span class="ped-dash">—</span> Fleet Lady <span class="ped-paren">(Avenue of Flags)</span></div>
           <div class="info-pills"><span class="info-pill">2006 (20yo)</span><span class="info-pill">16.0½ hh</span><span class="info-pill">Earnings: $1.6M</span><span class="info-pill">Entered stud: 2011</span><span class="info-pill">First crop are 14-year-olds</span></div>
-          <div class="stat-strip"><div class="stat"><b>1,066</b><span>Starters</span></div><div class="stat"><b>839</b><span>Winners</span></div><div class="stat"><b>5</b><span>2026 2yo wnrs</span></div><div class="stat"><b>184</b><span>BTH</span></div><div class="stat"><b>91</b><span>BTW</span></div><div class="stat"><b>33</b><span>GSW</span></div><div class="stat"><b>9</b><span>G1W</span></div></div>
+          <div class="stat-strip"><div class="stat"><b>1,066</b><span>Starters</span></div><div class="stat"><b>839</b><span>Winners</span></div><div class="stat"><b>5</b><span>2026 2yo wnrs</span></div><div class="stat"><b>184</b><span>BTH</span></div><div class="stat"><b>91</b><span>BTW</span></div><div class="stat"><b>33</b><span>GSW</span></div><div class="stat"><b>9</b><span>G1W</span></div><div class="stat"><b>101</b><span>2026 mares</span></div><div class="stat" title="19 sold"><b>$69k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -3145,7 +3147,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Ghostzapper <span class="ped-dash">—</span> Music Note <span class="ped-paren">(A.P. Indy)</span></div>
           <div class="info-pills"><span class="info-pill">2017 (9yo)</span><span class="info-pill">16.2½ hh</span><span class="info-pill">Earnings: $7.6M</span><span class="info-pill">Entered stud: 2023</span><span class="info-pill">First crop are 2yos</span></div>
-          <div class="stat-strip"><div class="stat rank"><b>22nd</b><span>TDN freshman sires</span></div><div class="stat"><b>33</b><span>Starters</span></div><div class="stat"><b>8</b><span>Winners</span></div><div class="stat"><b>8</b><span>2026 2yo wnrs</span></div></div>
+          <div class="stat-strip"><div class="stat rank"><b>22nd</b><span>TDN freshman sires</span></div><div class="stat"><b>33</b><span>Starters</span></div><div class="stat"><b>8</b><span>Winners</span></div><div class="stat"><b>8</b><span>2026 2yo wnrs</span></div><div class="stat"><b>88</b><span>2026 mares</span></div><div class="stat" title="39 sold"><b>$21k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -3436,7 +3438,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Uncle Mo <span class="ped-dash">—</span> Seeking Gabrielle <span class="ped-paren">(Forestry)</span></div>
           <div class="info-pills"><span class="info-pill">2013 (13yo)</span><span class="info-pill">16.1½ hh</span><span class="info-pill">Earnings: $5.2M</span><span class="info-pill">Entered stud: 2017</span><span class="info-pill">First crop are 8-year-olds</span></div>
-          <div class="stat-strip"><div class="stat"><b>578</b><span>Starters</span></div><div class="stat"><b>379</b><span>Winners</span></div><div class="stat"><b>6</b><span>2026 2yo wnrs</span></div><div class="stat"><b>100</b><span>BTH</span></div><div class="stat"><b>46</b><span>BTW</span></div><div class="stat"><b>26</b><span>GSW</span></div><div class="stat"><b>13</b><span>G1W</span></div></div>
+          <div class="stat-strip"><div class="stat"><b>578</b><span>Starters</span></div><div class="stat"><b>379</b><span>Winners</span></div><div class="stat"><b>6</b><span>2026 2yo wnrs</span></div><div class="stat"><b>100</b><span>BTH</span></div><div class="stat"><b>46</b><span>BTW</span></div><div class="stat"><b>26</b><span>GSW</span></div><div class="stat"><b>13</b><span>G1W</span></div><div class="stat"><b>179</b><span>2026 mares</span></div><div class="stat" title="70 sold"><b>$576k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -3803,7 +3805,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Tapit <span class="ped-dash">—</span> Panty Raid <span class="ped-paren">(Include)</span></div>
           <div class="info-pills"><span class="info-pill">2018 (8yo)</span><span class="info-pill">16.3 hh</span><span class="info-pill">Earnings: $2.8M</span><span class="info-pill">Entered stud: 2024</span><span class="info-pill">First crop are yearlings</span></div>
-          
+          <div class="stat-strip"><div class="stat"><b>6</b><span>wins from 20 starts</span></div><div class="stat"><b>1</b><span>G1 wins</span></div><div class="stat"><b>3</b><span>Graded wins</span></div><div class="stat"><b>104</b><span>Best Beyer</span></div><div class="stat"><b>5</b><span>100+ Beyers</span></div><div class="stat"><b>64</b><span>2026 mares</span></div><div class="stat" title="48 sold"><b>$46k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -4102,7 +4104,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Into Mischief <span class="ped-dash">—</span> Crowned <span class="ped-paren">(Bernardini)</span></div>
           <div class="info-pills"><span class="info-pill">2022 (4yo)</span><span class="info-pill">16.3 hh</span><span class="info-pill">Earnings: $6.9M</span><span class="info-pill">New for 2027</span></div>
-          
+          <div class="stat-strip"><div class="stat rank"><b>2025</b><span>Horse of the Year</span></div><div class="stat"><b>7</b><span>wins from 12 starts</span></div><div class="stat"><b>4</b><span>G1 wins</span></div><div class="stat"><b>7</b><span>Graded wins</span></div><div class="stat"><b>115</b><span>Best Beyer</span></div><div class="stat"><b>7</b><span>100+ Beyers</span></div></div>
           
         </div>
       </div>
@@ -4139,7 +4141,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">1</td>
             <td class="fee-cell"></td>
-            <td class="center">96</td>
+            <td class="center">97</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -4255,7 +4257,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Street Sense <span class="ped-dash">—</span> Tyburn Brook <span class="ped-paren">(Bernardini)</span></div>
           <div class="info-pills"><span class="info-pill">2018 (8yo)</span><span class="info-pill">16.1½ hh</span><span class="info-pill">Earnings: $740k</span><span class="info-pill">Entered stud: 2023</span><span class="info-pill">First crop are 2yos</span></div>
-          <div class="stat-strip"><div class="stat rank"><b>14th</b><span>TDN freshman sires</span></div><div class="stat"><b>41</b><span>Starters</span></div><div class="stat"><b>6</b><span>Winners</span></div><div class="stat"><b>6</b><span>2026 2yo wnrs</span></div><div class="stat"><b>4</b><span>BTH</span></div><div class="stat"><b>3</b><span>BTW</span></div><div class="stat"><b>1</b><span>GSW</span></div></div>
+          <div class="stat-strip"><div class="stat rank"><b>14th</b><span>TDN freshman sires</span></div><div class="stat"><b>41</b><span>Starters</span></div><div class="stat"><b>6</b><span>Winners</span></div><div class="stat"><b>6</b><span>2026 2yo wnrs</span></div><div class="stat"><b>4</b><span>BTH</span></div><div class="stat"><b>3</b><span>BTW</span></div><div class="stat"><b>1</b><span>GSW</span></div><div class="stat"><b>146</b><span>2026 mares</span></div><div class="stat" title="40 sold"><b>$35k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
@@ -4556,7 +4558,7 @@ td { border-bottom: 1px solid #eef2f7; }
           </div>
           <div class="ped-line">Street Cry <span class="ped-dash">—</span> Bedazzle <span class="ped-paren">(Dixieland Band)</span></div>
           <div class="info-pills"><span class="info-pill">2004 (22yo)</span><span class="info-pill">16.3 hh</span><span class="info-pill">Earnings: $4.4M</span><span class="info-pill">Entered stud: 2008</span><span class="info-pill">First crop are 17-year-olds</span></div>
-          <div class="stat-strip"><div class="stat"><b>1,476</b><span>Starters</span></div><div class="stat"><b>1,036</b><span>Winners</span></div><div class="stat"><b>2</b><span>2026 2yo wnrs</span></div><div class="stat"><b>189</b><span>BTH</span></div><div class="stat"><b>109</b><span>BTW</span></div><div class="stat"><b>47</b><span>GSW</span></div><div class="stat"><b>13</b><span>G1W</span></div></div>
+          <div class="stat-strip"><div class="stat"><b>1,476</b><span>Starters</span></div><div class="stat"><b>1,036</b><span>Winners</span></div><div class="stat"><b>2</b><span>2026 2yo wnrs</span></div><div class="stat"><b>189</b><span>BTH</span></div><div class="stat"><b>109</b><span>BTW</span></div><div class="stat"><b>47</b><span>GSW</span></div><div class="stat"><b>13</b><span>G1W</span></div><div class="stat"><b>102</b><span>2026 mares</span></div><div class="stat" title="28 sold"><b>$172k</b><span>2026 yrlg avg</span></div></div>
           
         </div>
       </div>
