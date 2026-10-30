@@ -68,7 +68,7 @@ auto_bullets:
 - 2026 yearlings bring $900k (CHC/Maverick Racing/Light Post Ventures), $850k (Chad Summers), $600k (Flanagan Racing), $550k (Mayberry Farm), $475k (Bruno Bloodstock), $375k (Eclipse Thoroughbred Partners/Bridlewood Farm), $375k (PDW), $325k (Dream Big Racing), $300k (Klaravich Stable), $285k (Front Row Club/Starlight Racing/Madaket Stable).
 - 2025 weanlings bring $350k (Bach Stables), $250k (Cherry Knoll Farm), $150k (Hermitage Farm), $130k (Jim & Susan Hill), $130k (Avocet Bloodstock), $115k (Sum of The Partners), $110k (Taproot Bloodstock).
 auto_stats:
-  starters: 118
+  starters: 119
   winners: 59
   stakes_horses: 20
   stakes_winners: 8
@@ -78,4 +78,4 @@ auto_stats:
   freshman: false
   tdn_list: second-crop
   tdn_rank: 4
-  tdn_rank_date: '2026-10-29'
+  tdn_rank_date: '2026-10-30'

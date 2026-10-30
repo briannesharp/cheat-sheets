@@ -82,13 +82,13 @@ auto_bullets:
 - 2025 weanlings bring $135k (Machmer Hall), $105k (AHW).
 auto_stats:
   starters: 130
-  winners: 67
+  winners: 68
   stakes_horses: 13
   stakes_winners: 9
   graded_sw: 1
   g1_winners: 1
-  two_yo_winners: 10
+  two_yo_winners: 11
   freshman: false
   tdn_list: second-crop
   tdn_rank: 2
-  tdn_rank_date: '2026-10-29'
+  tdn_rank_date: '2026-10-30'
