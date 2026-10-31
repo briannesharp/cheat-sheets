@@ -54,6 +54,13 @@ progeny:
   bms: Summer Bird
   breeder: Tommy Wente Jr. & Scott Stephens
   sale: $875k OBS Spring 2yo (Lauren Carlisle)
+- horse: SAIMON RECOLTE (2c)
+  auto: won WFA on debut 10/31.
+  note: Miyaji Takatoshi.
+  rule: freshman
+  bms: Tiznow
+  breeder: Mercedes Stables LLC
+  sale: $160k OBS Spring 2yo (Narvick International)
 - horse: CHIQUEADA (2f)
   auto: won MCL by 5 1/4 at IND 8/13 (60).
   note: John Ennis.
@@ -82,14 +89,14 @@ auto_bullets:
 - 2026 yearlings bring $115k (Canuck Racing Club).
 - 2025 weanlings bring $110k (Sabby Racing), $100k (Faris Breeding).
 auto_stats:
-  starters: 41
-  winners: 6
+  starters: 42
+  winners: 7
   stakes_horses: 4
   stakes_winners: 3
   graded_sw: 1
   g1_winners: 0
-  two_yo_winners: 6
+  two_yo_winners: 7
   freshman: true
   tdn_list: first-crop
-  tdn_rank: 15
-  tdn_rank_date: '2026-10-30'
+  tdn_rank: 13
+  tdn_rank_date: '2026-10-31'
