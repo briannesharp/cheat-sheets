@@ -24,7 +24,7 @@ career:
     - Won G1 BC Juvenile at Keeneland, G1 FrontRunner at SA, G1 Del Mar Futurity, G2 Best Pal S.
 progeny:
 - horse: KNIGHTSBRIDGE (5c)
-  auto: won G1 Pacific Classic S. by 6 1/4 at DMR 8/22 (104); won G3 Monmouth Cup S. by 10 1/4 at MTH 7/18 (122); 2nd in G1 Met Mile; won G3 Gulfstream Park Mile by 11 lengths 2/28 (112); won G3 Fred Hooper by 5 at GP 1/24 (105); won G3 Mr. Prospector by 5 at GP 12/27/25 (104).
+  auto: 3rd G1 Longines Breeders' Cup Classic at KEE 10/31; won G1 Pacific Classic S. by 6 1/4 at DMR 8/22 (104); won G3 Monmouth Cup S. by 10 1/4 at MTH 7/18 (122); 2nd in G1 Met Mile; won G3 Gulfstream Park Mile by 11 lengths 2/28 (112); won G3 Fred Hooper by 5 at GP 1/24 (105); won G3 Mr. Prospector by 5 at GP 12/27/25 (104).
   note: Godolphin/Mott.
   bms: Bernardini
   breeder: Godolphin
@@ -84,7 +84,7 @@ progeny:
   breeder: Godolphin
   sale: ''
 - horse: EMPHATIC (2f)
-  auto: won G1 Breeders' Cup Juvenile Fillies at KEE 10/30; won G1 Darley Alcibiades S. at KEE 10/2 (95); won Sorority S. by 5 1/4 at MTH 8/29 (83).
+  auto: won G1 Breeders' Cup Juvenile Fillies at KEE 10/30 (93); won G1 Darley Alcibiades S. at KEE 10/2 (95); won Sorority S. by 5 1/4 at MTH 8/29 (83).
   note: Brendan P. Walsh.
   bms: Tiznow
   breeder: Jon A. Marshall
@@ -114,7 +114,7 @@ auto_bullets:
 - 2026 yearlings bring $3.2m (Boyd Racing), $2.25m (Alex & JoAnn Lieblong), $2m (St. Elias Stable/West Point Thoroughbreds/Lane's End Racing/Belladonna Racing), $1.75m (RTM Racing), $1.6m (RTM Racing/Whisper Hill Farm), $1.38m (Blue Devil Racing), $1.2m (Front Row Club/Starlight Racing/Madaket Stable), $1.2m (Eclipse Thoroughbred Partners/Bridlewood Farm/Robert LaPenta), $1.2m (St. Elias Stable/West Point Thoroughbreds/Lane's End Racing/Belladonna Racing), $1m (Resolute Bloodstock).
 - 2025 weanlings bring $750k (MWG), $600k (Clover Leaf Bloodstock), $525k (En Fuego), $325k (Curtis Green).
 auto_stats:
-  starters: 578
+  starters: 579
   winners: 380
   stakes_horses: 100
   stakes_winners: 46
