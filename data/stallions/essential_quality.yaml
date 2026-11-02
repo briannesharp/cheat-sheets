@@ -28,7 +28,7 @@ career:
     - Undefeated, won G1 Breeders' Futurity and G1 Breeder's Cup Juvenile.
 progeny:
 - horse: THE PUMA (3c)
-  auto: 2nd G1 Longines Breeders' Cup Classic at KEE 10/31; won G1 Pennsylvania Derby at PRX 9/19 (103); won G3 Tampa Bay Derby on 3/7 (94), 2nd by a nose G1 Florida Derby 3/28 (100).
+  auto: 2nd G1 Longines Breeders' Cup Classic at KEE 10/31 (107); won G1 Pennsylvania Derby at PRX 9/19 (103); won G3 Tampa Bay Derby on 3/7 (94), 2nd by a nose G1 Florida Derby 3/28 (100).
   bms: Declaration of War
   breeder: Hidden Brook Farm & Brian Kahn
   sale: $150k OBS Spring 2yo (Marquee Bloodstock)
@@ -51,7 +51,7 @@ progeny:
   breeder: Pollock Farm & Hugh Owen
   sale: $65k KeeSep (Jeff Mackor)
 - horse: MEASURE (3f)
-  auto: 3rd G1 Longines Breeders' Cup Distaff at KEE 10/31; 3rd G1 Cotillion S. at PRX 9/19 (87); 2nd by a neck G1 Alabama S. at SAR 8/22 (90); 3rd G1 Coaching Club American Oaks at SAR 7/25 (90).
+  auto: 3rd G1 Longines Breeders' Cup Distaff at KEE 10/31 (89); 3rd G1 Cotillion S. at PRX 9/19 (87); 2nd by a neck G1 Alabama S. at SAR 8/22 (90); 3rd G1 Coaching Club American Oaks at SAR 7/25 (90).
   note: Mark E. Casse.
   bms: Eskendereya
   breeder: Town & Country Farms
@@ -91,4 +91,4 @@ auto_stats:
   freshman: false
   tdn_list: second-crop
   tdn_rank: 2
-  tdn_rank_date: '2026-11-01'
+  tdn_rank_date: '2026-11-02'
