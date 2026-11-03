@@ -41,7 +41,7 @@ progeny:
   breeder: Machmer Hall, Carrie Brogden & Craig Brogden
   sale: $130k KeeSep (Sevenattributes.com)
 - horse: SPEAKER'S SPEECH (2c)
-  auto: won G3 Grey S. at WO 11/1; 3rd G3 Algonquin S. at WO 10/3 (66); 2nd by a head Listed Soaring Free S. at WO 8/15 (59).
+  auto: won G3 Grey S. at WO 11/1 (83); 3rd G3 Algonquin S. at WO 10/3 (66); 2nd by a head Listed Soaring Free S. at WO 8/15 (59).
   note: Mark E. Casse.
   rule: freshman
   bms: Summer Bird
@@ -99,4 +99,4 @@ auto_stats:
   freshman: true
   tdn_list: first-crop
   tdn_rank: 12
-  tdn_rank_date: '2026-11-02'
+  tdn_rank_date: '2026-11-03'
