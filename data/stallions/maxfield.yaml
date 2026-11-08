@@ -69,16 +69,16 @@ auto_bullets:
 - '3 Graded Stakes winners in 2026: ENGLISHMAN, MASHALLAH, MAXIMUM OFFER.'
 - 2026 2yos in training bring $600k (FMQ Stables), $310k (Taproot Bloodstock), $249k (Zabeel Racing Stables), $200k (Main Line Racing), $159k (J Osborne/Pythia Sports), $112k (Forge Ahead Stables), $110k (Corbin Blumberg).
 - 2026 yearlings bring $900k (CHC/Maverick Racing/Light Post Ventures), $850k (Chad Summers), $600k (Flanagan Racing), $550k (Mayberry Farm), $475k (Bruno Bloodstock), $375k (Eclipse Thoroughbred Partners/Bridlewood Farm), $375k (PDW), $325k (Dream Big Racing), $300k (Klaravich Stable), $285k (Front Row Club/Starlight Racing/Madaket Stable).
-- 2026 weanlings bring $285k (Tracy Farmer), $250k (Teddy Town), $250k (Glen Hill Farm), $200k (Tracy Farmer), $140k (Parks Bloodstock).
+- 2026 weanlings bring $285k (Tracy Farmer), $250k (Teddy Town), $250k (Glen Hill Farm), $200k (Tracy Farmer), $150k (JS Company), $140k (Parks Bloodstock), $110k (McMahon & Hill Bloodstock).
 auto_stats:
-  starters: 120
-  winners: 59
+  starters: 123
+  winners: 61
   stakes_horses: 20
   stakes_winners: 8
   graded_sw: 3
   g1_winners: 1
-  two_yo_winners: 6
+  two_yo_winners: 7
   freshman: false
   tdn_list: second-crop
   tdn_rank: 4
-  tdn_rank_date: '2026-11-07'
+  tdn_rank_date: '2026-11-08'

@@ -31,17 +31,17 @@ auto_bullets:
 - 2026 2yos in training bring $480k (Novogratz Racing Stables), $290k (Marquee Bloodstock), $210k (Willis Horton Racing), $150k (Harmash Racing), $100k (Michael V. Pino).
 - 2025 yearlings bring $425k (The Three Amigos), $300k (Champions Farm), $245k (Legion Bloodstock), $210k (Sabby Racing), $180k (Vince Foglia), $150k (Deacon Bloodstock), $150k (Saratoga Glen Farm), $150k (Faris Breeding), $140k (Redwings), $140k (Thorostock).
 auto_stats:
-  starters: 37
-  winners: 8
+  starters: 38
+  winners: 9
   stakes_horses: 1
   stakes_winners: 1
   graded_sw: 1
   g1_winners: 0
-  two_yo_winners: 8
+  two_yo_winners: 9
   freshman: true
   tdn_list: first-crop
   tdn_rank: 20
-  tdn_rank_date: '2026-11-07'
+  tdn_rank_date: '2026-11-08'
 progeny:
 - horse: SUNDAY FINERY (2f)
   auto: won G3 Mazarine S. by 6 3/4 at WO 11/1 (88); won MSW by 13 1/2 at WO 9/26 (76).
@@ -64,6 +64,13 @@ progeny:
   bms: Pleasantly Perfect
   breeder: Tabitha Lee
   sale: $30k OBS March 2yo (Peter Miller)
+- horse: NOBLE SCEPTER (2c)
+  auto: won Maiden 11/7.
+  note: Tatsuya Yoshioka.
+  rule: freshman
+  bms: More Than Ready
+  breeder: Alpha Stables
+  sale: ''
 - horse: MYSTIC RIDE (2c)
   auto: won MSW by 4 1/4 on debut at LRC 9/18 (67).
   note: Bob Baffert.
