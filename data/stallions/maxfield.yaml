@@ -29,19 +29,19 @@ career:
     - Won on debut at Churchill, then won the G1 Breeders' Futurity at Keeneland by 5.5 lengths.
 progeny:
 - horse: ENGLISHMAN (3c)
-  auto: 2nd G1 Cygames Breeders' Cup Sprint at KEE 10/31 (110); won G1 Allen Jerkens by 3 3/4 at SAR 8/29 (117 - highest 3yo Beyer since Flightline); Won G1 Woody Stephens (115); TDN Rising Star. Won MSW by 7 on debut at CD 9/19/25 (97 Beyer); won ALW by 7 at FG 3/19 (95 Beyer); 2nd G2 Pat Day Mile on Derby Day (94).
-  note: Cherie DaVaux. $400k KeeSep.
+  auto: 2nd G1 Breeders' Cup Sprint at KEE 10/31 (110); won G1 H. Allen Jerkens Memorial S. by 3 3/4 at SAR 8/29 (117); won G1 Woody Stephens S. by 5 3/4 at SAR 6/6 (115).
+  note: Cherie DaVaux. $400k KeeSep. His 117 in the Allen Jerkens is the highest 3yo Beyer since Flightline.
   bms: Speightstown
   breeder: Fifth Avenue Bloodstock
   sale: $400k KeeSep (Mayberry Farm)
 - horse: MASHALLAH (3f)
-  auto: won G3 Prioress S. by 5 at SAR 9/6 (92); won Tyson Gilpin S. by 5 1/2 at CNL 8/1 (87); TDN Rising Star won by 4 on debut at Kee 4/23. Her 106 Beyer is the best debut Beyer for a filly in 25 years! Won AOC at Sar 7/4 by 7 (96).
-  note: Brendan Walsh. $1.25m OBS 2yo.
+  auto: won G3 Prioress S. by 5 at SAR 9/6 (92); won Tyson Gilpin S. by 5 1/2 at CNL 8/1 (86); won AOC by 7 at SAR 7/4 (96).
+  note: Brendan Walsh. $1.25m OBS 2yo. Her 106 Beyer on debut at Kee 4/23 is the best debut Beyer for a filly in 25 years.
   bms: Quiet American
   breeder: Taylor Made Stallions Inc., Louis Brooks Ranch LTD, Baysore Stables, et al
   sale: $1.25m OBS March 2yo (Marquee Bloodstock)
 - horse: MAXIMUM OFFER (3f)
-  auto: won G3 Indiana Oaks at IND 7/11 (84).
+  auto: won G3 Indiana Oaks at IND 7/11 (85).
   note: Kenneth G. McPeek.
   bms: Pure Prize
   breeder: KMN Racing, LLC
@@ -53,17 +53,11 @@ progeny:
   breeder: St. Simon Place LLC
   sale: $200k KeeNov (Scott & Evan Dilworth)
 - horse: SABINO CANYON (3c)
-  auto: won Petramalo Mile S. at CNL 8/1 (84); won Los Al Derby 6/27 (85).
+  auto: won Petramalo Mile S. at CNL 8/1 (83); won Listed Los Alamitos Derby at LRC 6/27 (85).
   note: Baffert/ Three Amigos.
   bms: Quality Road
   breeder: Mercedes Stables LLC
   sale: $575k KeeSep (Three Amigos)
-- horse: DANON BOURBON (3c)
-  auto: won Fukuryu Stakes.
-  note: 5th in Ky Derby.
-  bms: Tapit
-  breeder: Blue Heaven Farm
-  sale: $450k KeeSep (Katsumi Yoshida)
 auto_bullets:
 - '1 G1 winner (NH): ENGLISHMAN.'
 - '3 Graded Stakes winners in 2026: ENGLISHMAN, MASHALLAH, MAXIMUM OFFER.'
