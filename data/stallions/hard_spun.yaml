@@ -17,36 +17,48 @@ more_selling_points:
 - Named TDN Gold Medal Value Sire for 2026.
 - '2026 yearlings sold for up to $400k: Johnny Johnny to Centennial Farms at Saratoga, Little Spunshine $300k to IJJ Racing, a $200k colt to MWG and a $180k colt to Gary Barber. His $575k OBS Spring 2yo went to Lael Stable.'
 progeny:
-- horse: GAS ME UP (6g)
-  auto: 3rd G1 Woodbine Mile S. at WO 9/12 (95); won G2 King Edward S. at WO 8/15 (90); won G2 Joe Hernandez S. at SA 12/29/25 (100); won G2 King Edward S. at WO 8/16/25 (92).
-  note: ''
-  bms: Smart Strike
-  breeder: Sam-Son Farm
-  sale: $140k KeeSep (Exline/Border Racing)
-- horse: ELYSIAN FIELD (6f)
-  auto: won Belfountain S. at WO 9/13 (83); won G3 Seaway at Woodbine (91).
-  note: ''
-  bms: Smart Strike
-  breeder: Anderson Farms Ont. Inc.
-  sale: $70k OBS June 2yo (Bruce Brown)
 - horse: BUILT (4c)
   auto: won Listed Louisville Thoroughbred Society S. at CD 9/12 (100); won G2 Alfred G. Vanderbilt S. at SAR 7/25 (105); won AOC by 4 3/4 at CD 5/21 (100); won 6f dirt AOC at FG 3/13 (106) = new track record!
   note: ''
   bms: Curlin
   breeder: Robert Low & Lawana Low
   sale: $260k OBS Spring 2yo (Eclipse Thoroughbred Partners)
+- horse: GAS ME UP (6g)
+  auto: 3rd G1 Woodbine Mile S. at WO 9/12 (95); won G2 King Edward S. at WO 8/15 (90); won G2 Joe Hernandez S. at SA 12/29/25 (100); won G2 King Edward S. at WO 8/16/25 (92).
+  note: ''
+  bms: Smart Strike
+  breeder: Sam-Son Farm
+  sale: $140k KeeSep (Exline/Border Racing)
+- horse: MOON SPUN (5f)
+  auto: won G2 Unbridled Sidney S. at CD 5/1 (98).
+  note: Brian A. Lynch.
+  bms: Malibu Moon
+  breeder: Jack Liebau Sr.
+  sale: $80k FT October (Town & Country Racing)
+- horse: PONDERING (4f)
+  auto: won G3 Bessarabian S. at WO 11/7 (90).
+  note: Brendan P. Walsh.
+  bms: Street Sense
+  breeder: Godolphin
+  sale: ''
 - horse: RUNAWAY AGAIN (4g)
   auto: won G3 HPIbet Autumn S. at WO 11/7 (101); won G3 Dominion Day at Woo 6/27 (96).
   note: ''
   bms: Storm Cat
   breeder: Adena Springs
   sale: ''
-- horse: BRILLIANT PLAN (3g)
-  auto: won AOC at RP 9/18 (90); won ALW by 4 1/2 at LS 6/6 (91).
-  note: Karen E. Jacks.
-  bms: Bernardini
-  breeder: Godolphin
-  sale: $10k FT OCT DIGITAL 2025 (Karen E Jacks)
+- horse: ELYSIAN FIELD (6f)
+  auto: won Belfountain S. at WO 9/13 (83); won G3 Seaway at Woodbine (91).
+  note: ''
+  bms: Smart Strike
+  breeder: Anderson Farms Ont. Inc.
+  sale: $70k OBS June 2yo (Bruce Brown)
+- horse: BOLD JOURNEY (7g)
+  auto: won G3 Tom Fool S. at AQU 2/28 (97).
+  note: William I. Mott.
+  bms: Super Saver
+  breeder: Fred W. Hertrich lll & John D. Fielding
+  sale: $80k OBS Spring 2yo (McMahon & Hill Bloodstock)
 - horse: KUPUNA (7g)
   auto: won Listed Bernard Baruch S. at SAR 9/3 (97); won Listed Colonel E. R. Bradley S. at FG 1/17 (95).
   note: Norm W. Casse.
@@ -65,24 +77,12 @@ progeny:
   bms: English Channel
   breeder: Mr. & Mrs. William L. Pape
   sale: $435k KeeSep (CJ Thoroughbreds/St. Elias Stables/West Point Thoroughbreds)
-- horse: PONDERING (4f)
-  auto: won G3 Bessarabian S. at WO 11/7 (90).
-  note: Brendan P. Walsh.
-  bms: Street Sense
+- horse: BRILLIANT PLAN (3g)
+  auto: won AOC at RP 9/18 (90); won ALW by 4 1/2 at LS 6/6 (91).
+  note: Karen E. Jacks.
+  bms: Bernardini
   breeder: Godolphin
-  sale: ''
-- horse: BOLD JOURNEY (7g)
-  auto: won G3 Tom Fool S. at AQU 2/28 (97).
-  note: William I. Mott.
-  bms: Super Saver
-  breeder: Fred W. Hertrich lll & John D. Fielding
-  sale: $80k OBS Spring 2yo (McMahon & Hill Bloodstock)
-- horse: MOON SPUN (5f)
-  auto: won G2 Unbridled Sidney S. at CD 5/1 (98).
-  note: Brian A. Lynch.
-  bms: Malibu Moon
-  breeder: Jack Liebau Sr.
-  sale: $80k FT October (Town & Country Racing)
+  sale: $10k FT OCT DIGITAL 2025 (Karen E Jacks)
 auto_bullets:
 - '12 G1 winners (NH): ALOHA WEST, HARD ACES, HARD NOT TO LIKE, HARD NOT TO LOVE, HARDEST CORE, OUT FOR A SPIN, QUESTING, SILVER STATE, SMOOTH ROLLER, SPUN TO RUN, WICKED STRONG, ZO IMPRESSIVE.'
 - 3 G1 winners and 11 GSWs (SH) including ERTIJAAL, GATTING, LE ROMAIN.

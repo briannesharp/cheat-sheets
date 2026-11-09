@@ -32,48 +32,48 @@ progeny:
   bms: Declaration of War
   breeder: Hidden Brook Farm & Brian Kahn
   sale: $150k OBS Spring 2yo (Marquee Bloodstock)
-- horse: EZUM (3c)
-  auto: won MSW by 20 at Colonial 3/14 (87).
-  note: Brad Cox/Shadwell.
-  bms: Quiet American
-  breeder: Nancy Shuford
-  sale: $485k KeeNov (Shadwell Racing)
-- horse: CONFESSIONAL (3c)
-  auto: 3rd in Virginia Derby 3/14 (82).
-  note: Brad Cox.
-  bms: American Pharoah
-  breeder: Breed First LLC
-  sale: $160k KeeSep (SL Equine)
-- horse: TACTICALITY (3c)
-  auto: won AOC at MTH 5/24 (90).
-  note: Chad C. Brown.
-  bms: Speightstown
-  breeder: Pollock Farm & Hugh Owen
-  sale: $65k KeeSep (Jeff Mackor)
-- horse: MEASURE (3f)
-  auto: 3rd G1 Breeders' Cup Distaff at KEE 10/31 (89); 3rd G1 Cotillion S. at PRX 9/19 (87); 2nd by a neck G1 Alabama S. at SAR 8/22 (90); 3rd G1 Coaching Club American Oaks at SAR 7/25 (90).
-  note: Mark E. Casse.
-  bms: Eskendereya
-  breeder: Town & Country Farms
-  sale: $250k KeeSep (Eclipse Thoroughbred Partners/Bridlewood Farm/Gary Barber)
-- horse: BOHEMIAN (3f)
-  auto: won Listed Pucker Up S. at ELP 8/2 (82).
-  note: Joe Sharp.
-  bms: Kitten's Joy
-  breeder: Hinkle Farms
-  sale: $125k FT July Digital 2025 (Bigman)
-- horse: WESTERN WARRIOR (3g)
-  auto: won Listed Manitoba Derby at ASD 8/3 (77).
-  note: Dino K. Condilenios.
-  bms: Warrior's Reward
-  breeder: Tracy Farmer
-  sale: ''
 - horse: WHARFIE (2f)
   auto: won Listed Rags to Riches S. at CD 10/25 (72).
   note: William I. Mott.
   bms: Medaglia d'Oro
   breeder: Godolphin
   sale: ''
+- horse: WESTERN WARRIOR (3g)
+  auto: won Listed Manitoba Derby at ASD 8/3 (77).
+  note: Dino K. Condilenios.
+  bms: Warrior's Reward
+  breeder: Tracy Farmer
+  sale: ''
+- horse: BOHEMIAN (3f)
+  auto: won Listed Pucker Up S. at ELP 8/2 (82).
+  note: Joe Sharp.
+  bms: Kitten's Joy
+  breeder: Hinkle Farms
+  sale: $125k FT July Digital 2025 (Bigman)
+- horse: MEASURE (3f)
+  auto: 3rd G1 Breeders' Cup Distaff at KEE 10/31 (89); 3rd G1 Cotillion S. at PRX 9/19 (87); 2nd by a neck G1 Alabama S. at SAR 8/22 (90); 3rd G1 Coaching Club American Oaks at SAR 7/25 (90).
+  note: Mark E. Casse.
+  bms: Eskendereya
+  breeder: Town & Country Farms
+  sale: $250k KeeSep (Eclipse Thoroughbred Partners/Bridlewood Farm/Gary Barber)
+- horse: CONFESSIONAL (3c)
+  auto: 3rd in Virginia Derby 3/14 (82).
+  note: Brad Cox.
+  bms: American Pharoah
+  breeder: Breed First LLC
+  sale: $160k KeeSep (SL Equine)
+- horse: EZUM (3c)
+  auto: won MSW by 20 at Colonial 3/14 (87).
+  note: Brad Cox/Shadwell.
+  bms: Quiet American
+  breeder: Nancy Shuford
+  sale: $485k KeeNov (Shadwell Racing)
+- horse: TACTICALITY (3c)
+  auto: won AOC at MTH 5/24 (90).
+  note: Chad C. Brown.
+  bms: Speightstown
+  breeder: Pollock Farm & Hugh Owen
+  sale: $65k KeeSep (Jeff Mackor)
 auto_bullets:
 - '1 G1 winner (NH): THE PUMA.'
 - '1 Graded Stakes winner in 2026: THE PUMA.'

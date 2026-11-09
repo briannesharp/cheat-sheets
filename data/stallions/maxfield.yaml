@@ -40,18 +40,6 @@ progeny:
   bms: Quiet American
   breeder: Taylor Made Stallions Inc., Louis Brooks Ranch LTD, Baysore Stables, et al
   sale: $1.25m OBS March 2yo (Marquee Bloodstock)
-- horse: DANON BOURBON (3c)
-  auto: won Fukuryu Stakes.
-  note: 5th in Ky Derby.
-  bms: Tapit
-  breeder: Blue Heaven Farm
-  sale: $450k KeeSep (Katsumi Yoshida)
-- horse: SABINO CANYON (3c)
-  auto: won Petramalo Mile S. at CNL 8/1 (84); won Los Al Derby 6/27 (85).
-  note: Baffert/ Three Amigos.
-  bms: Quality Road
-  breeder: Mercedes Stables LLC
-  sale: $575k KeeSep (Three Amigos)
 - horse: MAXIMUM OFFER (3f)
   auto: won G3 Indiana Oaks at IND 7/11 (84).
   note: Kenneth G. McPeek.
@@ -64,6 +52,18 @@ progeny:
   bms: Bodemeister
   breeder: St. Simon Place LLC
   sale: $200k KeeNov (Scott & Evan Dilworth)
+- horse: SABINO CANYON (3c)
+  auto: won Petramalo Mile S. at CNL 8/1 (84); won Los Al Derby 6/27 (85).
+  note: Baffert/ Three Amigos.
+  bms: Quality Road
+  breeder: Mercedes Stables LLC
+  sale: $575k KeeSep (Three Amigos)
+- horse: DANON BOURBON (3c)
+  auto: won Fukuryu Stakes.
+  note: 5th in Ky Derby.
+  bms: Tapit
+  breeder: Blue Heaven Farm
+  sale: $450k KeeSep (Katsumi Yoshida)
 auto_bullets:
 - '1 G1 winner (NH): ENGLISHMAN.'
 - '3 Graded Stakes winners in 2026: ENGLISHMAN, MASHALLAH, MAXIMUM OFFER.'
