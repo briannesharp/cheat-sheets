@@ -30,16 +30,29 @@ career:
 progeny:
 - horse: ENGLISHMAN (3c)
   auto: 2nd G1 Breeders' Cup Sprint at KEE 10/31 (110); won G1 H. Allen Jerkens Memorial S. by 3 3/4 at SAR 8/29 (117); won G1 Woody Stephens S. by 5 3/4 at SAR 6/6 (115).
-  note: Cherie DaVaux. $400k KeeSep. His 117 in the Allen Jerkens is the highest 3yo Beyer since Flightline.
+  note: Cherie DaVaux. $400k KeeSep. His {beyer 2026-08-29} in the Allen Jerkens is the highest 3yo Beyer since Flightline.
+  check_best:
+    race: '2026-08-29'
+    since: '2021-12-27'
+    age: 3
   bms: Speightstown
   breeder: Fifth Avenue Bloodstock
   sale: $400k KeeSep (Mayberry Farm)
+  figures:
+    '2026-08-29': 117
 - horse: MASHALLAH (3f)
   auto: won G3 Prioress S. by 5 at SAR 9/6 (92); won Tyson Gilpin S. by 5 1/2 at CNL 8/1 (86); won AOC by 7 at SAR 7/4 (96).
-  note: Brendan Walsh. $1.25m OBS 2yo. Her 106 Beyer on debut at Kee 4/23 is the best debut Beyer for a filly in 25 years.
+  note: Brendan Walsh. $1.25m OBS 2yo. Her {beyer 2026-04-23} Beyer on debut at Kee 4/23 is the best debut Beyer for a filly in 25 years.
+  check_best:
+    race: '2026-04-23'
+    since: '2001-04-14'
+    filly: true
+    debut: true
   bms: Quiet American
   breeder: Taylor Made Stallions Inc., Louis Brooks Ranch LTD, Baysore Stables, et al
   sale: $1.25m OBS March 2yo (Marquee Bloodstock)
+  figures:
+    '2026-04-23': 106
 - horse: MAXIMUM OFFER (3f)
   auto: won G3 Indiana Oaks at IND 7/11 (85).
   note: Kenneth G. McPeek.
@@ -63,7 +76,7 @@ auto_bullets:
 - '3 Graded Stakes winners in 2026: ENGLISHMAN, MASHALLAH, MAXIMUM OFFER.'
 - 2026 2yos in training bring $600k (FMQ Stables), $310k (Taproot Bloodstock), $249k (Zabeel Racing Stables), $200k (Main Line Racing), $159k (J Osborne/Pythia Sports), $112k (Forge Ahead Stables), $110k (Corbin Blumberg).
 - 2026 yearlings bring $900k (CHC/Maverick Racing/Light Post Ventures), $850k (Chad Summers), $600k (Flanagan Racing), $550k (Mayberry Farm), $475k (Bruno Bloodstock), $375k (Eclipse Thoroughbred Partners/Bridlewood Farm), $375k (PDW), $325k (Dream Big Racing), $300k (Klaravich Stable), $285k (Front Row Club/Starlight Racing/Madaket Stable).
-- 2026 weanlings bring $285k (Tracy Farmer), $250k (Teddy Town), $250k (Glen Hill Farm), $200k (Tracy Farmer), $150k (JS Company), $140k (Parks Bloodstock), $110k (McMahon & Hill Bloodstock).
+- 2026 weanlings bring $285k (Tracy Farmer), $250k (Teddy Town), $250k (Glen Hill Farm), $200k (Tracy Farmer), $150k (JS Company), $140k (Parks Bloodstock), $137k (Bourbon Meadows), $110k (McMahon & Hill Bloodstock).
 auto_stats:
   starters: 123
   winners: 61
@@ -75,4 +88,4 @@ auto_stats:
   freshman: false
   tdn_list: second-crop
   tdn_rank: 4
-  tdn_rank_date: '2026-11-09'
+  tdn_rank_date: '2026-11-10'

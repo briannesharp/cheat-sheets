@@ -137,11 +137,11 @@ auto_bullets:
 - 2026 yearlings bring $3.2m (Boyd Racing), $2.25m (Alex & JoAnn Lieblong), $2m (St. Elias Stable/West Point Thoroughbreds/Lane's End Racing/Belladonna Racing), $1.75m (RTM Racing), $1.6m (RTM Racing/Whisper Hill Farm), $1.38m (Blue Devil Racing), $1.2m (Front Row Club/Starlight Racing/Madaket Stable), $1.2m (Eclipse Thoroughbred Partners/Bridlewood Farm/Robert LaPenta), $1.2m (St. Elias Stable/West Point Thoroughbreds/Lane's End Racing/Belladonna Racing), $1m (Resolute Bloodstock).
 - 2026 weanlings bring $310k (Asagi Farms), $250k (Scott & Evan Dilworth).
 auto_stats:
-  starters: 582
-  winners: 380
+  starters: 583
+  winners: 381
   stakes_horses: 100
   stakes_winners: 46
   graded_sw: 26
   g1_winners: 13
-  two_yo_winners: 6
+  two_yo_winners: 7
   freshman: false

@@ -30,10 +30,12 @@ career:
 progeny:
 - horse: HARPER'S CORNER (2f)
   auto: 2nd G3 Matron S. at BEL 10/3 (90); 2nd G1 Spinaway S. at SAR 9/5 (87); won Listed Schuylerville S. by 5 1/4 at SAR 7/3 (88); won MSW by 7 3/4 on debut at LRL 6/12 (56).
-  note: Finished 3rd in the G1 Breeders' Cup Juvenile Turf Sprint at KEE 10/30 (89) but was disqualified for interference and placed 8th.
+  note: Finished 3rd in the G1 Breeders' Cup Juvenile Turf Sprint at KEE 10/30 ({beyer 2026-10-30}) but was disqualified for interference and placed 8th.
   bms: Speightstown
   breeder: Bishop Racing, Inc.
   sale: $70k OBS Spring 2yo (Charles L. Biggs)
+  figures:
+    '2026-10-30': 89
 - horse: DOMAIN EXPANSION (2f)
   auto: won G2 Oak Leaf S. by 7 at SA 10/3 (89).
   note: Leonard Powell.
@@ -93,4 +95,4 @@ auto_stats:
   freshman: true
   tdn_list: first-crop
   tdn_rank: 12
-  tdn_rank_date: '2026-11-09'
+  tdn_rank_date: '2026-11-10'

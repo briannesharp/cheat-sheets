@@ -19,10 +19,12 @@ more_selling_points:
 progeny:
 - horse: BUILT (4c)
   auto: won Listed Louisville Thoroughbred Society S. at CD 9/12 (100); won G2 Alfred G. Vanderbilt S. at SAR 7/25 (105); won AOC by 4 3/4 at CD 5/21 (100).
-  note: Set a track record going 6f on dirt at FG 3/13 (106).
+  note: Set a track record going 6f on dirt at FG 3/13 ({beyer 2026-03-13}).
   bms: Curlin
   breeder: Robert Low & Lawana Low
   sale: $260k OBS Spring 2yo (Eclipse Thoroughbred Partners)
+  figures:
+    '2026-03-13': 106
 - horse: GAS ME UP (6g)
   auto: 3rd G1 Woodbine Mile S. at WO 9/12 (95); won G2 King Edward S. at WO 8/15 (90); won G2 Joe Hernandez S. at SA 12/29/25 (100).
   note: ''

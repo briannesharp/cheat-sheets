@@ -60,6 +60,9 @@ auto_stats:                    # machine-maintained, rewritten every run:
   start of every site generation and prepends new qualifying results to
   `auto`. Don't edit `auto` unless you must (the machine rewrites it);
   put your editorial (Derby points, sale prices, trainer color) in `note`.
+  To quote a Beyer in a note, write `{beyer 2026-08-27}` (this horse that day)
+  or `{beyer 2026-08-29 Englishman}` (another horse); the site shows the
+  current database figure. `figures` is filled by the machine.
 - **Broodmare sire (`bms`)** shows in parentheses after the horse's name and
   age/sex, e.g. `THE PUMA (3c) (Tapit)`. The machine fills it in only when it's blank, so if the database
   has the wrong dam you can correct it here and it stays corrected.

@@ -38,10 +38,21 @@ progeny:
   sale: ''
 - horse: LIAM SMITH (3c)
   auto: 3rd G1 Breeders' Cup Sprint at KEE 10/31 (100); won AOC by 5 1/2 at SA 9/26 (108).
-  note: 'Peter Miller. Beyers of 107 and 108 in a row: won by 12 at Del Mar on 8/27 (107), then the Santa Anita allowance by 5½ over Duke Silver (108). Only Englishman (Beyer 117) and Deep Flame (Beyer 110) have run faster among 2026 3yos.'
+  note: 'Peter Miller. Beyers of {beyer 2026-08-27} and {beyer 2026-09-26} in a row: won by 12 at Del Mar on 8/27 ({beyer 2026-08-27}), then the Santa Anita allowance by 5½ over Duke Silver ({beyer 2026-09-26}). Only Englishman (Beyer {beyer 2026-08-29 Englishman}) and Deep Flame (Beyer {beyer 2026-08-29 Deep Flame}) have run faster among 2026 3yos.'
   bms: First Dude
   breeder: Donald R. Dizney, LLC
   sale: ''
+  figures:
+    '2026-08-27': 107
+    '2026-09-26': 108
+    2026-08-29 Englishman: 117
+    2026-08-29 Deep Flame: 110
+  check_faster:
+    year: 2026
+    age: 3
+    horses:
+    - Englishman
+    - Deep Flame
 - horse: MERONEY (4g)
   auto: won AOC at CBY 8/30 (94).
   note: Tyrone Gleason.
