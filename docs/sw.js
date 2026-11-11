@@ -1,5 +1,5 @@
 const CACHE = 'darley-v1';
-const URLS  = ['./index.html', './', './classic.html'];
+const URLS  = ['./index.html', './', './classic.html', './europe.html'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(URLS)));

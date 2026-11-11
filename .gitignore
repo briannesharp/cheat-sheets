@@ -44,3 +44,6 @@ logos/
 
 # Original phone photos (HEIC, carry EXIF/GPS) - publish the converted JPG only
 *.heic
+
+# Darley Europe page: last good read of each darleyeurope.com stallion page
+europe_cache.json
