@@ -10,7 +10,7 @@ profile:
   entered_stud: 2022
   first_crop_note: First crop are 3-year-olds
 more_selling_points:
-- 18 first-crop stakes horses.
+- '{count first_crop_stakes_horses} first-crop stakes horses.'
 - First-crop two-year-olds in 2025 brought $1.25m, $1m, €1m. Plus two $1m first-crop yearlings. Only American Pharoah and Flightline have ever had more first-crop seven-figure sales horses.
 pedigree_highlights:
 - Out of a Bernardini mare who is also the dam of 2024 Graded winner LOVED (Beyers of 94, 92, 91, 90). Half-sister to Sky Mesa (sire of 5 champions, 26 GSWs).
@@ -89,3 +89,5 @@ auto_stats:
   tdn_list: second-crop
   tdn_rank: 4
   tdn_rank_date: '2026-11-13'
+counts:
+  count first_crop_stakes_horses: 18
