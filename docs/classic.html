@@ -420,9 +420,8 @@ th.center { text-align: center; }
 .bc-tag { display: inline-block; background: #582C83; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 1px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle; }
 /* Grade pills in Upcoming Entries: G1 solid red, G2 solid blue, G3 blue outline */
 .gr { display: inline-block; font-weight: 800; font-size: 11px; line-height: 1; letter-spacing: 0.3px; padding: 2px 5px 1px; border-radius: 4px; border: 1.5px solid; vertical-align: 1px; margin-right: 2px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-.gr.g1 { background: #CC1012; border-color: #CC1012; color: #fff; }
-.gr.g2 { background: #0037B2; border-color: #0037B2; color: #fff; }
-.gr.g3 { background: #fff; border-color: #0037B2; color: #0037B2; }
+.gr.g1 { background: #0037B2; border-color: #0037B2; color: #fff; }
+.gr.g2, .gr.g3 { background: #fff; border-color: #0037B2; color: #0037B2; }
 
 /* ── Back-to-top ── */
 .back-to-top {
@@ -518,6 +517,11 @@ footer {
 
 /* ── Race Record (PP image) ── */
 .pp-wrap { overflow-x: auto; }
+.rr-table { width: 100%; border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; margin-bottom: 12px; }
+.rr-table th { text-align: left; font-weight: 600; font-size: 11px; color: var(--grey); padding: 4px 8px 4px 0; white-space: nowrap; border-bottom: 2px solid var(--blue); }
+.rr-table td { padding: 5px 8px 5px 0; border-bottom: 1px solid var(--border); }
+.rr-table .n { text-align: right; white-space: nowrap; }
+@media (max-width: 759px) { .rr-table .hide-s { display: none; } }
 .pp-img  { display: block; max-width: 100%; height: auto; border: 1px solid var(--border); border-radius: 4px; }
 
 /* ── Back to top of card ── */
@@ -1090,7 +1094,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">4</td>
             <td class="fee-cell">$55,000</td>
-            <td class="center">55</td>
+            <td class="center">57</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -1204,11 +1208,9 @@ td { border-bottom: 1px solid #eef2f7; }
       </div>
         
       <div class="content-block pp-block">
-        <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <div class="pp-wrap">
-            <img src="stallion%20PPs%20png%20files/codys-wish.png" alt="Cody's Wish past performances" class="pp-img" loading="lazy">
-          </div>
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>11/4/23</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Cup Dirt Mile</td><td class='hide-s'>Santa Anita</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>nose</td><td class='n'>107</td></tr><tr><td>10/1/23</td><td>Won</td><td><span class="gr g2">G2</span> Vosburgh S.</td><td class='hide-s'>Belmont At The Big A</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>1 1/2</td><td class='n'>100</td></tr><tr><td>8/5/23</td><td>3rd</td><td><span class="gr g1">G1</span> Whitney S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>95</td></tr><tr><td>6/10/23</td><td>Won</td><td><span class="gr g1">G1</span> Metropolitan H.</td><td class='hide-s'>Belmont Park</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>3 1/4</td><td class='n'>112</td></tr><tr><td>5/6/23</td><td>Won</td><td><span class="gr g1">G1</span> Churchill Downs S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>4 3/4</td><td class='n'>105</td></tr><tr><td>11/5/22</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Cup Dirt Mile</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>head</td><td class='n'>106</td></tr><tr><td>8/27/22</td><td>Won</td><td><span class="gr g1">G1</span> Forego S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>1 1/4</td><td class='n'>112</td></tr><tr><td>7/4/22</td><td>Won</td><td>Listed Hanshin S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>neck</td><td class='n'>102</td></tr><tr><td>5/7/22</td><td>Won</td><td><span class="gr g3">G3</span> Westchester S.</td><td class='hide-s'>Belmont Park</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>5</td><td class='n'>104</td></tr></tbody></table></div></div><div class="pp-wrap"><img src="stallion%20PPs%20png%20files/codys-wish.png" alt="Cody's Wish past performances" class="pp-img" loading="lazy"></div>
         </div>
       </div>
         
@@ -1382,7 +1384,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">6</td>
             <td class="fee-cell">$25,000</td>
-            <td class="center">49</td>
+            <td class="center">51</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -1530,6 +1532,12 @@ td { border-bottom: 1px solid #eef2f7; }
         </div>
       </div>
         
+      <div class="content-block pp-block">
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>11/6/21</td><td>3rd</td><td><span class="gr g1">G1</span> Breeders' Cup Classic</td><td class='hide-s'>Del Mar</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>108</td></tr><tr><td>8/28/21</td><td>Won</td><td><span class="gr g1">G1</span> Travers S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>neck</td><td class='n'>107</td></tr><tr><td>7/31/21</td><td>Won</td><td><span class="gr g2">G2</span> Jim Dandy S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>1/2</td><td class='n'>98</td></tr><tr><td>6/5/21</td><td>Won</td><td><span class="gr g1">G1</span> Belmont S.</td><td class='hide-s'>Belmont Park</td><td>Dirt</td><td class='n hide-s'>1 1/2 m</td><td class='n'>1 1/4</td><td class='n'>109</td></tr><tr><td>5/1/21</td><td>3rd</td><td><span class="gr g1">G1</span> Kentucky Derby</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>100</td></tr><tr><td>4/3/21</td><td>Won</td><td><span class="gr g2">G2</span> Blue Grass S.</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>neck</td><td class='n'>97</td></tr><tr><td>2/27/21</td><td>Won</td><td><span class="gr g3">G3</span> Southwest S.</td><td class='hide-s'>Oaklawn Park</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>4 1/4</td><td class='n'>96</td></tr><tr><td>11/6/20</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Cup Juvenile</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>3/4</td><td class='n'>95</td></tr><tr><td>10/3/20</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Futurity</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>3 1/4</td><td class='n'>88</td></tr></tbody></table></div></div>
+        </div>
+      </div>
         
       <div class="content-block ped-block">
         <h3 class="block-title"><span class="block-icon">🧬</span>Pedigree<span class="chevron">▾</span></h3>
@@ -1709,11 +1717,9 @@ td { border-bottom: 1px solid #eef2f7; }
       </div>
         
       <div class="content-block pp-block">
-        <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <div class="pp-wrap">
-            <img src="stallion%20PPs%20png%20files/first-mission.png" alt="First Mission past performances" class="pp-img" loading="lazy">
-          </div>
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>6/28/25</td><td>3rd</td><td><span class="gr g1">G1</span> Stephen Foster S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>101</td></tr><tr><td>4/19/25</td><td>Won</td><td><span class="gr g2">G2</span> Oaklawn H.</td><td class='hide-s'>Oaklawn Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>2</td><td class='n'>109</td></tr><tr><td>5/3/24</td><td>Won</td><td><span class="gr g2">G2</span> Alysheba S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>4</td><td class='n'>106</td></tr><tr><td>3/23/24</td><td>Won</td><td><span class="gr g3">G3</span> Essex H.</td><td class='hide-s'>Oaklawn Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>5</td><td class='n'>100</td></tr><tr><td>4/15/23</td><td>Won</td><td><span class="gr g3">G3</span> Lexington S.</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>1/2</td><td class='n'>99</td></tr></tbody></table></div></div><div class="pp-wrap"><img src="stallion%20PPs%20png%20files/first-mission.png" alt="First Mission past performances" class="pp-img" loading="lazy"></div>
         </div>
       </div>
         
@@ -2091,6 +2097,12 @@ td { border-bottom: 1px solid #eef2f7; }
         </div>
       </div>
         
+      <div class="content-block pp-block">
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>10/27/07</td><td>2nd</td><td><span class="gr g1">G1</span> Breeders' Cup Classic</td><td class='hide-s'>Monmouth Park</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>112</td></tr><tr><td>9/29/07</td><td>Won</td><td><span class="gr g2">G2</span> Kentucky Cup Classic S.</td><td class='hide-s'>Turfway Park</td><td>Synthetic</td><td class='n hide-s'>1 1/8 m</td><td class='n'>1 1/4</td><td class='n'>109</td></tr><tr><td>8/25/07</td><td>Won</td><td><span class="gr g1">G1</span> King's Bishop S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>1 1/2</td><td class='n'>107</td></tr><tr><td>8/5/07</td><td>2nd</td><td><span class="gr g1">G1</span> Haskell Invitational S.</td><td class='hide-s'>Monmouth Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>106</td></tr><tr><td>5/19/07</td><td>3rd</td><td><span class="gr g1">G1</span> Preakness S.</td><td class='hide-s'>Pimlico</td><td>Dirt</td><td class='n hide-s'>1 3/16 m</td><td class='n'></td><td class='n'>104</td></tr><tr><td>5/5/07</td><td>2nd</td><td><span class="gr g1">G1</span> Kentucky Derby</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>107</td></tr><tr><td>3/24/07</td><td>Won</td><td><span class="gr g2">G2</span> Lane's End S.</td><td class='hide-s'>Turfway Park</td><td>Synthetic</td><td class='n hide-s'>1 1/8 m</td><td class='n'>3 1/4</td><td class='n'>101</td></tr><tr><td>1/13/07</td><td>Won</td><td><span class="gr g3">G3</span> LeComte S.</td><td class='hide-s'>Fair Grounds</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>6 1/2</td><td class='n'>95</td></tr><tr><td>12/18/06</td><td>Won</td><td>Pennsylvania Nursery S.</td><td class='hide-s'>Philadelphia Park</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>7 3/4</td><td class='n'>82</td></tr><tr><td>11/14/06</td><td>Won</td><td>Port Penn S.</td><td class='hide-s'>Delaware Park</td><td>Dirt</td><td class='n hide-s'>6 f</td><td class='n'>5</td><td class='n'>87</td></tr></tbody></table></div></div>
+        </div>
+      </div>
         
       <div class="content-block ped-block">
         <h3 class="block-title"><span class="block-icon">🧬</span>Pedigree<span class="chevron">▾</span></h3>
@@ -2270,11 +2282,9 @@ td { border-bottom: 1px solid #eef2f7; }
       </div>
         
       <div class="content-block pp-block">
-        <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <div class="pp-wrap">
-            <img src="stallion%20PPs%20png%20files/highland-falls.png" alt="Highland Falls past performances" class="pp-img" loading="lazy">
-          </div>
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>8/31/25</td><td>3rd</td><td><span class="gr g1">G1</span> Jockey Club Gold Cup S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>102</td></tr><tr><td>8/2/25</td><td>2nd</td><td><span class="gr g1">G1</span> Whitney S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>107</td></tr><tr><td>9/1/24</td><td>Won</td><td><span class="gr g1">G1</span> Jockey Club Gold Cup S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>4</td><td class='n'>104</td></tr><tr><td>6/1/24</td><td>Won</td><td><span class="gr g3">G3</span> Blame S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>1</td><td class='n'>98</td></tr></tbody></table></div></div><div class="pp-wrap"><img src="stallion%20PPs%20png%20files/highland-falls.png" alt="Highland Falls past performances" class="pp-img" loading="lazy"></div>
         </div>
       </div>
         
@@ -2378,7 +2388,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">1</td>
             <td class="fee-cell">$75,000</td>
-            <td class="center">175</td>
+            <td class="center">174</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -2427,11 +2437,9 @@ td { border-bottom: 1px solid #eef2f7; }
         
         
       <div class="content-block pp-block">
-        <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <div class="pp-wrap">
-            <img src="stallion%20PPs%20png%20files/knightsbridge.png" alt="Knightsbridge past performances" class="pp-img" loading="lazy">
-          </div>
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>10/31/26</td><td>3rd</td><td><span class="gr g1">G1</span> Breeders' Cup Classic</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>107</td></tr><tr><td>8/22/26</td><td>Won</td><td><span class="gr g1">G1</span> Pacific Classic S.</td><td class='hide-s'>Del Mar</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>6 1/4</td><td class='n'>104</td></tr><tr><td>7/18/26</td><td>Won</td><td><span class="gr g3">G3</span> Monmouth Cup S.</td><td class='hide-s'>Monmouth Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>10 1/4</td><td class='n'>122</td></tr><tr><td>6/6/26</td><td>2nd</td><td><span class="gr g1">G1</span> Metropolitan H.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'></td><td class='n'>102</td></tr><tr><td>2/28/26</td><td>Won</td><td><span class="gr g3">G3</span> Gulfstream Park Mile S.</td><td class='hide-s'>Gulfstream Park</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>11 1/4</td><td class='n'>112</td></tr><tr><td>1/24/26</td><td>Won</td><td><span class="gr g3">G3</span> Fred W. Hooper S.</td><td class='hide-s'>Gulfstream Park</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>4 3/4</td><td class='n'>105</td></tr><tr><td>12/27/25</td><td>Won</td><td><span class="gr g3">G3</span> Mr. Prospector S.</td><td class='hide-s'>Gulfstream Park</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>4 3/4</td><td class='n'>104</td></tr></tbody></table></div></div><div class="pp-wrap"><img src="stallion%20PPs%20png%20files/knightsbridge.png" alt="Knightsbridge past performances" class="pp-img" loading="lazy"></div>
         </div>
       </div>
         
@@ -2605,7 +2613,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">6</td>
             <td class="fee-cell">$75,000</td>
-            <td class="center">93</td>
+            <td class="center">94</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -2763,6 +2771,12 @@ td { border-bottom: 1px solid #eef2f7; }
         </div>
       </div>
         
+      <div class="content-block pp-block">
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>11/26/21</td><td>Won</td><td><span class="gr g1">G1</span> Clark S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>1/2</td><td class='n'>99</td></tr><tr><td>10/2/21</td><td>2nd</td><td><span class="gr g1">G1</span> Woodward S.</td><td class='hide-s'>Belmont Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>105</td></tr><tr><td>8/7/21</td><td>2nd</td><td><span class="gr g1">G1</span> Whitney S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>105</td></tr><tr><td>6/26/21</td><td>Won</td><td><span class="gr g2">G2</span> Stephen Foster S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>3 1/4</td><td class='n'>103</td></tr><tr><td>4/30/21</td><td>Won</td><td><span class="gr g2">G2</span> Alysheba S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>3 1/4</td><td class='n'>105</td></tr><tr><td>3/6/21</td><td>3rd</td><td><span class="gr g1">G1</span> Santa Anita H.</td><td class='hide-s'>Santa Anita</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>99</td></tr><tr><td>2/13/21</td><td>Won</td><td><span class="gr g3">G3</span> Mineshaft S.</td><td class='hide-s'>Fair Grounds</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>3 1/4</td><td class='n'>99</td></tr><tr><td>12/19/20</td><td>Won</td><td>Listed Tenacious S.</td><td class='hide-s'>Fair Grounds</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>2 1/2</td><td class='n'>97</td></tr><tr><td>5/23/20</td><td>Won</td><td><span class="gr g3">G3</span> Matt Winn S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>1</td><td class='n'>95</td></tr><tr><td>10/5/19</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Futurity</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>5 1/2</td><td class='n'>87</td></tr></tbody></table></div></div>
+        </div>
+      </div>
         
       <div class="content-block ped-block">
         <h3 class="block-title"><span class="block-icon">🧬</span>Pedigree<span class="chevron">▾</span></h3>
@@ -3004,7 +3018,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">17</td>
             <td class="fee-cell">$15,000</td>
-            <td class="center">16</td>
+            <td class="center">17</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -3142,6 +3156,12 @@ td { border-bottom: 1px solid #eef2f7; }
         </div>
       </div>
         
+      <div class="content-block pp-block">
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>11/7/09</td><td>3rd</td><td><span class="gr g1">G1</span> Breeders' Cup Dirt Mile</td><td class='hide-s'>Oak Tree At Santa Anita</td><td>Synthetic</td><td class='n hide-s'>1 m</td><td class='n'></td><td class='n'>103</td></tr><tr><td>10/25/08</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Cup Juvenile</td><td class='hide-s'>Oak Tree At Santa Anita</td><td>Synthetic</td><td class='n hide-s'>1 1/16 m</td><td class='n'>1 1/4</td><td class='n'>91</td></tr><tr><td>9/28/08</td><td>2nd</td><td><span class="gr g1">G1</span> Norfolk S.</td><td class='hide-s'>Oak Tree At Santa Anita</td><td>Synthetic</td><td class='n hide-s'>1 1/16 m</td><td class='n'></td><td class='n'>85</td></tr><tr><td>9/3/08</td><td>Won</td><td><span class="gr g1">G1</span> Del Mar Futurity</td><td class='hide-s'>Del Mar</td><td>Synthetic</td><td class='n hide-s'>7 f</td><td class='n'>nose</td><td class='n'>85</td></tr></tbody></table></div></div>
+        </div>
+      </div>
         
       <div class="content-block ped-block">
         <h3 class="block-title"><span class="block-icon">🧬</span>Pedigree<span class="chevron">▾</span></h3>
@@ -3437,11 +3457,9 @@ td { border-bottom: 1px solid #eef2f7; }
       </div>
         
       <div class="content-block pp-block">
-        <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <div class="pp-wrap">
-            <img src="stallion%20PPs%20png%20files/mystic-guide.png" alt="Mystic Guide past performances" class="pp-img" loading="lazy">
-          </div>
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>3/27/21</td><td>Won</td><td><span class="gr g1">G1</span> Dubai World Cup</td><td class='hide-s'>Meydan</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'></td></tr><tr><td>2/27/21</td><td>Won</td><td><span class="gr g3">G3</span> Razorback H.</td><td class='hide-s'>Oaklawn Park</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>6</td><td class='n'>108</td></tr><tr><td>10/10/20</td><td>2nd</td><td><span class="gr g1">G1</span> Jockey Club Gold Cup S.</td><td class='hide-s'>Belmont Park</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>102</td></tr><tr><td>9/5/20</td><td>Won</td><td><span class="gr g2">G2</span> Jim Dandy S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>3/4</td><td class='n'>95</td></tr></tbody></table></div></div><div class="pp-wrap"><img src="stallion%20PPs%20png%20files/mystic-guide.png" alt="Mystic Guide past performances" class="pp-img" loading="lazy"></div>
         </div>
       </div>
         
@@ -3685,7 +3703,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">11</td>
             <td class="fee-cell">$225,000</td>
-            <td class="center">167</td>
+            <td class="center">169</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -3827,6 +3845,12 @@ td { border-bottom: 1px solid #eef2f7; }
         </div>
       </div>
         
+      <div class="content-block pp-block">
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>5/21/16</td><td>3rd</td><td><span class="gr g1">G1</span> Preakness S.</td><td class='hide-s'>Pimlico</td><td>Dirt</td><td class='n hide-s'>1 3/16 m</td><td class='n'></td><td class='n'>96</td></tr><tr><td>5/7/16</td><td>Won</td><td><span class="gr g1">G1</span> Kentucky Derby</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>1 1/4</td><td class='n'>103</td></tr><tr><td>4/2/16</td><td>Won</td><td><span class="gr g1">G1</span> Florida Derby</td><td class='hide-s'>Gulfstream Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>3 1/4</td><td class='n'>92</td></tr><tr><td>2/15/16</td><td>Won</td><td><span class="gr g2">G2</span> San Vicente S.</td><td class='hide-s'>Santa Anita</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>1 1/2</td><td class='n'>101</td></tr><tr><td>10/31/15</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Cup Juvenile</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>1/2</td><td class='n'>89</td></tr><tr><td>9/26/15</td><td>Won</td><td><span class="gr g1">G1</span> FrontRunner S.</td><td class='hide-s'>Santa Anita</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>3/4</td><td class='n'>79</td></tr><tr><td>9/7/15</td><td>Won</td><td><span class="gr g1">G1</span> Del Mar Futurity</td><td class='hide-s'>Del Mar</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>3 3/4</td><td class='n'>82</td></tr><tr><td>8/8/15</td><td>Won</td><td><span class="gr g2">G2</span> Best Pal S.</td><td class='hide-s'>Del Mar</td><td>Dirt</td><td class='n hide-s'>6 1/2 f</td><td class='n'>5 1/4</td><td class='n'>89</td></tr></tbody></table></div></div>
+        </div>
+      </div>
         
       <div class="content-block ped-block">
         <h3 class="block-title"><span class="block-icon">🧬</span>Pedigree<span class="chevron">▾</span></h3>
@@ -4119,11 +4143,9 @@ td { border-bottom: 1px solid #eef2f7; }
       </div>
         
       <div class="content-block pp-block">
-        <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <div class="pp-wrap">
-            <img src="stallion%20PPs%20png%20files/proxy.png" alt="Proxy past performances" class="pp-img" loading="lazy">
-          </div>
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>11/4/23</td><td>3rd</td><td><span class="gr g1">G1</span> Breeders' Cup Classic</td><td class='hide-s'>Santa Anita</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>103</td></tr><tr><td>9/2/23</td><td>2nd</td><td><span class="gr g1">G1</span> Jockey Club Gold Cup S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>103</td></tr><tr><td>7/22/23</td><td>Won</td><td><span class="gr g3">G3</span> Monmouth Cup S.</td><td class='hide-s'>Monmouth Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>2 1/2</td><td class='n'>98</td></tr><tr><td>4/22/23</td><td>Won</td><td><span class="gr g2">G2</span> Oaklawn H.</td><td class='hide-s'>Oaklawn Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>head</td><td class='n'>103</td></tr><tr><td>3/4/23</td><td>2nd</td><td><span class="gr g1">G1</span> Santa Anita H.</td><td class='hide-s'>Santa Anita</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'></td><td class='n'>97</td></tr><tr><td>11/25/22</td><td>Won</td><td><span class="gr g1">G1</span> Clark S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>3/4</td><td class='n'>101</td></tr></tbody></table></div></div><div class="pp-wrap"><img src="stallion%20PPs%20png%20files/proxy.png" alt="Proxy past performances" class="pp-img" loading="lazy"></div>
         </div>
       </div>
         
@@ -4272,11 +4294,9 @@ td { border-bottom: 1px solid #eef2f7; }
         
         
       <div class="content-block pp-block">
-        <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <div class="pp-wrap">
-            <img src="stallion%20PPs%20png%20files/sovereignty.png" alt="Sovereignty past performances" class="pp-img" loading="lazy">
-          </div>
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>10/31/26</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Cup Classic</td><td class='hide-s'>Keeneland</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>1 3/4</td><td class='n'>110</td></tr><tr><td>8/8/26</td><td>Won</td><td><span class="gr g1">G1</span> Whitney S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>4 3/4</td><td class='n'>112</td></tr><tr><td>6/27/26</td><td>3rd</td><td><span class="gr g1">G1</span> Stephen Foster S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>106</td></tr><tr><td>8/23/25</td><td>Won</td><td><span class="gr g1">G1</span> Travers S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>10</td><td class='n'>115</td></tr><tr><td>7/26/25</td><td>Won</td><td><span class="gr g2">G2</span> Jim Dandy S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>1</td><td class='n'>104</td></tr><tr><td>6/7/25</td><td>Won</td><td><span class="gr g1">G1</span> Belmont S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>3</td><td class='n'>109</td></tr><tr><td>5/3/25</td><td>Won</td><td><span class="gr g1">G1</span> Kentucky Derby</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>1 1/2</td><td class='n'>104</td></tr><tr><td>3/29/25</td><td>2nd</td><td><span class="gr g1">G1</span> Florida Derby</td><td class='hide-s'>Gulfstream Park</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>92</td></tr><tr><td>3/1/25</td><td>Won</td><td><span class="gr g2">G2</span> Fountain of Youth S.</td><td class='hide-s'>Gulfstream Park</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>neck</td><td class='n'>95</td></tr><tr><td>10/27/24</td><td>Won</td><td><span class="gr g3">G3</span> Street Sense S.</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>5</td><td class='n'>87</td></tr></tbody></table></div></div><div class="pp-wrap"><img src="stallion%20PPs%20png%20files/sovereignty.png" alt="Sovereignty past performances" class="pp-img" loading="lazy"></div>
         </div>
       </div>
         
@@ -4436,7 +4456,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">5</td>
             <td class="fee-cell">$15,000</td>
-            <td class="center">42</td>
+            <td class="center">47</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -4578,11 +4598,9 @@ td { border-bottom: 1px solid #eef2f7; }
       </div>
         
       <div class="content-block pp-block">
-        <h3 class="block-title"><span class="block-icon">📋</span>Race Record<span class="chevron">▾</span></h3>
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
         <div class="block-body">
-          <div class="pp-wrap">
-            <img src="stallion%20PPs%20png%20files/speakers-corner.png" alt="Speaker's Corner past performances" class="pp-img" loading="lazy">
-          </div>
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>6/11/22</td><td>3rd</td><td><span class="gr g1">G1</span> Metropolitan H.</td><td class='hide-s'>Belmont Park</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'></td><td class='n'>97</td></tr><tr><td>4/9/22</td><td>Won</td><td><span class="gr g1">G1</span> Carter H.</td><td class='hide-s'>Aqueduct</td><td>Dirt</td><td class='n hide-s'>7 f</td><td class='n'>4 1/2</td><td class='n'>114</td></tr><tr><td>3/5/22</td><td>Won</td><td><span class="gr g2">G2</span> Gulfstream Park Mile S.</td><td class='hide-s'>Gulfstream Park</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>5 1/2</td><td class='n'>106</td></tr><tr><td>1/29/22</td><td>Won</td><td><span class="gr g3">G3</span> Fred W. Hooper S.</td><td class='hide-s'>Gulfstream Park</td><td>Dirt</td><td class='n hide-s'>1 m</td><td class='n'>1 1/4</td><td class='n'>102</td></tr></tbody></table></div></div><div class="pp-wrap"><img src="stallion%20PPs%20png%20files/speakers-corner.png" alt="Speaker's Corner past performances" class="pp-img" loading="lazy"></div>
         </div>
       </div>
         
@@ -4826,7 +4844,7 @@ td { border-bottom: 1px solid #eef2f7; }
             <td class="bold">2027</td>
             <td class="center">20</td>
             <td class="fee-cell">$35,000</td>
-            <td class="center">25</td>
+            <td class="center">26</td>
             <td class="center"></td>
             <td class="center"></td>
             <td></td>
@@ -4960,6 +4978,12 @@ td { border-bottom: 1px solid #eef2f7; }
         </div>
       </div>
         
+      <div class="content-block pp-block">
+        <h3 class="block-title"><span class="block-icon">📋</span>Race record (black-type wins and G1 placings)<span class="chevron">▾</span></h3>
+        <div class="block-body">
+          <div class="table-scroll-wrap"><div class="table-scroll"><table class='rr-table'><thead><tr><th>Date</th><th></th><th>Race</th><th class='hide-s'>Track</th><th>Surface</th><th class='n hide-s'>Distance</th><th class='n'>Margin</th><th class='n'>Beyer</th></tr></thead><tbody><tr><td>8/25/07</td><td>Won</td><td><span class="gr g1">G1</span> Travers S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>1/2</td><td class='n'>108</td></tr><tr><td>7/29/07</td><td>Won</td><td><span class="gr g2">G2</span> Jim Dandy S.</td><td class='hide-s'>Saratoga</td><td>Dirt</td><td class='n hide-s'>1 1/8 m</td><td class='n'>1 1/2</td><td class='n'>105</td></tr><tr><td>5/19/07</td><td>2nd</td><td><span class="gr g1">G1</span> Preakness S.</td><td class='hide-s'>Pimlico</td><td>Dirt</td><td class='n hide-s'>1 3/16 m</td><td class='n'></td><td class='n'>111</td></tr><tr><td>5/5/07</td><td>Won</td><td><span class="gr g1">G1</span> Kentucky Derby</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/4 m</td><td class='n'>2 1/4</td><td class='n'>110</td></tr><tr><td>4/14/07</td><td>2nd</td><td><span class="gr g1">G1</span> Blue Grass S.</td><td class='hide-s'>Keeneland</td><td>Synthetic</td><td class='n hide-s'>1 1/8 m</td><td class='n'></td><td class='n'>93</td></tr><tr><td>3/17/07</td><td>Won</td><td><span class="gr g3">G3</span> Tampa Bay Derby</td><td class='hide-s'>Tampa Bay Downs</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>nose</td><td class='n'>102</td></tr><tr><td>11/4/06</td><td>Won</td><td><span class="gr g1">G1</span> Breeders' Cup Juvenile</td><td class='hide-s'>Churchill Downs</td><td>Dirt</td><td class='n hide-s'>1 1/16 m</td><td class='n'>10</td><td class='n'>108</td></tr><tr><td>10/7/06</td><td>3rd</td><td><span class="gr g1">G1</span> Breeders' Futurity</td><td class='hide-s'>Keeneland</td><td>Synthetic</td><td class='n hide-s'>1 1/16 m</td><td class='n'></td><td class='n'>87</td></tr></tbody></table></div></div>
+        </div>
+      </div>
         
       <div class="content-block ped-block">
         <h3 class="block-title"><span class="block-icon">🧬</span>Pedigree<span class="chevron">▾</span></h3>
