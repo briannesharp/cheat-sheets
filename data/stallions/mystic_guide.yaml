@@ -41,7 +41,7 @@ auto_stats:
   freshman: true
   tdn_list: first-crop
   tdn_rank: 20
-  tdn_rank_date: '2026-11-12'
+  tdn_rank_date: '2026-11-13'
 progeny:
 - horse: SUNDAY FINERY (2f)
   auto: won G3 Mazarine S. by 6 3/4 at WO 11/1 (88); won MSW by 13 1/2 at WO 9/26 (83).
@@ -80,7 +80,7 @@ progeny:
   breeder: Bonnie Heath Farm
   sale: $425k KeeSep (The Three Amigos)
 - horse: ALL ABOUT SOUL (2c)
-  auto: won MSW at FL 11/11.
+  auto: won MSW at FL 11/11 (51).
   note: M. Anthony Ferraro.
   bms: Tiznow
   breeder: Saratoga Glen Farm, LLC

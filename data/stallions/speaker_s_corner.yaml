@@ -85,7 +85,7 @@ auto_bullets:
 - 2026 yearlings bring $115k (Canuck Racing Club).
 - 2025 weanlings bring $110k (Sabby Racing), $100k (Faris Breeding).
 auto_stats:
-  starters: 44
+  starters: 45
   winners: 8
   stakes_horses: 4
   stakes_winners: 4
@@ -95,4 +95,4 @@ auto_stats:
   freshman: true
   tdn_list: first-crop
   tdn_rank: 12
-  tdn_rank_date: '2026-11-12'
+  tdn_rank_date: '2026-11-13'
