@@ -69,7 +69,7 @@ auto_bullets:
 - 2026 yearlings bring $450k (Saints or Sinners/Spartan Equine Racing), $300k (BDS Stables), $260k (Tropical Racing), $250k (Robert LaPenta/Madaket Stable/Sabby Racing), $230k (Brad Smith), $200k (Tom McCrocklin), $150k (Wayne R. Sanders & Kat Kirk), $150k (Wycombe House), $120k (Go Go Greys), $110k (Scanlon Training and Sales).
 - 2025 weanlings bring $135k (Machmer Hall), $105k (AHW).
 auto_stats:
-  starters: 134
+  starters: 135
   winners: 71
   stakes_horses: 13
   stakes_winners: 9
@@ -79,4 +79,4 @@ auto_stats:
   freshman: false
   tdn_list: second-crop
   tdn_rank: 2
-  tdn_rank_date: '2026-11-13'
+  tdn_rank_date: '2026-11-14'
